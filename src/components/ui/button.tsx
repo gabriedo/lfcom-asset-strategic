@@ -5,25 +5,40 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 transition-all duration-300",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
-        secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
+        // Primary CTA - Black background, white text
+        default: "bg-surface-black text-surface-white hover:bg-surface-dark rounded-2xl hover:shadow-lg hover:scale-[1.02]",
+        
+        // Secondary CTA - White background, black text with border
+        secondary: "bg-surface-white text-surface-black border border-border-strong hover:bg-surface-light rounded-2xl hover:shadow-lg hover:scale-[1.02]",
+        
+        // Outline variant - transparent with border
+        outline: "border border-border-strong bg-transparent hover:bg-surface-light text-foreground rounded-2xl hover:shadow-lg hover:scale-[1.02]",
+        
+        // Hero variant - special styling for hero section
+        hero: "bg-surface-white text-surface-black hover:bg-surface-light rounded-2xl shadow-lg hover:shadow-xl hover:scale-[1.02] font-semibold",
+        
+        // Hero outline - for secondary hero CTA
+        "hero-outline": "border-2 border-surface-white bg-transparent text-surface-white hover:bg-surface-white hover:text-surface-black rounded-2xl hover:shadow-lg hover:scale-[1.02] font-semibold",
+        
+        // Accent variant with gold
+        accent: "bg-accent-gold text-surface-black hover:bg-accent-gold-muted rounded-2xl hover:shadow-lg hover:scale-[1.02] font-semibold",
+        
+        // Ghost variant
+        ghost: "hover:bg-surface-light hover:text-foreground rounded-2xl",
+        
+        // Link variant
+        link: "text-primary underline-offset-4 hover:underline font-medium",
       },
       size: {
-        default: "h-10 px-4 py-2",
-        sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
-        icon: "h-10 w-10",
+        sm: "h-9 px-4 py-2 text-sm",
+        default: "h-12 px-6 py-3 text-base",
+        lg: "h-14 px-8 py-4 text-lg",
+        xl: "h-16 px-10 py-5 text-xl",
+        icon: "h-12 w-12",
       },
     },
     defaultVariants: {
