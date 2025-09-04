@@ -53,7 +53,7 @@ const Solucoes = () => {
           <div className="container mx-auto px-4 text-center">
             <div className="max-w-3xl mx-auto space-y-6">
               <h1 className="text-hero text-surface-white">
-                Nossas <span className="text-accent-gold">Soluções</span>
+                Soluções de ponta a ponta em leilões estratégicos
               </h1>
               <p className="text-xl text-surface-medium leading-relaxed">
                 Atuamos de ponta a ponta, do mapeamento à liquidação, 
@@ -157,9 +157,9 @@ const Solucoes = () => {
               <p className="text-xl text-surface-medium">
                 Solicite uma avaliação estratégica sem compromisso
               </p>
-              <Button asChild variant="hero" size="lg">
-                <Link to="/contato">Solicitar avaliação estratégica</Link>
-              </Button>
+                <Button asChild variant="hero" size="lg">
+                  <Link to="/contato">Agendar conversa estratégica</Link>
+                </Button>
             </div>
           </div>
         </section>

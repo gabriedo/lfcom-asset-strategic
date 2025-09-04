@@ -94,7 +94,7 @@ const Sobre = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-hero mb-6 animate-fade-in">
-                Autoridade, previsibilidade e execução.
+                Quem somos: autoridade e governança em leilões
               </h1>
               <p className="text-xl text-surface-medium mb-8 animate-slide-up leading-relaxed">
                 A LFCOM nasceu para transformar ativos de leilão em patrimônio estratégico para quem pensa grande. 

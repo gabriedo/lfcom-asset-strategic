@@ -33,9 +33,9 @@ const Insights = () => {
         <section className="py-20 bg-surface-black text-surface-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-hero mb-6 animate-fade-in">
-                Insights do Mercado
-              </h1>
+            <h1 className="text-hero mb-6 animate-fade-in">
+              Análises e inteligência de mercado
+            </h1>
               <p className="text-xl text-surface-medium mb-8 animate-slide-up">
                 Análises, estratégias e tendências do mercado de leilões para empresários e investidores que pensam grande.
               </p>

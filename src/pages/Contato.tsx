@@ -136,7 +136,7 @@ const Contato = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-hero mb-6 animate-fade-in">
-                Vamos conversar sobre seu próximo investimento
+                Converse com a LFCOM
               </h1>
               <p className="text-xl text-surface-medium mb-8 animate-slide-up">
                 Nossa equipe está preparada para estruturar operações de leilão com a governança e previsibilidade que você exige.

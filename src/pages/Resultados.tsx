@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -102,7 +103,7 @@ const Resultados = () => {
           <div className="container mx-auto px-4 text-center">
             <div className="max-w-3xl mx-auto space-y-6">
               <h1 className="text-hero text-surface-white">
-                Nossos <span className="text-accent-gold">Resultados</span>
+                Casos reais, resultados comprovados
               </h1>
               <p className="text-xl text-surface-medium leading-relaxed">
                 Cases reais de sucesso com segurança jurídica e resultados mensuráveis
@@ -215,8 +216,10 @@ const Resultados = () => {
               <p className="text-xl text-surface-medium">
                 Converse com nossos especialistas sobre suas necessidades específicas
               </p>
-              <Button variant="hero" size="lg">
-                Solicitar análise personalizada
+              <Button asChild variant="hero" size="lg">
+                <Link to="/contato">
+                  Agendar conversa estratégica
+                </Link>
               </Button>
             </div>
           </div>
