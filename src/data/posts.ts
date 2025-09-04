@@ -188,14 +188,13 @@ Com a pressão por **eficiência operacional** e **margens sustentáveis**, empr
 ## Análise de viabilidade
 
 ### Cálculo do investimento total:
-```
-Valor do lance
-+ Custos de transporte
-+ Instalação e adequações  
-+ Licenciamento/regularização
-+ Capital de giro adicional
-= CAPEX Real
-```
+
+**Valor do lance**
+- Custos de transporte
+- Instalação e adequações  
+- Licenciamento/regularização
+- Capital de giro adicional
+**= CAPEX Real**
 
 ### Métricas de decisão:
 - **Payback**: Máximo 3 anos
