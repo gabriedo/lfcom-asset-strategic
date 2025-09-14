@@ -19,9 +19,9 @@ export const Footer = () => {
           <div className="md:col-span-2">
             <div className="mb-4">
               <img 
-                src="/lovable-uploads/7ef599a7-0e33-4c04-b2e7-aa2be6417721.png" 
+                src="/logo-lfcom.png" 
                 alt="LFCOM Logo" 
-                className="h-6 w-auto filter brightness-0 invert opacity-90"
+                className="h-6 w-auto opacity-90"
               />
             </div>
             <p className="text-surface-medium text-sm leading-relaxed mb-4 max-w-sm">

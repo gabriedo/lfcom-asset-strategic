@@ -23,7 +23,7 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/7ef599a7-0e33-4c04-b2e7-aa2be6417721.png" 
+              src="/logo-lfcom.png" 
               alt="LFCOM"
               className="h-8 w-auto"
             />
