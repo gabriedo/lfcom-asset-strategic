@@ -38,8 +38,8 @@ export default {
 				'surface-medium': 'hsl(var(--surface-medium))',
 				'surface-light': 'hsl(var(--surface-light))',
 				'surface-white': 'hsl(var(--surface-white))',
-				'accent-gold': 'hsl(var(--accent-gold))',
-				'accent-gold-muted': 'hsl(var(--accent-gold-muted))',
+				'accent-blue': 'hsl(var(--accent-blue))',
+				'accent-blue-light': 'hsl(var(--accent-blue-light))',
 				'border-strong': 'hsl(var(--border-strong))',
 				
 				primary: {

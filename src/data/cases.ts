@@ -13,92 +13,92 @@ export interface Case {
 export const cases: Case[] = [
   {
     id: "1",
-    title: "Galpão Logístico - Grande SP",
-    type: "galpao", 
-    discountPercent: 42,
+    title: "Apartamento Alto Padrão - Jardins",
+    type: "imovel", 
+    discountPercent: 38,
     thesis: "renda",
-    prazo: "90 dias",
-    resultado: "Cap rate 11,2% a.a.",
+    prazo: "75 dias",
+    resultado: "Yield 8,5% a.a.",
     highlights: [
-      "22.000 m² em condomínio logístico premium",
-      "Localização estratégica no corredor Anhanguera",
-      "Inquilino multinacional com contrato de 10 anos",
-      "Certificação LEED e sistemas automatizados"
+      "240 m² em edifício premium nos Jardins",
+      "Vista panorâmica da cidade",
+      "Acabamento Armani Casa",
+      "Potencial locação executiva R$ 18k/mês"
     ]
   },
   {
     id: "2", 
-    title: "Sede Corporativa - Rio de Janeiro",
+    title: "Casa de Alto Padrão - Alphaville",
     type: "imovel",
-    discountPercent: 37,
-    thesis: "sede-propria", 
-    prazo: "120 dias",
-    resultado: "ROI 28% - Economia R$ 180k/mês",
+    discountPercent: 45,
+    thesis: "renda", 
+    prazo: "90 dias",
+    resultado: "ROI 22% em 24 meses",
     highlights: [
-      "Edifício corporativo 3.500 m² em Botafogo",
-      "Eliminação de aluguel de R$ 180 mil mensais",
-      "Infraestrutura completa e moderna",
-      "Valorização estimada de 8% a.a."
+      "Casa 450 m² em condomínio fechado",
+      "4 suítes + área gourmet completa",
+      "Segurança 24h e clube privativo",
+      "Demanda alta para locação corporativa"
     ]
   },
   {
     id: "3",
-    title: "Linha Industrial Têxtil",
-    type: "maquina", 
-    discountPercent: 55,
-    thesis: "capex-otimizado",
-    prazo: "60 dias", 
-    resultado: "Payback < 12 meses",
+    title: "Galpão Logístico - Grande SP",
+    type: "galpao", 
+    discountPercent: 42,
+    thesis: "renda",
+    prazo: "90 dias", 
+    resultado: "Cap rate 11,2% a.a.",
     highlights: [
-      "Equipamentos Sulzer de última geração",
-      "Capacidade produtiva de 2.000 ton/mês",
-      "Tecnologia europeia com 3 anos de uso",
-      "Aumento de 45% na capacidade instalada"
+      "22.000 m² em condomínio logístico",
+      "Localização estratégica Anhanguera",
+      "Inquilino multinacional AAA",
+      "Contrato de 10 anos + reajustes"
     ]
   },
   {
     id: "4",
-    title: "Complexo Industrial - MG", 
-    type: "fabrica",
-    discountPercent: 48,
-    thesis: "expansao",
-    prazo: "150 dias",
-    resultado: "Consolidação regional",
+    title: "Terreno Comercial - Faria Lima", 
+    type: "imovel",
+    discountPercent: 52,
+    thesis: "valor",
+    prazo: "120 dias",
+    resultado: "Potencial 3x em 5 anos",
     highlights: [
-      "Planta de 15.000 m² com licenças ambientais",
-      "Localização estratégica no Triângulo Mineiro", 
-      "Infraestrutura para 300 funcionários",
-      "Potencial de duplicação da operação"
+      "2.800 m² em esquina nobre",
+      "Zoneamento para edifício comercial",
+      "Próximo ao metrô e centro financeiro", 
+      "Projeto pré-aprovado incluído"
     ]
   },
   {
     id: "5",
-    title: "Centro de Distribuição - SP",
-    type: "galpao",
+    title: "Edifício Corporativo - Vila Olímpia",
+    type: "imovel",
     discountPercent: 35,
-    thesis: "renda",
-    prazo: "75 dias", 
-    resultado: "Cap rate 9,8% a.a.",
+    thesis: "sede-propria",
+    prazo: "150 dias", 
+    resultado: "Economia 40% vs aluguel",
     highlights: [
-      "28.000 m² em Guarulhos próximo ao aeroporto",
-      "Docking para 40 carretas simultâneas",
-      "Sistema WMS implementado", 
-      "Contrato built-to-suit com varejista"
+      "Edifício 8 andares totalmente ocupável",
+      "100 vagas de garagem cobertas",
+      "Certificação LEED Platinum",
+      "Eliminação R$ 120k/mês em aluguéis"
     ]
   },
   {
     id: "6",
-    title: "Equipamentos Rodoviários",
+    title: "Máquinas Industriais Têxteis",
     type: "maquina",
-    discountPercent: 62, 
+    discountPercent: 55, 
     thesis: "capex-otimizado",
-    prazo: "45 dias",
-    resultado: "Fleet renovation completa",
+    prazo: "60 dias",
+    resultado: "Payback < 1 ano",
     highlights: [
-      "Frota de 12 caminhões Mercedes seminovos",
-      "Idade média de 2,5 anos com baixa quilometragem", 
-      "Revisões em concessionária comprovadas",
-      "Financiamento próprio eliminou necessidade de CDC"
+      "Linha completa Sulzer seminova",
+      "Capacidade 2.000 ton/mês",
+      "3 anos de uso com manutenção total",
+      "Aumento 45% da capacidade instalada"
     ]
   }
 ];

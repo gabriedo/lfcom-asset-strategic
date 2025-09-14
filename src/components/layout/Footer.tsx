@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Linkedin, Instagram } from "lucide-react";
 
 const footerNavigation = [
+  { name: "Home", href: "/" },
   { name: "Soluções", href: "/solucoes" },
   { name: "Resultados", href: "/resultados" },
   { name: "Insights", href: "/insights" },
@@ -11,84 +12,86 @@ const footerNavigation = [
 
 export const Footer = () => {
   return (
-    <footer className="bg-surface-black text-surface-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Logo and Description */}
-          <div className="space-y-4">
-            <img 
-              src="/lovable-uploads/7ef599a7-0e33-4c04-b2e7-aa2be6417721.png" 
-              alt="LFCOM"
-              className="h-8 w-auto"
-            />
-            <p className="text-body text-surface-medium max-w-sm">
-              Assessoria de leilões para grandes empresários e investidores. 
-              Transformamos ativos de leilão em patrimônio estratégico.
+    <footer className="bg-surface-black text-surface-white py-12">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div className="md:col-span-2">
+            <div className="mb-4">
+              <img 
+                src="/lovable-uploads/7ef599a7-0e33-4c04-b2e7-aa2be6417721.png" 
+                alt="LFCOM Logo" 
+                className="h-6 w-auto filter brightness-0 invert opacity-90"
+              />
+            </div>
+            <p className="text-surface-medium text-sm leading-relaxed mb-4 max-w-sm">
+              Assessoria especializada em leilões para grandes investidores e empresas.
             </p>
+            <div className="text-surface-medium text-sm space-y-1">
+              <p>R. Francisco Rocha, 198 – Batel</p>
+              <p>Curitiba – PR, 80420-130</p>
+              <p>+55 41 92003-0105</p>
+              <p>suporte@lfcom.xyz</p>
+            </div>
           </div>
 
           {/* Navigation */}
-          <div className="space-y-4">
-            <h3 className="text-title text-surface-white">Navegação</h3>
-            <ul className="space-y-2">
+          <div>
+            <nav className="space-y-2">
               {footerNavigation.map((item) => (
-                <li key={item.name}>
-                  <Link
-                    to={item.href}
-                    className="text-body text-surface-medium hover:text-surface-white transition-colors"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block text-surface-medium hover:text-surface-white transition-colors text-sm"
+                >
+                  {item.name}
+                </Link>
               ))}
-            </ul>
+            </nav>
           </div>
 
-          {/* Contact and Social */}
-          <div className="space-y-4">
-            <h3 className="text-title text-surface-white">Conecte-se</h3>
-            <div className="flex space-x-4">
-              <a
-                href="#"
+          {/* Social & Legal */}
+          <div>
+            <div className="flex space-x-3 mb-4">
+              <a 
+                href="https://linkedin.com/company/lfcom" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="text-surface-medium hover:text-surface-white transition-colors"
-                aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
               </a>
-              <a
-                href="#"
+              <a 
+                href="https://instagram.com/lfcom.oficial" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="text-surface-medium hover:text-surface-white transition-colors"
-                aria-label="Instagram"
               >
                 <Instagram size={20} />
               </a>
             </div>
-            <p className="text-caption text-surface-medium">
-              contato@lfcom.com.br
-            </p>
-          </div>
-        </div>
-
-        <div className="border-t border-surface-dark mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-caption text-surface-medium">
-              © 2024 LFCOM. Todos os direitos reservados.
-            </p>
-            <div className="flex space-x-6">
-              <Link
-                to="/politica-privacidade"
-                className="text-caption text-surface-medium hover:text-surface-white transition-colors"
+            <div className="space-y-2">
+              <Link 
+                to="/politica-de-privacidade" 
+                className="block text-surface-medium hover:text-surface-white text-sm transition-colors"
               >
                 Política de Privacidade
               </Link>
-              <Link
-                to="/aviso-legal"
-                className="text-caption text-surface-medium hover:text-surface-white transition-colors"
+              <Link 
+                to="/aviso-legal" 
+                className="block text-surface-medium hover:text-surface-white text-sm transition-colors"
               >
                 Aviso Legal
               </Link>
             </div>
           </div>
+        </div>
+
+        {/* Bottom */}
+        <div className="border-t border-surface-medium/20 mt-8 pt-6">
+          <p className="text-surface-medium text-xs text-center">
+            © 2025 LFCOM. Todos os direitos reservados.
+          </p>
         </div>
       </div>
     </footer>

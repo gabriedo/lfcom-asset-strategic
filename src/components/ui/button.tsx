@@ -18,14 +18,14 @@ const buttonVariants = cva(
         // Outline variant - transparent with border
         outline: "border border-border-strong bg-transparent hover:bg-surface-light text-foreground rounded-2xl hover:shadow-lg hover:scale-[1.02]",
         
-        // Hero variant - special styling for hero section
-        hero: "bg-surface-white text-surface-black hover:bg-surface-light rounded-2xl shadow-lg hover:shadow-xl hover:scale-[1.02] font-semibold",
+        // Hero variant - Apple blue for CTAs
+        hero: "bg-accent-blue text-white hover:bg-accent-blue-light rounded-2xl shadow-lg hover:shadow-xl hover:scale-[1.02] font-semibold",
         
         // Hero outline - for secondary hero CTA
-        "hero-outline": "border-2 border-surface-white bg-transparent text-surface-white hover:bg-surface-white hover:text-surface-black rounded-2xl hover:shadow-lg hover:scale-[1.02] font-semibold",
+        "hero-outline": "border-2 border-current text-foreground hover:bg-accent-blue hover:text-white rounded-2xl hover:shadow-lg hover:scale-[1.02] font-semibold",
         
-        // Accent variant with gold
-        accent: "bg-accent-gold text-surface-black hover:bg-accent-gold-muted rounded-2xl hover:shadow-lg hover:scale-[1.02] font-semibold",
+        // Accent variant with blue
+        accent: "bg-accent-blue text-white hover:bg-accent-blue-light rounded-2xl hover:shadow-lg hover:scale-[1.02] font-semibold",
         
         // Ghost variant
         ghost: "hover:bg-surface-light hover:text-foreground rounded-2xl",

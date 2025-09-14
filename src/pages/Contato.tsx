@@ -75,7 +75,7 @@ const Contato = () => {
     }
   };
 
-  const whatsappUrl = "https://wa.me/5511999999999?text=Olá! Gostaria de falar sobre assessoria de leilões.";
+  const whatsappUrl = "https://wa.me/5541920030105?text=Olá! Gostaria de falar sobre assessoria de leilões.";
   const calendlyUrl = "https://calendly.com/lfcom";
 
   if (isSubmitted) {
@@ -265,7 +265,7 @@ const Contato = () => {
                           />
                           <Label htmlFor="lgpd" className="text-sm leading-5 cursor-pointer">
                             Concordo em compartilhar meus dados para contato sobre soluções da LFCOM e aceito a{" "}
-                            <a href="/politica-de-privacidade" className="text-accent-gold hover:underline">
+                            <a href="/politica-de-privacidade" className="text-accent-blue hover:underline">
                               Política de Privacidade
                             </a>
                             . *
@@ -325,21 +325,21 @@ const Contato = () => {
                       <CardTitle className="text-title">Outras formas de contato</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
-                      <div className="flex items-center gap-3">
-                        <Mail className="text-accent-gold" size={20} />
-                        <div>
-                          <p className="font-medium">E-mail</p>
-                          <p className="text-sm text-surface-medium">contato@lfcom.com.br</p>
-                        </div>
-                      </div>
-                      
-                      <div className="flex items-center gap-3">
-                        <Clock className="text-accent-gold" size={20} />
-                        <div>
-                          <p className="font-medium">SLA de resposta</p>
-                          <p className="text-sm text-surface-medium">24-48 horas úteis</p>
-                        </div>
-                      </div>
+                  <div className="flex items-center gap-3">
+                    <Mail className="text-accent-blue" size={20} />
+                    <div>
+                      <p className="font-medium">E-mail</p>
+                      <p className="text-sm text-surface-medium">suporte@lfcom.xyz</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-3">
+                    <Clock className="text-accent-blue" size={20} />
+                    <div>
+                      <p className="font-medium">SLA de resposta</p>
+                      <p className="text-sm text-surface-medium">24-48 horas úteis</p>
+                    </div>
+                  </div>
 
                       <div className="pt-4 space-y-3">
                         <Button asChild variant="outline" size="sm" className="w-full">

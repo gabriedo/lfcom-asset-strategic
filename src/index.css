@@ -17,9 +17,9 @@
     --surface-light: 0 0% 92.9%;
     --surface-white: 0 0% 100%;
     
-    /* Gold Accent (micro-accent only) */
-    --accent-gold: 45 65% 52%;
-    --accent-gold-muted: 45 35% 45%;
+    /* Apple Blue Accent */
+    --accent-blue: 211 100% 50%;
+    --accent-blue-light: 211 100% 60%;
     
     /* Functional Colors */
     --border: 0 0% 92.9%;
@@ -40,7 +40,7 @@
     --secondary-foreground: 0 0% 0%;
     --muted: 0 0% 92.9%;
     --muted-foreground: 0 0% 53.3%;
-    --accent: 45 65% 52%;
+    --accent: 211 100% 50%;
     --accent-foreground: 0 0% 0%;
     
     /* Destructive */
@@ -81,7 +81,7 @@
     --secondary-foreground: 0 0% 100%;
     --muted: 0 0% 6.7%;
     --muted-foreground: 0 0% 53.3%;
-    --accent: 45 65% 52%;
+    --accent: 211 100% 50%;
     --accent-foreground: 0 0% 0%;
   }
 }
