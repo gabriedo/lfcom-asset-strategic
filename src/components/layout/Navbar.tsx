@@ -23,9 +23,9 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img 
-              src="/logo-lfcom.png" 
+              src="/logo-preto.png" 
               alt="LFCOM"
-              className="h-12 w-auto"
+              className="h-14 w-auto"
             />
           </Link>
 

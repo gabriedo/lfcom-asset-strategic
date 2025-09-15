@@ -22,7 +22,7 @@ const buttonVariants = cva(
         hero: "bg-accent-blue text-white hover:bg-accent-blue-light rounded-2xl shadow-lg hover:shadow-xl hover:scale-[1.02] font-semibold",
         
         // Hero outline - for secondary hero CTA
-        "hero-outline": "border-2 border-current text-foreground hover:bg-accent-blue hover:text-white rounded-2xl hover:shadow-lg hover:scale-[1.02] font-semibold",
+        "hero-outline": "border-2 border-accent-blue text-accent-blue bg-transparent hover:border-surface-white hover:text-surface-white rounded-2xl hover:shadow-lg hover:scale-[1.02] font-semibold",
         
         // Accent variant with blue
         accent: "bg-accent-blue text-white hover:bg-accent-blue-light rounded-2xl hover:shadow-lg hover:scale-[1.02] font-semibold",
