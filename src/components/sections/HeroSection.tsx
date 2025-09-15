@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-
 export const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 border border-surface-white rounded-full"></div>
@@ -15,7 +13,7 @@ export const HeroSection = () => {
           {/* Main Headline */}
           <h1 className="text-hero text-surface-white text-balance animate-fade-in">
             Transformamos ativos de leilão em{" "}
-            <span className="text-accent-gold">patrimônio estratégico</span>
+            <span className="text-accent-gold text-slate-400">patrimônio estratégico</span>
           </h1>
           
           {/* Subtitle */}
@@ -41,6 +39,5 @@ export const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
