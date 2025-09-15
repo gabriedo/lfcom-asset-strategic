@@ -25,7 +25,7 @@ export const Navbar = () => {
             <img 
               src="/logo-lfcom.png" 
               alt="LFCOM"
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
           </Link>
 
