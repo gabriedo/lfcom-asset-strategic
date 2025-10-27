@@ -14,6 +14,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const isHomepage = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,17 +26,21 @@ export const Navbar = () => {
   }, []);
 
   const isActive = (href: string) => location.pathname === href;
+  
+  // No homepage, começa transparente. Em outras páginas, começa branco
+  const shouldBeTransparent = isHomepage && !isScrolled;
+  const shouldUseWhiteText = shouldBeTransparent;
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? "bg-background/95 backdrop-blur-md shadow-sm" : "bg-transparent"
+      shouldBeTransparent ? "bg-transparent" : "bg-background/95 backdrop-blur-md shadow-sm"
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img 
-              src={isScrolled ? "/logo-preto.png" : "/logo-branco.png"}
+              src={shouldUseWhiteText ? "/logo-branco.png" : "/logo-preto.png"}
               alt="LFCOM"
               className="h-40 w-auto transition-opacity duration-300"
             />
@@ -50,9 +55,9 @@ export const Navbar = () => {
                 className={`text-body font-medium transition-colors hover:text-accent-gold ${
                   isActive(item.href) 
                     ? "text-accent-gold" 
-                    : isScrolled 
-                    ? "text-foreground" 
-                    : "text-white"
+                    : shouldUseWhiteText 
+                    ? "text-white" 
+                    : "text-foreground"
                 }`}
               >
                 {item.name}
@@ -89,9 +94,9 @@ export const Navbar = () => {
                 className={`block text-body font-medium transition-colors hover:text-accent-gold ${
                   isActive(item.href) 
                     ? "text-accent-gold" 
-                    : isScrolled 
-                    ? "text-foreground" 
-                    : "text-white"
+                    : shouldUseWhiteText 
+                    ? "text-white" 
+                    : "text-foreground"
                 }`}
                 onClick={() => setIsOpen(false)}
               >
