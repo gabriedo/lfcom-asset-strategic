@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Search, FileCheck, Target, Key } from "lucide-react";
+import { Search, FileCheck, Target, Key, Play, Pause } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -61,6 +61,7 @@ const steps = [
 export const HowWeWorkSection = () => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(true);
 
   useEffect(() => {
     if (!api) {
@@ -74,12 +75,24 @@ export const HowWeWorkSection = () => {
     });
   }, [api]);
 
+  useEffect(() => {
+    if (!api || !isPlaying) {
+      return;
+    }
+
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [api, isPlaying]);
+
   return (
     <section className="py-24 bg-gradient-to-b from-surface-black to-surface-dark">
       <div className="max-w-[1400px] mx-auto px-4">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-5xl lg:text-6xl font-bold text-white font-inter tracking-tight">
-            Como Atuamos
+            Transformamos ativos em patrimônio estratégico
           </h2>
         </div>
       </div>
@@ -108,8 +121,8 @@ export const HowWeWorkSection = () => {
                   <div className="absolute inset-0 p-6 sm:p-8 lg:p-12 flex flex-col justify-end text-white">
                     <div className="space-y-3 sm:space-y-4 lg:space-y-6 font-inter">
                       <div className="flex items-center space-x-3 sm:space-x-4">
-                        <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-accent-gold rounded-full flex items-center justify-center flex-shrink-0">
-                          <step.icon className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-surface-black" />
+                        <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0 border border-white/20">
+                          <step.icon className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-accent-blue" />
                         </div>
                         <span className="text-base sm:text-lg lg:text-xl font-semibold text-accent-gold">
                           0{index + 1}
@@ -143,20 +156,34 @@ export const HowWeWorkSection = () => {
           </CarouselContent>
         </Carousel>
 
-        {/* Dots Navigation */}
-        <div className="flex justify-center gap-2 sm:gap-3 mt-10 sm:mt-12">
-          {steps.map((_, index) => (
-            <button
-              key={index}
-              className={`h-2 sm:h-2.5 rounded-full transition-all duration-300 ${
-                index === current 
-                  ? "w-8 sm:w-10 bg-accent-gold" 
-                  : "w-2 sm:w-2.5 bg-white/30 hover:bg-white/50"
-              }`}
-              onClick={() => api?.scrollTo(index)}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
+        {/* Dots Navigation with Play/Pause */}
+        <div className="flex justify-center items-center gap-4 sm:gap-6 mt-10 sm:mt-12">
+          <button
+            onClick={() => setIsPlaying(!isPlaying)}
+            className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center hover:bg-white/20 transition-all duration-300"
+            aria-label={isPlaying ? "Pause carousel" : "Play carousel"}
+          >
+            {isPlaying ? (
+              <Pause className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+            ) : (
+              <Play className="w-5 h-5 sm:w-6 sm:h-6 text-white ml-0.5" />
+            )}
+          </button>
+          
+          <div className="flex gap-2 sm:gap-3">
+            {steps.map((_, index) => (
+              <button
+                key={index}
+                className={`h-2 sm:h-2.5 rounded-full transition-all duration-300 ${
+                  index === current 
+                    ? "w-8 sm:w-10 bg-accent-blue" 
+                    : "w-2 sm:w-2.5 bg-white/30 hover:bg-white/50"
+                }`}
+                onClick={() => api?.scrollTo(index)}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
