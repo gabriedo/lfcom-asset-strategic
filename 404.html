@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // Obtém o caminho da URL
+    const path = window.location.pathname;
+    
+    // Redireciona para o index.html, mantendo o caminho como um parâmetro
+    // Isso é uma solução comum para SPAs no GitHub Pages
+    window.location.replace(`/${path}`);
+  </script>
+</head>
+<body>
+  <p>Redirecionando para a página inicial...</p>
+</body>
+</html>
