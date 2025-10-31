@@ -75,104 +75,66 @@ export const HowWeWorkSection = () => {
   }, [api]);
 
   return (
-    <section className="py-20 bg-surface-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center space-y-4 mb-12">
-          <h2 className="text-display text-surface-black">
+    <section className="py-24 bg-gradient-to-b from-surface-black to-surface-dark">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="text-center space-y-4 mb-16">
+          <h2 className="text-5xl lg:text-6xl font-bold text-white">
             Como Atuamos
           </h2>
-          <p className="text-xl text-surface-medium max-w-2xl mx-auto">
-            Processo estruturado e rigoroso para maximizar segurança e resultado
-          </p>
         </div>
         
-        {/* Desktop Grid View */}
-        <div className="hidden lg:grid grid-cols-4 gap-6">
-          {steps.map((step, index) => (
-            <div 
-              key={index}
-              className="group bg-surface-light rounded-2xl overflow-hidden hover-lift transition-all duration-300"
-            >
-              <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={step.image} 
-                  alt={step.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-surface-black/60 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-accent-gold rounded-full flex items-center justify-center">
-                    <step.icon className="w-5 h-5 text-surface-black" />
-                  </div>
-                  <span className="text-sm text-white font-semibold">
-                    0{index + 1}
-                  </span>
-                </div>
-              </div>
-              
-              <div className="p-6 space-y-3">
-                <h3 className="text-title text-surface-black font-semibold">
-                  {step.title}
-                </h3>
-                <p className="text-sm text-surface-medium">
-                  {step.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Mobile/Tablet Carousel View */}
-        <div className="lg:hidden">
+        {/* Carousel for all screen sizes */}
+        <div className="relative">
           <Carousel
             opts={{
-              align: "start",
+              align: "center",
               loop: true,
             }}
             setApi={setApi}
             className="w-full"
           >
-            <CarouselContent className="-ml-4">
+            <CarouselContent className="-ml-4 lg:-ml-6">
               {steps.map((step, index) => (
-                <CarouselItem key={index} className="pl-4 md:basis-1/2">
-                  <div className="group bg-surface-light rounded-2xl overflow-hidden hover-lift transition-all duration-300">
-                    <div className="relative h-64 overflow-hidden">
-                      <img 
-                        src={step.image} 
-                        alt={step.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-surface-black/70 to-transparent"></div>
-                      <div className="absolute bottom-6 left-6 right-6 text-white space-y-2">
-                        <div className="flex items-center space-x-3 mb-3">
-                          <div className="w-12 h-12 bg-accent-gold rounded-full flex items-center justify-center">
-                            <step.icon className="w-6 h-6 text-surface-black" />
+                <CarouselItem key={index} className="pl-4 lg:pl-6 basis-full md:basis-4/5 lg:basis-3/4">
+                  <div className="group relative h-[500px] lg:h-[600px] rounded-3xl overflow-hidden cursor-pointer">
+                    <img 
+                      src={step.image} 
+                      alt={step.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-surface-black via-surface-black/50 to-transparent"></div>
+                    
+                    <div className="absolute inset-0 p-8 lg:p-12 flex flex-col justify-end text-white">
+                      <div className="space-y-4 lg:space-y-6">
+                        <div className="flex items-center space-x-4">
+                          <div className="w-14 h-14 lg:w-16 lg:h-16 bg-accent-gold rounded-full flex items-center justify-center">
+                            <step.icon className="w-7 h-7 lg:w-8 lg:h-8 text-surface-black" />
                           </div>
-                          <span className="text-sm font-semibold">
+                          <span className="text-lg lg:text-xl font-semibold text-accent-gold">
                             0{index + 1}
                           </span>
                         </div>
-                        <h3 className="text-2xl font-bold">
+                        
+                        <h3 className="text-3xl lg:text-5xl font-bold leading-tight">
                           {step.title}
                         </h3>
-                        <p className="text-sm text-white/90">
+                        
+                        <p className="text-lg lg:text-xl text-white/90 max-w-2xl">
                           {step.description}
                         </p>
+                        
+                        <ul className="space-y-3 mt-6">
+                          {step.points.map((point, pointIndex) => (
+                            <li 
+                              key={pointIndex}
+                              className="text-base lg:text-lg text-white/80 flex items-start"
+                            >
+                              <span className="w-2 h-2 bg-accent-gold rounded-full mr-4 mt-2 flex-shrink-0"></span>
+                              {point}
+                            </li>
+                          ))}
+                        </ul>
                       </div>
-                    </div>
-                    
-                    <div className="p-6">
-                      <ul className="space-y-2">
-                        {step.points.map((point, pointIndex) => (
-                          <li 
-                            key={pointIndex}
-                            className="text-sm text-surface-medium flex items-start"
-                          >
-                            <span className="w-1.5 h-1.5 bg-accent-gold rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                            {point}
-                          </li>
-                        ))}
-                      </ul>
                     </div>
                   </div>
                 </CarouselItem>
@@ -181,14 +143,14 @@ export const HowWeWorkSection = () => {
           </Carousel>
 
           {/* Dots Navigation */}
-          <div className="flex justify-center gap-2 mt-8">
+          <div className="flex justify-center gap-3 mt-12">
             {steps.map((_, index) => (
               <button
                 key={index}
-                className={`h-2 rounded-full transition-all duration-300 ${
+                className={`h-2.5 rounded-full transition-all duration-300 ${
                   index === current 
-                    ? "w-8 bg-accent-gold" 
-                    : "w-2 bg-surface-medium/30"
+                    ? "w-10 bg-accent-gold" 
+                    : "w-2.5 bg-white/30 hover:bg-white/50"
                 }`}
                 onClick={() => api?.scrollTo(index)}
                 aria-label={`Go to slide ${index + 1}`}
