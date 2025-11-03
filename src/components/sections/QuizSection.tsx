@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import quizPersonImage from "@/assets/quiz-person.jpg";
 
@@ -37,16 +38,25 @@ const questions = [
 ];
 
 export const QuizSection = () => {
+  const navigate = useNavigate();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
+  const [answers, setAnswers] = useState<string[]>([]);
 
   const handleOptionClick = (option: string) => {
     setSelectedOption(option);
+    const newAnswers = [...answers, option];
+    setAnswers(newAnswers);
     
     if (currentQuestion < questions.length - 1) {
       setTimeout(() => {
         setCurrentQuestion(currentQuestion + 1);
         setSelectedOption(null);
+      }, 300);
+    } else {
+      // Quiz completo, navegar para página de resultados
+      setTimeout(() => {
+        navigate(`/quiz-resultado?setor=${encodeURIComponent(newAnswers[0])}&desafio=${encodeURIComponent(newAnswers[1])}`);
       }, 300);
     }
   };
@@ -59,7 +69,7 @@ export const QuizSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-4xl lg:text-5xl font-bold text-surface-black font-inter">
-                Nós defendemos a ousadia para alcançar o extraordinário.
+                Enxergamos além do óbvio para alcançar o extraordinário.
               </h2>
               <p className="text-lg text-surface-dark">
                 Responda a duas perguntas e deixe nossa criatividade trabalhar em seus desafios.

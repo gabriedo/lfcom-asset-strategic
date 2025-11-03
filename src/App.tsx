@@ -10,6 +10,7 @@ import Insights from "./pages/Insights";
 import InsightPost from "./pages/InsightPost";
 import Sobre from "./pages/Sobre";
 import Contato from "./pages/Contato";
+import QuizResultado from "./pages/QuizResultado";
 import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
 import AvisoLegal from "./pages/AvisoLegal";
 import Status from "./pages/Status";
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/insights/:slug" element={<InsightPost />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/quiz-resultado" element={<QuizResultado />} />
           <Route path="/politica-de-privacidade" element={<PoliticaPrivacidade />} />
           <Route path="/aviso-legal" element={<AvisoLegal />} />
           <Route path="/status" element={<Status />} />
