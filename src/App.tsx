@@ -11,6 +11,9 @@ import InsightPost from "./pages/InsightPost";
 import Sobre from "./pages/Sobre";
 import Contato from "./pages/Contato";
 import QuizResultado from "./pages/QuizResultado";
+import LeiloesPatrimonio from "./pages/LeiloesPatrimonio";
+import LeiloesMaquinas from "./pages/LeiloesMaquinas";
+import DueDiligence from "./pages/DueDiligence";
 import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
 import AvisoLegal from "./pages/AvisoLegal";
 import Status from "./pages/Status";
@@ -33,6 +36,9 @@ const App = () => (
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/quiz-resultado" element={<QuizResultado />} />
+          <Route path="/leiloes-patrimonio" element={<LeiloesPatrimonio />} />
+          <Route path="/leiloes-maquinas" element={<LeiloesMaquinas />} />
+          <Route path="/due-diligence" element={<DueDiligence />} />
           <Route path="/politica-de-privacidade" element={<PoliticaPrivacidade />} />
           <Route path="/aviso-legal" element={<AvisoLegal />} />
           <Route path="/status" element={<Status />} />

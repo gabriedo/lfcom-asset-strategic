@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import quizPersonImage from "@/assets/quiz-person.jpg";
 
@@ -37,8 +36,11 @@ const questions = [
   }
 ];
 
-export const QuizSection = () => {
-  const navigate = useNavigate();
+interface QuizSectionProps {
+  onComplete: (setor: string, desafio: string) => void;
+}
+
+export const QuizSection = ({ onComplete }: QuizSectionProps) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [answers, setAnswers] = useState<string[]>([]);
@@ -54,9 +56,9 @@ export const QuizSection = () => {
         setSelectedOption(null);
       }, 300);
     } else {
-      // Quiz completo, navegar para página de resultados
+      // Quiz completo, chamar callback
       setTimeout(() => {
-        navigate(`/quiz-resultado?setor=${encodeURIComponent(newAnswers[0])}&desafio=${encodeURIComponent(newAnswers[1])}`);
+        onComplete(newAnswers[0], newAnswers[1]);
       }, 300);
     }
   };
