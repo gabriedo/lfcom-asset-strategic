@@ -76,7 +76,7 @@ const Contato = () => {
   };
 
   const whatsappUrl = "https://wa.me/5541920030105?text=Olá! Gostaria de falar sobre assessoria de leilões.";
-  const calendlyUrl = "https://calendly.com/lfcom";
+  const calendlyUrl = "https://calendly.com/gabriel-lfcom/30min";
 
   if (isSubmitted) {
     return (

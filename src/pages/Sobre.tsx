@@ -90,7 +90,7 @@ const Sobre = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild variant="hero" size="lg">
-                  <a href="https://calendly.com/lfcom" target="_blank" rel="noopener noreferrer">
+                  <a href="https://calendly.com/gabriel-lfcom/30min" target="_blank" rel="noopener noreferrer">
                     Agendar conversa estratégica
                   </a>
                 </Button>
