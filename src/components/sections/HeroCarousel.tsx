@@ -127,9 +127,9 @@ export const HeroCarousel = () => {
           ))}
         </CarouselContent>
 
-        {/* Navigation Arrows */}
-        <CarouselPrevious className="left-4 lg:left-8" />
-        <CarouselNext className="right-4 lg:right-8" />
+        {/* Navigation Arrows - Hidden on mobile, visible on desktop */}
+        <CarouselPrevious className="hidden md:flex left-4 lg:left-8 bg-white/10 border-white/20 text-white hover:bg-white/20" />
+        <CarouselNext className="hidden md:flex right-4 lg:right-8 bg-white/10 border-white/20 text-white hover:bg-white/20" />
 
         {/* Dot Navigation */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-10">
@@ -148,8 +148,8 @@ export const HeroCarousel = () => {
         </div>
       </Carousel>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 animate-bounce">
+      {/* Scroll Indicator - Hidden on mobile */}
+      <div className="hidden md:block absolute bottom-20 left-1/2 -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white/60 rounded-full mt-2" />
         </div>

@@ -33,7 +33,7 @@ export const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      shouldBeTransparent ? "bg-transparent" : "bg-background/95 backdrop-blur-md shadow-sm"
+      shouldBeTransparent ? "bg-black/30 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none" : "bg-background/95 backdrop-blur-md shadow-sm"
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
@@ -78,6 +78,7 @@ export const Navbar = () => {
               variant="ghost"
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
+              className={shouldUseWhiteText ? "text-white hover:bg-white/10" : ""}
             >
               {isOpen ? <X size={20} /> : <Menu size={20} />}
             </Button>
@@ -86,7 +87,7 @@ export const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 space-y-4">
+          <div className="md:hidden py-4 space-y-4 bg-background/95 backdrop-blur-md">
             {navigation.map((item) => (
               <Link
                 key={item.name}
