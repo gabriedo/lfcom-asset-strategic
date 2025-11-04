@@ -2,12 +2,36 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import quizPersonImage from "@/assets/quiz-person.jpg";
 
+const allSectors = [
+  "Manufatura e Serviços Avançados",
+  "Produtos de consumo",
+  "Petróleo e gás",
+  "Aeroespacial e Defesa",
+  "Energia e Recursos Naturais",
+  "Papel e embalagens",
+  "Agronegócio",
+  "Serviços financeiros",
+  "Capital Privado",
+  "Automotivo",
+  "Saúde e Ciências da Vida",
+  "Varejo",
+  "Aviação",
+  "Máquinas e equipamentos",
+  "Impacto social",
+  "Produtos químicos",
+  "Mídia e Entretenimento",
+  "Tecnologia",
+  "Construção e Infraestrutura",
+  "Mineração",
+  "Telecomunicações"
+];
+
 const questions = [
   {
     id: 1,
     question: "Qual é o seu setor de atividade?",
     total: 2,
-    options: [
+    initialOptions: [
       "Varejo",
       "Capital Privado",
       "Manufatura e Serviços Avançados",
@@ -17,21 +41,30 @@ const questions = [
       "Produtos químicos",
       "Produtos de consumo",
       "Mineração",
-      "Serviços financeiros",
-      "Ver tudo"
-    ]
+      "Serviços financeiros"
+    ],
+    allOptions: allSectors
   },
   {
     id: 2,
     question: "Qual é o seu principal desafio?",
     total: 2,
-    options: [
+    initialOptions: [
+      "Expansão de patrimônio",
+      "Aquisição estratégica",
+      "Redução de custos",
+      "Diversificação de ativos",
+      "Crescimento acelerado"
+    ],
+    allOptions: [
       "Expansão de patrimônio",
       "Aquisição estratégica",
       "Redução de custos",
       "Diversificação de ativos",
       "Crescimento acelerado",
-      "Ver tudo"
+      "Otimização de portfólio",
+      "Sucessão patrimonial",
+      "Blindagem jurídica"
     ]
   }
 ];
@@ -44,6 +77,7 @@ export const QuizSection = ({ onComplete }: QuizSectionProps) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [answers, setAnswers] = useState<string[]>([]);
+  const [showAllOptions, setShowAllOptions] = useState(false);
 
   const handleOptionClick = (option: string) => {
     setSelectedOption(option);
@@ -54,6 +88,7 @@ export const QuizSection = ({ onComplete }: QuizSectionProps) => {
       setTimeout(() => {
         setCurrentQuestion(currentQuestion + 1);
         setSelectedOption(null);
+        setShowAllOptions(false); // Reset ao mudar de pergunta
       }, 300);
     } else {
       // Quiz completo, chamar callback
@@ -62,6 +97,14 @@ export const QuizSection = ({ onComplete }: QuizSectionProps) => {
       }, 300);
     }
   };
+
+  const toggleShowAll = () => {
+    setShowAllOptions(!showAllOptions);
+  };
+
+  const currentOptions = showAllOptions 
+    ? questions[currentQuestion].allOptions 
+    : questions[currentQuestion].initialOptions;
 
   return (
     <section className="py-20 bg-surface-white">
@@ -89,21 +132,29 @@ export const QuizSection = ({ onComplete }: QuizSectionProps) => {
               </div>
 
               <div className="flex flex-wrap gap-3">
-                {questions[currentQuestion].options.map((option, idx) => (
+                {currentOptions.map((option, idx) => (
                   <button
                     key={idx}
                     onClick={() => handleOptionClick(option)}
                     className={`px-6 py-3 rounded-full border-2 font-medium transition-all duration-200 ${
                       selectedOption === option
                         ? "border-accent-gold bg-accent-gold text-surface-black"
-                        : option === "Ver tudo"
-                        ? "border-surface-black text-surface-black hover:bg-surface-black hover:text-surface-white underline"
                         : "border-accent-gold text-accent-gold hover:bg-accent-gold hover:text-surface-black"
                     }`}
                   >
                     {option}
                   </button>
                 ))}
+                
+                {/* Botão Ver tudo / Ver menos */}
+                {questions[currentQuestion].allOptions.length > questions[currentQuestion].initialOptions.length && (
+                  <button
+                    onClick={toggleShowAll}
+                    className="px-6 py-3 rounded-full border-2 border-surface-black text-surface-black hover:bg-surface-black hover:text-surface-white font-medium transition-all duration-200 underline"
+                  >
+                    {showAllOptions ? "Ver menos" : "Ver tudo"}
+                  </button>
+                )}
               </div>
             </div>
           </div>
