@@ -62,7 +62,7 @@ export const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="https://instagram.com/lfcom.oficial" 
+                href="https://instagram.com/lfcombrasil" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-surface-medium hover:text-surface-white transition-colors"

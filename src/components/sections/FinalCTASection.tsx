@@ -16,14 +16,22 @@ export const FinalCTASection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <Button variant="hero" size="lg" className="group">
-              <Calendar className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-              Agendar conversa estratégica
+            <Button asChild variant="hero" size="lg" className="group">
+              <a href="/contato">
+                <Calendar className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                Agendar conversa estratégica
+              </a>
             </Button>
             
-            <Button variant="hero-outline" size="lg" className="group">
-              <MessageCircle className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-              Falar no WhatsApp
+            <Button asChild variant="hero-outline" size="lg" className="group">
+              <a 
+                href="https://wa.me/5541920030105" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <MessageCircle className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                Falar no WhatsApp
+              </a>
             </Button>
           </div>
           
