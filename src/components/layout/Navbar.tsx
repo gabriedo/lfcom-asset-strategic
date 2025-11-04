@@ -87,7 +87,7 @@ export const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 space-y-4 bg-background/95 backdrop-blur-md">
+          <div className="md:hidden py-4 space-y-4 bg-background backdrop-blur-md border-t border-border">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -95,8 +95,6 @@ export const Navbar = () => {
                 className={`block text-body font-medium transition-colors hover:text-accent-gold ${
                   isActive(item.href) 
                     ? "text-accent-gold" 
-                    : shouldUseWhiteText 
-                    ? "text-white" 
                     : "text-foreground"
                 }`}
                 onClick={() => setIsOpen(false)}
