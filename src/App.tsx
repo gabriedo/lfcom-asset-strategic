@@ -13,6 +13,9 @@ import Contato from "./pages/Contato";
 import QuizResultado from "./pages/QuizResultado";
 import LeiloesPatrimonio from "./pages/LeiloesPatrimonio";
 import LeiloesMaquinas from "./pages/LeiloesMaquinas";
+import LeiloesEmpresas from "./pages/LeiloesEmpresas";
+import ConsultoriaLeiloes from "./pages/ConsultoriaLeiloes";
+import GestaoAtivos from "./pages/GestaoAtivos";
 import DueDiligence from "./pages/DueDiligence";
 import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
 import AvisoLegal from "./pages/AvisoLegal";
@@ -38,6 +41,9 @@ const App = () => (
           <Route path="/quiz-resultado" element={<QuizResultado />} />
           <Route path="/leiloes-patrimonio" element={<LeiloesPatrimonio />} />
           <Route path="/leiloes-maquinas" element={<LeiloesMaquinas />} />
+          <Route path="/leiloes-empresas" element={<LeiloesEmpresas />} />
+          <Route path="/consultoria-leiloes" element={<ConsultoriaLeiloes />} />
+          <Route path="/gestao-ativos" element={<GestaoAtivos />} />
           <Route path="/due-diligence" element={<DueDiligence />} />
           <Route path="/politica-de-privacidade" element={<PoliticaPrivacidade />} />
           <Route path="/aviso-legal" element={<AvisoLegal />} />
