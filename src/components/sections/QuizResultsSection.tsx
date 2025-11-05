@@ -124,51 +124,52 @@ export const QuizResultsSection = ({ setor, desafio, onReset }: QuizResultsSecti
   return (
     <>
       {/* Results Header */}
-      <section className="py-16 bg-gradient-to-b from-surface-light to-surface-white">
+      <section className="py-12 bg-gradient-to-b from-surface-light to-surface-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h2 className="text-3xl lg:text-4xl font-bold text-surface-black">
-              Você selecionou <span className="text-accent-blue">{setor}</span> como seu setor e{" "}
-              <span className="text-accent-blue">{desafio}</span> como sua necessidade de negócios.
-            </h2>
-            <Button
-              variant="outline"
-              onClick={onReset}
-              className="border-accent-red text-accent-red hover:bg-accent-red hover:text-surface-white"
-            >
-              REINICIAR
-            </Button>
+          <div className="max-w-5xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+              <h2 className="text-2xl lg:text-3xl font-bold text-surface-black text-center md:text-left">
+                Você selecionou <span className="text-accent-blue">{setor}</span> como seu setor e{" "}
+                <span className="text-accent-blue">{desafio}</span> como sua necessidade de negócios.
+              </h2>
+              <Button
+                variant="outline"
+                onClick={onReset}
+                className="border-accent-red text-accent-red hover:bg-accent-red hover:text-surface-white whitespace-nowrap font-semibold px-8"
+              >
+                REINICIAR
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Recommendations */}
-      <section className="py-20 bg-surface-white">
+      <section className="py-12 bg-surface-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-2xl font-bold text-surface-black mb-12">
+            <h3 className="text-3xl font-bold text-surface-black mb-10">
               Recomendado para você
             </h3>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-6">
               {recs.map((rec, idx) => (
                 <Card 
                   key={idx} 
-                  className="border-t-4 border-t-accent-red hover:shadow-xl transition-all duration-300 cursor-pointer"
+                  className="border-2 border-surface-light hover:border-accent-gold hover:shadow-2xl transition-all duration-300 cursor-pointer group bg-white"
                   onClick={() => navigate(rec.link)}
                 >
-                  <CardHeader>
-                    <CardTitle className="text-xl text-surface-black">{rec.title}</CardTitle>
+                  <CardHeader className="pb-4">
+                    <CardTitle className="text-xl font-bold text-surface-black group-hover:text-accent-blue transition-colors">
+                      {rec.title}
+                    </CardTitle>
                   </CardHeader>
-                  <CardContent className="space-y-4">
-                    <CardDescription className="text-surface-dark leading-relaxed">
+                  <CardContent className="space-y-6">
+                    <CardDescription className="text-surface-dark leading-relaxed text-base">
                       {rec.description}
                     </CardDescription>
-                    <Button
-                      variant="link"
-                      className="text-accent-red p-0 h-auto font-semibold"
-                    >
-                      Leia mais <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
+                    <div className="flex items-center text-accent-red font-semibold group-hover:translate-x-2 transition-transform">
+                      Leia mais <ArrowRight className="ml-2 h-5 w-5" />
+                    </div>
                   </CardContent>
                 </Card>
               ))}
@@ -178,42 +179,44 @@ export const QuizResultsSection = ({ setor, desafio, onReset }: QuizResultsSecti
       </section>
 
       {/* Related Articles */}
-      <section className="py-20 bg-surface-light">
+      <section className="py-16 bg-surface-light">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-2xl font-bold text-surface-black mb-12">
+            <h3 className="text-3xl font-bold text-surface-black mb-10">
               Artigos relacionados
             </h3>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-6">
               {relatedPosts.map((post) => (
                 <Card 
                   key={post.slug}
-                  className="overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer"
+                  className="overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer group bg-white border-2 border-surface-light hover:border-accent-gold"
                   onClick={() => navigate(`/insights/${post.slug}`)}
                 >
                   {post.coverImage && (
-                    <div className="aspect-video overflow-hidden">
+                    <div className="aspect-video overflow-hidden relative">
                       <img 
                         src={post.coverImage} 
                         alt={post.title}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
+                      <div className="absolute inset-0 bg-gradient-to-t from-surface-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>
                   )}
-                  <CardHeader>
-                    <div className="text-sm text-accent-blue font-semibold mb-2">
+                  <CardHeader className="pb-3">
+                    <div className="text-sm text-accent-blue font-bold mb-2 uppercase tracking-wide">
                       {post.tags[0]}
                     </div>
-                    <CardTitle className="text-lg text-surface-black line-clamp-2">
+                    <CardTitle className="text-xl font-bold text-surface-black line-clamp-2 group-hover:text-accent-blue transition-colors">
                       {post.title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className="line-clamp-3">
+                    <CardDescription className="line-clamp-3 text-base leading-relaxed mb-4">
                       {post.excerpt}
                     </CardDescription>
-                    <div className="mt-4 text-sm text-surface-medium">
-                      {post.date} • {post.readingMinutes} min de leitura
+                    <div className="flex items-center justify-between text-sm text-surface-medium">
+                      <span>{post.date}</span>
+                      <span className="font-medium">{post.readingMinutes} min</span>
                     </div>
                   </CardContent>
                 </Card>
