@@ -2,81 +2,48 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { useNavigate } from "react-router-dom";
-import { ArrowRight, Building2, TrendingUp, Shield, Users, FileCheck, Target } from "lucide-react";
+import { Link } from "react-router-dom";
+import { ArrowRight, TrendingUp, BarChart3, Building2, Calendar } from "lucide-react";
+import { posts } from "@/data/posts";
 
 const LeiloesEmpresas = () => {
-  const navigate = useNavigate();
+  const relevantPosts = posts.filter(post => 
+    post.tags.some(tag => ["Estratégia", "Empresários", "Patrimônio", "CAPEX"].includes(tag))
+  );
 
-  const benefits = [
+  const insights = [
+    {
+      metric: "R$ 15Bi+",
+      label: "Volume anual de leilões no Brasil",
+      description: "Mercado em expansão constante"
+    },
+    {
+      metric: "30-60%",
+      label: "Desconto médio estrutural",
+      description: "Abaixo do valor de avaliação"
+    },
+    {
+      metric: "425%",
+      label: "ROI médio em 24 meses",
+      description: "Com due diligence adequada"
+    }
+  ];
+
+  const keyThemes = [
     {
       icon: TrendingUp,
-      title: "Valorização Exponencial",
-      description: "Aquisição de empresas em recuperação com potencial de valorização de 300% a 500% em 24 meses."
+      title: "Otimização de CAPEX",
+      description: "Expansão operacional com investimento 40-60% menor que alternativas tradicionais. Análise de como grandes empresários utilizam leilões para modernização sem comprometer capital de giro."
     },
     {
-      icon: Shield,
-      title: "Segurança Jurídica Total",
-      description: "Due diligence completa garantindo proteção contra passivos ocultos e riscos contingenciais."
+      icon: BarChart3,
+      title: "Diversificação Patrimonial",
+      description: "Formação de portfólio de ativos tangíveis com desconto estrutural. Estratégias de proteção contra volatilidade através de aquisições judiciais e extrajudiciais."
     },
     {
-      icon: Users,
-      title: "Acesso Exclusivo",
-      description: "Rede privilegiada de oportunidades off-market e leilões restritos a investidores qualificados."
-    },
-    {
-      icon: FileCheck,
-      title: "Estruturação Completa",
-      description: "Assessoria integral desde identificação até fechamento, incluindo financiamento e reestruturação."
-    }
-  ];
-
-  const opportunities = [
-    {
-      title: "Indústrias em Recuperação Judicial",
-      description: "Unidades produtivas com capacidade instalada preservada, contratos mantidos e equipe técnica experiente.",
-      value: "R$ 5M - R$ 50M",
-      roi: "400% em 18 meses"
-    },
-    {
-      title: "Empresas de Tecnologia",
-      description: "Startups e scale-ups com produto validado, base de clientes ativa e propriedade intelectual protegida.",
-      value: "R$ 2M - R$ 20M",
-      roi: "350% em 24 meses"
-    },
-    {
-      title: "Redes de Varejo",
-      description: "Cadeias comerciais com pontos estratégicos, marca consolidada e operação estruturada para turn-around.",
-      value: "R$ 10M - R$ 100M",
-      roi: "300% em 36 meses"
-    }
-  ];
-
-  const process = [
-    {
-      step: "01",
-      title: "Mapeamento Estratégico",
-      description: "Identificamos oportunidades alinhadas ao seu perfil de investimento e tese de valor."
-    },
-    {
-      step: "02",
-      title: "Due Diligence 360°",
-      description: "Análise técnica, jurídica, financeira e operacional detalhada com equipe multidisciplinar."
-    },
-    {
-      step: "03",
-      title: "Estruturação da Oferta",
-      description: "Modelagem financeira, estratégia de lance e estrutura jurídica otimizada para aprovação."
-    },
-    {
-      step: "04",
-      title: "Execução e Fechamento",
-      description: "Representação no leilão, negociação com credores e conclusão da aquisição."
-    },
-    {
-      step: "05",
-      title: "Gestão Pós-Aquisição",
-      description: "Implementação de plano de reestruturação e maximização de valor do ativo."
+      icon: Building2,
+      title: "Consolidação Estratégica",
+      description: "Aquisição de concorrentes em recuperação judicial. Como transformar crise setorial em oportunidade de consolidação e ganho de market share."
     }
   ];
 
@@ -85,117 +52,71 @@ const LeiloesEmpresas = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-surface-black via-surface-dark to-surface-black text-white">
+      <section className="pt-32 pb-20 bg-surface-black text-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <div className="inline-block px-6 py-2 bg-accent-gold/20 backdrop-blur-sm border border-accent-gold rounded-full">
-              <span className="text-accent-gold font-semibold">Leilões Empresariais</span>
-            </div>
-            <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-              Transforme Oportunidades em <span className="text-accent-gold">Patrimônio de Alto Valor</span>
-            </h1>
-            <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
-              Acesso exclusivo a aquisições empresariais estratégicas através de leilões judiciais e extrajudiciais. 
-              Descontos de até 70% do valor de mercado com potencial de retorno extraordinário.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-              <Button 
-                size="lg" 
-                className="bg-accent-gold text-surface-black hover:bg-accent-gold/90 font-semibold text-lg px-8"
-                onClick={() => navigate("/contato")}
-              >
-                Agendar Consultoria
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-surface-black font-semibold text-lg px-8"
-                onClick={() => navigate("/insights")}
-              >
-                Ver Estudos de Caso
-              </Button>
+          <div className="max-w-5xl mx-auto space-y-12">
+            <div className="space-y-6">
+              <div className="inline-block px-4 py-1.5 bg-accent-gold/10 border border-accent-gold/30 rounded-full">
+                <span className="text-accent-gold text-sm font-medium tracking-wide">ANÁLISE ESTRATÉGICA</span>
+              </div>
+              <h1 className="text-5xl lg:text-7xl font-light leading-tight tracking-tight">
+                Por que grandes <br/>empresários olham <br/>para <span className="font-semibold text-accent-gold">leilões</span>
+              </h1>
+              <p className="text-xl text-gray-400 leading-relaxed max-w-3xl font-light">
+                Inteligência de mercado e estratégias comprovadas para formação patrimonial 
+                através de aquisições judiciais e extrajudiciais.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="py-20 bg-white">
+      {/* Insights Section */}
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-surface-black mb-4">
-                Por que Investir em Leilões Empresariais?
-              </h2>
-              <p className="text-xl text-surface-dark max-w-3xl mx-auto">
-                Vantagens exclusivas que transformam complexidade em oportunidade de valor excepcional
-              </p>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {benefits.map((benefit, idx) => (
-                <Card key={idx} className="border-2 border-surface-light hover:border-accent-gold transition-all duration-300 hover:shadow-xl">
-                  <CardHeader>
-                    <div className="w-14 h-14 bg-accent-gold/10 rounded-xl flex items-center justify-center mb-4">
-                      <benefit.icon className="h-7 w-7 text-accent-gold" />
-                    </div>
-                    <CardTitle className="text-xl text-surface-black">{benefit.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-base leading-relaxed">
-                      {benefit.description}
-                    </CardDescription>
-                  </CardContent>
-                </Card>
+            <div className="grid md:grid-cols-3 gap-12">
+              {insights.map((insight, idx) => (
+                <div key={idx} className="text-center space-y-3">
+                  <div className="text-5xl font-light text-accent-blue">{insight.metric}</div>
+                  <div className="text-lg font-medium text-surface-black">{insight.label}</div>
+                  <div className="text-sm text-surface-medium font-light">{insight.description}</div>
+                </div>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Opportunities Section */}
-      <section className="py-20 bg-surface-light">
+      {/* Key Themes Section */}
+      <section className="py-24 bg-surface-light">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-surface-black mb-4">
-                Oportunidades em Destaque
+          <div className="max-w-6xl mx-auto space-y-16">
+            <div className="max-w-3xl">
+              <h2 className="text-4xl font-light text-surface-black mb-6">
+                Temas estratégicos para decisores
               </h2>
-              <p className="text-xl text-surface-dark">
-                Portfólio curado de aquisições de alto potencial disponíveis agora
+              <p className="text-lg text-surface-medium font-light leading-relaxed">
+                Análises fundamentadas em dados de mercado e casos reais de grandes empresários 
+                que utilizam leilões como ferramenta de vantagem competitiva.
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-8">
-              {opportunities.map((opp, idx) => (
-                <Card key={idx} className="border-2 border-white hover:border-accent-blue transition-all duration-300 hover:shadow-2xl group bg-white">
-                  <CardHeader className="pb-4">
-                    <div className="flex items-start justify-between mb-4">
-                      <Building2 className="h-10 w-10 text-accent-blue" />
-                      <span className="text-sm font-bold text-accent-red px-3 py-1 bg-accent-red/10 rounded-full">
-                        {opp.roi}
-                      </span>
+            
+            <div className="grid lg:grid-cols-3 gap-8">
+              {keyThemes.map((theme, idx) => (
+                <Card key={idx} className="border-none shadow-sm hover:shadow-md transition-shadow bg-white">
+                  <CardHeader className="space-y-6 pb-6">
+                    <div className="w-12 h-12 bg-accent-blue/5 rounded-lg flex items-center justify-center">
+                      <theme.icon className="h-6 w-6 text-accent-blue" strokeWidth={1.5} />
                     </div>
-                    <CardTitle className="text-2xl font-bold text-surface-black group-hover:text-accent-blue transition-colors">
-                      {opp.title}
+                    <CardTitle className="text-xl font-medium text-surface-black">
+                      {theme.title}
                     </CardTitle>
                   </CardHeader>
-                  <CardContent className="space-y-6">
-                    <CardDescription className="text-base leading-relaxed text-surface-dark">
-                      {opp.description}
+                  <CardContent>
+                    <CardDescription className="text-base leading-relaxed text-surface-medium font-light">
+                      {theme.description}
                     </CardDescription>
-                    <div className="pt-4 border-t border-surface-light">
-                      <div className="flex items-center justify-between">
-                        <span className="text-sm text-surface-medium font-medium">Faixa de Valor</span>
-                        <span className="text-lg font-bold text-surface-black">{opp.value}</span>
-                      </div>
-                    </div>
-                    <Button 
-                      className="w-full bg-accent-blue hover:bg-accent-blue/90 text-white"
-                      onClick={() => navigate("/contato")}
-                    >
-                      Solicitar Detalhes
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
                   </CardContent>
                 </Card>
               ))}
@@ -204,64 +125,101 @@ const LeiloesEmpresas = () => {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-20 bg-white">
+      {/* Related Articles */}
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-surface-black mb-4">
-                Nossa Metodologia Comprovada
-              </h2>
-              <p className="text-xl text-surface-dark max-w-3xl mx-auto">
-                Processo estruturado de 5 etapas para maximizar sucesso e minimizar riscos
-              </p>
+          <div className="max-w-6xl mx-auto space-y-12">
+            <div className="flex items-end justify-between">
+              <div>
+                <h2 className="text-4xl font-light text-surface-black mb-4">
+                  Artigos relacionados
+                </h2>
+                <p className="text-lg text-surface-medium font-light">
+                  Análises aprofundadas e casos de estudo
+                </p>
+              </div>
+              <Button asChild variant="ghost" className="hidden md:flex">
+                <Link to="/insights">
+                  Ver todos os artigos
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
             </div>
-            <div className="space-y-6">
-              {process.map((item, idx) => (
-                <Card key={idx} className="border-l-4 border-l-accent-gold hover:shadow-xl transition-all duration-300 group">
-                  <CardContent className="p-8">
-                    <div className="flex flex-col md:flex-row gap-6 items-start">
-                      <div className="flex-shrink-0">
-                        <div className="w-16 h-16 bg-accent-gold rounded-xl flex items-center justify-center">
-                          <span className="text-2xl font-bold text-surface-black">{item.step}</span>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {relevantPosts.slice(0, 3).map((post) => (
+                <Link key={post.id} to={`/insights/${post.slug}`}>
+                  <Card className="border-none shadow-sm hover:shadow-md transition-all h-full group bg-white">
+                    <CardHeader className="space-y-4">
+                      <div className="flex items-center gap-4 text-surface-medium">
+                        <div className="flex items-center gap-1.5">
+                          <Calendar size={14} strokeWidth={1.5} />
+                          <span className="text-xs font-light">
+                            {new Date(post.date).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' })}
+                          </span>
                         </div>
+                        <span className="text-xs font-light">{post.readingMinutes} min</span>
                       </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl font-bold text-surface-black mb-3 group-hover:text-accent-blue transition-colors">
-                          {item.title}
-                        </h3>
-                        <p className="text-lg text-surface-dark leading-relaxed">
-                          {item.description}
-                        </p>
-                      </div>
-                      <Target className="hidden md:block h-8 w-8 text-accent-gold/30 group-hover:text-accent-gold transition-colors" />
-                    </div>
-                  </CardContent>
-                </Card>
+                      <CardTitle className="text-xl font-medium leading-snug group-hover:text-accent-blue transition-colors">
+                        {post.title}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="text-sm font-light leading-relaxed text-surface-medium line-clamp-3">
+                        {post.excerpt}
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                </Link>
               ))}
+            </div>
+
+            <div className="flex md:hidden justify-center pt-4">
+              <Button asChild variant="outline">
+                <Link to="/insights">
+                  Ver todos os artigos
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-accent-blue via-accent-blue/90 to-accent-blue text-white">
+      <section className="py-24 bg-surface-black text-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
-              Pronto para Sua Próxima Aquisição Estratégica?
-            </h2>
-            <p className="text-xl leading-relaxed opacity-90">
-              Agende uma consultoria gratuita e descubra oportunidades exclusivas alinhadas ao seu perfil de investimento.
-            </p>
-            <Button 
-              size="lg" 
-              className="bg-accent-gold text-surface-black hover:bg-accent-gold/90 font-bold text-lg px-12"
-              onClick={() => navigate("/contato")}
-            >
-              Agendar Consultoria Gratuita
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+          <div className="max-w-4xl mx-auto space-y-8">
+            <div className="space-y-6 text-center">
+              <h2 className="text-4xl lg:text-5xl font-light leading-tight">
+                Interessado em aprofundar <br/>sua <span className="font-medium">análise estratégica?</span>
+              </h2>
+              <p className="text-xl text-gray-400 font-light leading-relaxed">
+                Converse com especialistas que estruturam operações de alto impacto para empresários.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <Button 
+                asChild
+                size="lg" 
+                className="bg-accent-gold text-surface-black hover:bg-accent-gold/90 font-medium text-base px-8"
+              >
+                <Link to="/contato">
+                  Falar com especialista
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+              <Button 
+                asChild
+                size="lg" 
+                variant="outline" 
+                className="border-white/20 text-white hover:bg-white/10 font-medium text-base px-8"
+              >
+                <Link to="/resultados">
+                  Ver casos de sucesso
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
