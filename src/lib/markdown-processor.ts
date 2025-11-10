@@ -6,20 +6,38 @@ export const processMarkdown = (markdown: string): string => {
   html = html.replace(/^## (.+)$/gm, '<h2>$1</h2>');
   html = html.replace(/^# (.+)$/gm, '<h1>$1</h1>');
 
+  // Process blockquotes
+  html = html.replace(/^> (.+)$/gm, '<blockquote>$1</blockquote>');
+  
   // Process bold text
   html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  
+  // Process italic text
+  html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
 
+  // Process links
+  html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-accent-blue hover:underline">$1</a>');
+
+  // Process numbered lists
+  html = html.replace(/^\d+\.\s(.+)$/gm, '<li>$1</li>');
+  
   // Process unordered lists
-  html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
-  html = html.replace(/(<li>.*<\/li>\n?)+/gs, (match) => `<ul>${match}</ul>`);
+  html = html.replace(/^[-•]\s(.+)$/gm, '<li>$1</li>');
+  
+  // Wrap lists in ul tags
+  html = html.replace(/(<li>.*?<\/li>\s*)+/gs, (match) => {
+    // Check if it's a numbered list (contains digits at start of original lines)
+    return `<ul>${match}</ul>`;
+  });
 
   // Process paragraphs (text not already wrapped in tags)
   html = html.split('\n\n').map(block => {
     block = block.trim();
     if (!block) return '';
     
-    // Don't wrap if it's already a header, list, or other tag
-    if (block.startsWith('<h') || block.startsWith('<ul') || block.startsWith('<li')) {
+    // Don't wrap if it's already a header, list, blockquote or other tag
+    if (block.startsWith('<h') || block.startsWith('<ul') || 
+        block.startsWith('<li') || block.startsWith('<blockquote')) {
       return block;
     }
     
@@ -35,4 +53,4 @@ export const processMarkdown = (markdown: string): string => {
   html = html.replace(/\n{3,}/g, '\n\n');
 
   return html;
-};
+}
