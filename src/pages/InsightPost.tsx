@@ -114,6 +114,8 @@ const InsightPost = () => {
                   [&_h1]:text-4xl [&_h1]:font-bold [&_h1]:mb-8 [&_h1]:mt-16 [&_h1]:leading-tight
                   [&_h2]:text-3xl [&_h2]:font-bold [&_h2]:mb-6 [&_h2]:mt-16 [&_h2]:leading-tight
                   [&_h3]:text-2xl [&_h3]:font-semibold [&_h3]:mb-4 [&_h3]:mt-12 [&_h3]:leading-tight
+                  [&_h4]:text-xl [&_h4]:font-semibold [&_h4]:mb-3 [&_h4]:mt-10 [&_h4]:leading-tight
+                  [&_h5]:text-lg [&_h5]:font-semibold [&_h5]:mb-2 [&_h5]:mt-8 [&_h5]:leading-tight
                   [&_p]:text-lg [&_p]:leading-relaxed [&_p]:mb-6 [&_p]:text-foreground/90
                   [&_p:first-child]:text-xl [&_p:first-child]:leading-relaxed
                   [&_strong]:font-semibold [&_strong]:text-foreground
