@@ -28,7 +28,7 @@ const GestaoAtivos = () => {
       icon: Target,
       title: "Preparação para Exit",
       description: "Maximização de múltiplos e estruturação de venda estratégica. Data room, identificação de compradores e negociação.",
-      metrics: ["425% ROI médio", "18 meses payback", "Múltiplos premium"]
+      metrics: ["45% ROI médio", "18 meses payback", "Múltiplos premium"]
     }
   ];
 

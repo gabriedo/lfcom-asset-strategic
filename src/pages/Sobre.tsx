@@ -51,7 +51,7 @@ const Sobre = () => {
                 </p>
                 
                 <p className="text-body leading-relaxed mb-12">
-                  <strong>Resultado:</strong> mais de R$ 500 milhões em ativos analisados, 95% de taxa de sucesso 
+                  <strong>Resultado:</strong> mais de R$ 500 milhões em ativos analisados, 98,2% de taxa de sucesso 
                   e a confiança de investidores que exigem previsibilidade, controle de risco e execução sênior. 
                   A LFCOM representa a evolução natural do mercado de leilões: onde tradição e inovação se encontram 
                   para criar valor real e duradouro.
@@ -65,7 +65,7 @@ const Sobre = () => {
                   <div className="text-surface-medium">em ativos analisados</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold mb-2">95%</div>
+                  <div className="text-4xl font-bold mb-2">98,2%</div>
                   <div className="text-surface-medium">taxa de sucesso</div>
                 </div>
                 <div className="text-center">

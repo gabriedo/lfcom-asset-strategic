@@ -23,7 +23,7 @@ const LeiloesEmpresas = () => {
       description: "Abaixo do valor de avaliação"
     },
     {
-      metric: "425%",
+      metric: "45%",
       label: "ROI médio em 24 meses",
       description: "Com due diligence adequada"
     }

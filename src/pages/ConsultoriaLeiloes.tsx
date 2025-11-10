@@ -33,10 +33,10 @@ const ConsultoriaLeiloes = () => {
   ];
 
   const stats = [
-    { value: "94%", label: "Taxa de sucesso em aquisições" },
+    { value: "98,2%", label: "Taxa de sucesso em aquisições" },
     { value: "R$ 500M+", label: "Em ativos analisados" },
-    { value: "425%", label: "ROI médio em 24 meses" },
-    { value: "20+ anos", label: "De experiência em M&A" }
+    { value: "45%", label: "ROI médio em 24 meses" },
+    { value: "Zero", label: "Perdas patrimoniais dos clientes" }
   ];
 
   return (
