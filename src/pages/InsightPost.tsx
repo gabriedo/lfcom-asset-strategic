@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, Calendar, Clock, Share2 } from "lucide-react";
 import { getPostBySlug } from "@/data/posts";
+import { processMarkdown } from "@/lib/markdown-processor";
 
 const InsightPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -109,17 +110,18 @@ const InsightPost = () => {
               <div 
                 className="prose prose-lg max-w-none 
                   prose-headings:font-bold prose-headings:text-foreground
-                  prose-h1:text-display prose-h1:mb-8
+                  prose-h1:text-display prose-h1:mb-8 prose-h1:mt-0
                   prose-h2:text-headline prose-h2:mt-12 prose-h2:mb-6
                   prose-h3:text-title prose-h3:mt-8 prose-h3:mb-4
                   prose-p:text-body prose-p:leading-relaxed prose-p:mb-6
                   prose-strong:text-foreground prose-strong:font-semibold
-                  prose-ul:my-6 prose-li:text-body prose-li:leading-relaxed
+                  prose-ul:my-6 prose-ul:list-disc prose-ul:pl-6
+                  prose-li:text-body prose-li:leading-relaxed prose-li:mb-2
                   prose-blockquote:border-l-4 prose-blockquote:border-accent-gold 
                   prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-surface-medium
                   prose-code:bg-surface-light prose-code:px-2 prose-code:py-1 prose-code:rounded
                   prose-pre:bg-surface-dark prose-pre:text-surface-white"
-                dangerouslySetInnerHTML={{ __html: post.content.replace(/\n/g, '<br />') }}
+                dangerouslySetInnerHTML={{ __html: processMarkdown(post.content) }}
               />
             </div>
           </div>
