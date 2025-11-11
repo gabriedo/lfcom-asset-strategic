@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import caseClient1 from "@/assets/case-client-1.jpg";
+import caseFactory from "@/assets/case-factory.jpg";
 import caseClient2 from "@/assets/case-client-2.jpg";
 
 const cases = [
@@ -10,8 +10,8 @@ const cases = [
     title: "Como uma mentalidade orientada por dados impulsiona o crescimento",
     client: "Indústria de Máquinas Pesadas",
     description: "Aquisição estratégica de equipamentos industriais via leilões resultou em economia de 45% e expansão da capacidade produtiva.",
-    image: caseClient1,
-    link: "/resultados"
+    image: caseFactory,
+    link: "/case/6"
   },
   {
     id: 2,

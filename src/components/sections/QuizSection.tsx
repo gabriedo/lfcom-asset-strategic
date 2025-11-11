@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import quizPersonImage from "@/assets/quiz-person.jpg";
+import seniorGlassesImage from "@/assets/senior-glasses.jpg";
 
 const allSectors = [
   "Manufatura e Serviços Avançados",
@@ -163,7 +163,7 @@ export const QuizSection = ({ onComplete }: QuizSectionProps) => {
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src={quizPersonImage}
+                src={seniorGlassesImage}
                 alt="Profissional LFCOM"
                 className="w-full h-full object-cover"
               />
