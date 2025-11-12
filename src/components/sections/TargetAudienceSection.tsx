@@ -50,7 +50,7 @@ export const TargetAudienceSection = () => {
             <div 
               key={index}
               className="relative overflow-hidden rounded-3xl group cursor-pointer hover-lift"
-              style={{ minHeight: '600px' }}
+              style={{ minHeight: '700px' }}
             >
               {/* Background Image */}
               <div className="absolute inset-0">
@@ -58,30 +58,31 @@ export const TargetAudienceSection = () => {
                   src={audience.image} 
                   alt={audience.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  style={index === 0 ? { objectPosition: 'center 35%' } : { objectPosition: 'center bottom' }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-surface-black/90 via-surface-black/50 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-surface-black/95 via-surface-black/70 to-surface-black/20"></div>
               </div>
               
               {/* Content */}
-              <div className="relative h-full flex flex-col justify-end p-8 lg:p-10">
-                <div className="space-y-4">
-                  <div className="space-y-2">
-                    <p className="text-body text-surface-white/80 uppercase tracking-wider">
+              <div className="relative h-full flex flex-col justify-end p-8 lg:p-12">
+                <div className="space-y-4 backdrop-blur-sm bg-surface-black/20 p-6 rounded-2xl">
+                  <div className="space-y-3">
+                    <p className="text-sm text-surface-white/90 uppercase tracking-wider font-medium">
                       {audience.subtitle}
                     </p>
-                    <h3 className="text-4xl lg:text-5xl font-bold text-surface-white">
+                    <h3 className="text-4xl lg:text-5xl font-bold text-surface-white leading-tight">
                       {audience.title}
                     </h3>
-                    <p className="text-lg text-surface-white/90 max-w-md">
+                    <p className="text-lg text-surface-white/95 max-w-md leading-relaxed">
                       {audience.description}
                     </p>
                   </div>
                   
-                  <ul className="space-y-2 pt-4">
+                  <ul className="space-y-3 pt-4">
                     {audience.benefits.map((benefit, benefitIndex) => (
                       <li 
                         key={benefitIndex}
-                        className="text-body text-surface-white/90 flex items-start"
+                        className="text-base text-surface-white/95 flex items-start leading-relaxed"
                       >
                         <span className="w-1.5 h-1.5 bg-accent-gold rounded-full mr-3 mt-2 flex-shrink-0"></span>
                         {benefit}
