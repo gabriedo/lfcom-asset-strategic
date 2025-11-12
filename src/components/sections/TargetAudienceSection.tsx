@@ -1,12 +1,14 @@
-import { Building2, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import cargoShipImage from "@/assets/cargo-ship.jpg";
+import runnersImage from "@/assets/runners.jpg";
 
 const audiences = [
   {
-    icon: Building2,
+    image: cargoShipImage,
     title: "Empresas (CNPJ)",
     subtitle: "Expansão com inteligência",
+    description: "Soluções sob medida para empresas que buscam crescimento estratégico através de aquisições inteligentes.",
     benefits: [
       "Imóveis corporativos com desconto",
       "Galpões e centros logísticos",
@@ -16,9 +18,10 @@ const audiences = [
     ]
   },
   {
-    icon: TrendingUp,
+    image: runnersImage,
     title: "Investidores (CPF/CNPJ)",
     subtitle: "Patrimônio estratégico",
+    description: "Oportunidades exclusivas para investidores que desejam diversificar e crescer seu patrimônio.",
     benefits: [
       "Diversificação patrimonial",
       "Estratégias de renda e crescimento",
@@ -42,37 +45,51 @@ export const TargetAudienceSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {audiences.map((audience, index) => (
             <div 
               key={index}
-              className="bg-surface-light p-8 rounded-2xl space-y-6 hover-lift"
+              className="relative overflow-hidden rounded-3xl group cursor-pointer hover-lift"
+              style={{ minHeight: '600px' }}
             >
-              <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 bg-surface-black rounded-full flex items-center justify-center">
-                  <audience.icon className="w-8 h-8 text-surface-white" />
-                </div>
-                <div>
-                  <h3 className="text-headline text-surface-black">
-                    {audience.title}
-                  </h3>
-                  <p className="text-body text-surface-medium">
-                    {audience.subtitle}
-                  </p>
-                </div>
+              {/* Background Image */}
+              <div className="absolute inset-0">
+                <img 
+                  src={audience.image} 
+                  alt={audience.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-surface-black/90 via-surface-black/50 to-transparent"></div>
               </div>
               
-              <ul className="space-y-3">
-                {audience.benefits.map((benefit, benefitIndex) => (
-                  <li 
-                    key={benefitIndex}
-                    className="text-body text-surface-black flex items-start"
-                  >
-                    <span className="w-2 h-2 bg-accent-gold rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    {benefit}
-                  </li>
-                ))}
-              </ul>
+              {/* Content */}
+              <div className="relative h-full flex flex-col justify-end p-8 lg:p-10">
+                <div className="space-y-4">
+                  <div className="space-y-2">
+                    <p className="text-body text-surface-white/80 uppercase tracking-wider">
+                      {audience.subtitle}
+                    </p>
+                    <h3 className="text-4xl lg:text-5xl font-bold text-surface-white">
+                      {audience.title}
+                    </h3>
+                    <p className="text-lg text-surface-white/90 max-w-md">
+                      {audience.description}
+                    </p>
+                  </div>
+                  
+                  <ul className="space-y-2 pt-4">
+                    {audience.benefits.map((benefit, benefitIndex) => (
+                      <li 
+                        key={benefitIndex}
+                        className="text-body text-surface-white/90 flex items-start"
+                      >
+                        <span className="w-1.5 h-1.5 bg-accent-gold rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                        {benefit}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
           ))}
         </div>
