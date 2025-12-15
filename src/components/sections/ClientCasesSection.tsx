@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import caseFactory from "@/assets/case-factory.jpg";
 import caseClient2 from "@/assets/case-client-2.jpg";
 
@@ -80,10 +81,10 @@ export const ClientCasesSection = () => {
                     className="text-accent-gold hover:text-accent-gold/80 p-0 h-auto font-semibold group/btn"
                     asChild
                   >
-                    <a href={caseItem.link}>
+                    <Link to={caseItem.link}>
                       {index === 0 ? "Leia a história" : "Veja a oferta"}
                       <ArrowRight className="w-5 h-5 ml-2 group-hover/btn:translate-x-1 transition-transform" />
-                    </a>
+                    </Link>
                   </Button>
                 </div>
 
