@@ -17,11 +17,11 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <div className="mb-4">
+            <div className="mb-6">
               <img 
                 src="/logo-branco.png" 
                 alt="LFCOM Logo" 
-                className="h-16 w-auto opacity-90"
+                className="h-24 w-auto opacity-90"
               />
             </div>
             <p className="text-surface-medium text-sm leading-relaxed mb-4 max-w-sm">
