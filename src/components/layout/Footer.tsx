@@ -21,7 +21,7 @@ export const Footer = () => {
               <img 
                 src="/logo-branco.png" 
                 alt="LFCOM Logo" 
-                className="h-24 w-auto opacity-90"
+                className="h-48 w-auto opacity-90"
               />
             </div>
             <p className="text-surface-medium text-sm leading-relaxed mb-4 max-w-sm">
