@@ -58,7 +58,7 @@ export const TargetAudienceSection = () => {
                   src={audience.image} 
                   alt={audience.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  style={index === 0 ? { objectPosition: 'center 35%' } : { objectPosition: 'center bottom' }}
+                  style={index === 0 ? { objectPosition: 'center center' } : { objectPosition: 'center top' }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-surface-black/95 via-surface-black/70 to-surface-black/20"></div>
               </div>
