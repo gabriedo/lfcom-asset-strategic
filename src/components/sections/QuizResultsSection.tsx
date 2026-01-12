@@ -119,7 +119,34 @@ export const QuizResultsSection = ({ setor, desafio, onReset }: QuizResultsSecti
   };
 
   const recs = getRecommendations();
-  const relatedPosts = posts.slice(0, 3);
+  
+  // Selecionar artigos relevantes baseado no setor e desafio
+  const getRelatedPosts = () => {
+    const tagMapping: Record<string, string[]> = {
+      "Expansão de patrimônio": ["Patrimônio", "Estratégia", "Governança"],
+      "Aquisição estratégica": ["Due Diligence", "Checklist", "Riscos"],
+      "Formação de fundo de ativos distressed": ["Estratégia", "Governança", "ROI"],
+      "Modernização de parque industrial": ["CAPEX", "Modernização", "Equipamentos", "ROI"],
+      "Otimização de CAPEX com ativos produtivos": ["CAPEX", "Modernização", "Equipamentos"],
+      "Formação de patrimônio imobiliário empresarial": ["Patrimônio", "Estratégia", "Governança"],
+    };
+    
+    const relevantTags = tagMapping[desafio] || ["Estratégia", "Governança"];
+    
+    // Ordenar por relevância (quantas tags coincidem) e depois por data
+    const scoredPosts = posts.map(post => ({
+      post,
+      score: post.tags.filter(tag => relevantTags.includes(tag)).length,
+      date: new Date(post.date).getTime()
+    }));
+    
+    return scoredPosts
+      .sort((a, b) => b.score - a.score || b.date - a.date)
+      .slice(0, 3)
+      .map(item => item.post);
+  };
+  
+  const relatedPosts = getRelatedPosts();
 
   return (
     <>

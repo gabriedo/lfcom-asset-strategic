@@ -12,9 +12,14 @@ const Insights = () => {
   const [selectedTag, setSelectedTag] = useState<string>("todos");
   const allTags = getAllTags();
 
+  // Ordenar posts do mais recente para o mais antigo
+  const sortedPosts = [...posts].sort((a, b) => 
+    new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+
   const filteredPosts = selectedTag === "todos" 
-    ? posts 
-    : posts.filter(post => post.tags.includes(selectedTag));
+    ? sortedPosts 
+    : sortedPosts.filter(post => post.tags.includes(selectedTag));
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString('pt-BR', {
