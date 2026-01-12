@@ -9,9 +9,17 @@ import type { CarouselApi } from "@/components/ui/carousel";
 import leioesEmpresarios from "@/assets/insights/leiloes-empresarios.jpg";
 import dueDiligence from "@/assets/insights/due-diligence.jpg";
 import maquinasIndustriais from "@/assets/insights/maquinas-industriais.jpg";
-import patrimonioResidencial from "@/assets/insights/patrimonio-residencial.jpg";
+import checklistArrematacao from "@/assets/insights/checklist-arrematacao.jpg";
 
 const heroSlides = [
+  {
+    id: posts[3]?.id || "4",
+    title: "Os 7 erros que custam milhões em leilões",
+    excerpt: "Checklist estratégico completo para evitar armadilhas e maximizar retorno em arrematações.",
+    slug: "checklist-arrematacao-7-erros-leiloes",
+    image: checklistArrematacao,
+    category: "Guia Prático"
+  },
   {
     id: posts[0].id,
     title: posts[0].title,
@@ -35,14 +43,6 @@ const heroSlides = [
     slug: posts[2].slug,
     image: maquinasIndustriais,
     category: "Modernização Industrial"
-  },
-  {
-    id: "4",
-    title: "Patrimônio residencial de alto padrão",
-    excerpt: "Como transformar imóveis de leilão em ativos de renda e valorização estratégica.",
-    slug: "patrimonio-residencial-alto-padrao",
-    image: patrimonioResidencial,
-    category: "Real Estate"
   }
 ];
 
