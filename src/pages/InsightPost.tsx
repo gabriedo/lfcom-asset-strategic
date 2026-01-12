@@ -129,7 +129,16 @@ const InsightPost = () => {
                   [&_blockquote]:text-foreground/80 [&_blockquote]:leading-relaxed
                   [&_blockquote]:bg-muted/30
                   [&_a]:text-accent-blue [&_a]:underline [&_a]:underline-offset-4
-                  [&_a:hover]:text-accent-blue/80"
+                  [&_a:hover]:text-accent-blue/80
+                  [&_.table-wrapper]:my-8 [&_.table-wrapper]:overflow-x-auto [&_.table-wrapper]:rounded-lg [&_.table-wrapper]:border [&_.table-wrapper]:border-border
+                  [&_table]:w-full [&_table]:border-collapse
+                  [&_thead]:bg-muted/50
+                  [&_th]:px-4 [&_th]:py-3 [&_th]:text-left [&_th]:text-sm [&_th]:font-semibold [&_th]:text-foreground [&_th]:border-b [&_th]:border-border
+                  [&_td]:px-4 [&_td]:py-3 [&_td]:text-base [&_td]:text-foreground/90 [&_td]:border-b [&_td]:border-border/50
+                  [&_tbody_tr:last-child_td]:border-b-0
+                  [&_tbody_tr:hover]:bg-muted/30
+                  [&_.checkbox-item]:flex [&_.checkbox-item]:items-center [&_.checkbox-item]:gap-2 [&_.checkbox-item]:py-1 [&_.checkbox-item]:text-lg
+                  [&_.checkbox]:text-accent-blue"
                 dangerouslySetInnerHTML={{ __html: processMarkdown(post.content) }}
               />
             </div>
