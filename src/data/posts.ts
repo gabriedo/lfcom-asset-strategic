@@ -76,7 +76,7 @@ Para empresários que operam em escala, os leilões representam mais que oportun
 
 O sucesso, entretanto, exige governança, expertise técnica e execução sênior. Na LFCOM, estruturamos cada operação com o rigor que grandes patrimônios exigem.
     `,
-    date: "2026-01-08",
+    date: "2025-11-15",
     readingMinutes: 5,
     tags: ["Estratégia", "Empresários", "Patrimônio", "CAPEX"]
   },
@@ -192,7 +192,7 @@ Grandes empresários compreendem que due diligence rigorosa não é custo, mas i
 
 Na LFCOM, transformamos complexidade jurídica em clareza estratégica, permitindo que nossos clientes tomem decisões de alto impacto com confiança e previsibilidade.
     `,
-    date: "2026-01-05", 
+    date: "2025-09-22", 
     readingMinutes: 6,
     tags: ["Due Diligence", "Governança", "Metodologia", "Risco"]
   },
@@ -347,7 +347,7 @@ A aquisição de máquinas e motores via leilão, quando estruturada com governa
 
 Para grandes empresários, leilões de equipamentos industriais não representam apenas economia - são ferramenta estratégica de transformação competitiva. Na LFCOM, estruturamos cada operação com o rigor técnico que decisões de alto impacto exigem.
     `,
-    date: "2026-01-02",
+    date: "2024-07-10",
     readingMinutes: 7,
     tags: ["CAPEX", "Modernização", "Equipamentos", "ROI"]
   },
