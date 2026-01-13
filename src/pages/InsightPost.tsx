@@ -4,8 +4,8 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, Calendar, Clock, Share2 } from "lucide-react";
-import { getPostBySlug } from "@/data/posts";
+import { ArrowLeft, Calendar, Clock, Share2, ArrowRight } from "lucide-react";
+import { getPostBySlug, posts } from "@/data/posts";
 import { processMarkdown } from "@/lib/markdown-processor";
 
 const InsightPost = () => {
@@ -189,10 +189,67 @@ const InsightPost = () => {
         {/* Related Posts */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-5xl mx-auto">
               <h3 className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-8">
                 Continue explorando
               </h3>
+              
+              {/* Recommended Articles Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                {posts
+                  .filter(p => p.slug !== post.slug)
+                  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+                  .slice(0, 3)
+                  .map((relatedPost) => (
+                    <Link 
+                      key={relatedPost.id} 
+                      to={`/insights/${relatedPost.slug}`}
+                      className="group"
+                    >
+                      <Card className="h-full border-border/50 hover:border-accent-blue/50 transition-all duration-300 hover:shadow-lg bg-card/50 backdrop-blur-sm overflow-hidden">
+                        {/* Image */}
+                        {relatedPost.coverImage && (
+                          <div className="aspect-[16/9] overflow-hidden">
+                            <img 
+                              src={relatedPost.coverImage} 
+                              alt={relatedPost.title}
+                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            />
+                          </div>
+                        )}
+                        <CardContent className="p-5">
+                          {/* Tags */}
+                          <div className="flex flex-wrap gap-2 mb-3">
+                            {relatedPost.tags.slice(0, 2).map((tag) => (
+                              <span key={tag} className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider">
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+                          
+                          {/* Title */}
+                          <h4 className="font-semibold text-foreground group-hover:text-accent-blue transition-colors line-clamp-2 mb-3">
+                            {relatedPost.title}
+                          </h4>
+                          
+                          {/* Meta */}
+                          <div className="flex items-center gap-3 text-xs text-muted-foreground">
+                            <span>{formatDate(relatedPost.date)}</span>
+                            <span>•</span>
+                            <span>{relatedPost.readingMinutes} min</span>
+                          </div>
+                          
+                          {/* Read more indicator */}
+                          <div className="flex items-center gap-1 text-xs font-medium text-accent-blue mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            Ler artigo
+                            <ArrowRight size={12} />
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </Link>
+                  ))}
+              </div>
+              
               <div className="text-center">
                 <Button asChild variant="outline" size="lg">
                   <Link to="/insights">
