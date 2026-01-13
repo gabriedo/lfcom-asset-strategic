@@ -38,7 +38,7 @@ const Sobre = () => {
                 <p className="text-body leading-relaxed mb-8">
                   Nossa essência combina a <strong>confiança e compromisso</strong> de uma empresa familiar 
                   com a <strong>precisão e transparência</strong> de uma consultoria de primeiro mundo. 
-                  Transformamos o que tradicionalmente era visto como "negócio de oportunista" em 
+                  Transformamos o que tradicionalmente era visto como "negócio transacional" em 
                   <strong> estratégia patrimonial sistemática</strong>, blindada juridicamente e 
                   fundamentada em inteligência de dados.
                 </p>
