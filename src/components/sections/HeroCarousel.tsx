@@ -7,11 +7,19 @@ import type { CarouselApi } from "@/components/ui/carousel";
 
 // Import images
 import leioesEmpresarios from "@/assets/insights/leiloes-empresarios.jpg";
-import dueDiligence from "@/assets/insights/due-diligence.jpg";
 import maquinasIndustriais from "@/assets/insights/maquinas-industriais.jpg";
 import checklistArrematacao from "@/assets/insights/checklist-arrematacao.jpg";
+import reportLeiloes2026 from "@/assets/insights/report-leiloes-2026.jpg";
 
 const heroSlides = [
+  {
+    id: "6",
+    title: "Report Leilões 2026: Tendências e Oportunidades",
+    excerpt: "Análise completa do mercado com dados de 2025, projeções e as tendências que irão moldar o setor.",
+    slug: "report-leiloes-2026-tendencias-oportunidades",
+    image: reportLeiloes2026,
+    category: "Report Anual"
+  },
   {
     id: posts[3]?.id || "4",
     title: "Os 7 erros que custam milhões em leilões",
@@ -27,14 +35,6 @@ const heroSlides = [
     slug: posts[0].slug,
     image: leioesEmpresarios,
     category: "Estratégia Corporativa"
-  },
-  {
-    id: posts[1].id,
-    title: posts[1].title,
-    excerpt: posts[1].excerpt,
-    slug: posts[1].slug,
-    image: dueDiligence,
-    category: "Governança"
   },
   {
     id: posts[2].id,
