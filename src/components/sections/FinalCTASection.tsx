@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, MessageCircle } from "lucide-react";
 
@@ -17,10 +18,10 @@ export const FinalCTASection = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button asChild variant="hero" size="lg" className="group">
-              <a href="/contato">
+              <Link to="/contato">
                 <Calendar className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                 Agendar conversa estratégica
-              </a>
+              </Link>
             </Button>
             
             <Button asChild variant="hero-outline" size="lg" className="group">
