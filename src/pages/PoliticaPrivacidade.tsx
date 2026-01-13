@@ -114,8 +114,8 @@ const PoliticaPrivacidade = () => {
                     nosso Encarregado de Proteção de Dados:
                   </p>
                   <p className="text-body leading-relaxed">
-                    <strong>E-mail:</strong> dpo@lfcom.com.br<br />
-                    <strong>Endereço:</strong> [Endereço da LFCOM]
+                    <strong>E-mail:</strong> suporte@lfcom.xyz<br />
+                    <strong>Endereço:</strong> R. Francisco Rocha, 198 – Batel, Curitiba – PR, 80420-130
                   </p>
                 </div>
 
