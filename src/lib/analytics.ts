@@ -1,5 +1,5 @@
 // Google Analytics 4 - ID de medição
-const GA_MEASUREMENT_ID = 'G-FNDVLMF0J2';
+const GA_MEASUREMENT_ID = 'G-D3FVS4848G';
 
 // Declare gtag on window
 declare global {
