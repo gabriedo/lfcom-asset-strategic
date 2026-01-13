@@ -195,7 +195,7 @@ const InsightPost = () => {
               </h3>
               
               {/* Recommended Articles Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {posts
                   .filter(p => p.slug !== post.slug)
                   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
@@ -207,9 +207,9 @@ const InsightPost = () => {
                       className="group"
                     >
                       <Card className="h-full border-border/50 hover:border-accent-blue/50 transition-all duration-300 hover:shadow-lg bg-card/50 backdrop-blur-sm overflow-hidden">
-                        {/* Image */}
+                        {/* Image - Compact */}
                         {relatedPost.coverImage && (
-                          <div className="aspect-[16/9] overflow-hidden">
+                          <div className="aspect-[2/1] overflow-hidden">
                             <img 
                               src={relatedPost.coverImage} 
                               alt={relatedPost.title}
@@ -217,9 +217,9 @@ const InsightPost = () => {
                             />
                           </div>
                         )}
-                        <CardContent className="p-5">
+                        <CardContent className="p-4">
                           {/* Tags */}
-                          <div className="flex flex-wrap gap-2 mb-3">
+                          <div className="flex flex-wrap gap-2 mb-2">
                             {relatedPost.tags.slice(0, 2).map((tag) => (
                               <span key={tag} className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider">
                                 {tag}
@@ -228,34 +228,18 @@ const InsightPost = () => {
                           </div>
                           
                           {/* Title */}
-                          <h4 className="font-semibold text-foreground group-hover:text-accent-blue transition-colors line-clamp-2 mb-3">
+                          <h4 className="font-semibold text-sm text-foreground group-hover:text-accent-blue transition-colors line-clamp-2 mb-2">
                             {relatedPost.title}
                           </h4>
                           
                           {/* Meta */}
-                          <div className="flex items-center gap-3 text-xs text-muted-foreground">
-                            <span>{formatDate(relatedPost.date)}</span>
-                            <span>•</span>
+                          <div className="flex items-center gap-2 text-xs text-muted-foreground">
                             <span>{relatedPost.readingMinutes} min</span>
-                          </div>
-                          
-                          {/* Read more indicator */}
-                          <div className="flex items-center gap-1 text-xs font-medium text-accent-blue mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                            Ler artigo
-                            <ArrowRight size={12} />
                           </div>
                         </CardContent>
                       </Card>
                     </Link>
                   ))}
-              </div>
-              
-              <div className="text-center">
-                <Button asChild variant="outline" size="lg">
-                  <Link to="/insights">
-                    Ver todos os insights
-                  </Link>
-                </Button>
               </div>
             </div>
           </div>
