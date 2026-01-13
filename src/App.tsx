@@ -22,6 +22,7 @@ import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
 import AvisoLegal from "./pages/AvisoLegal";
 import Status from "./pages/Status";
 import NotFound from "./pages/NotFound";
+import { CookieConsent } from "./components/layout/CookieConsent";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <CookieConsent />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
