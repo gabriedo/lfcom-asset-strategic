@@ -18,7 +18,7 @@ const mockResults = [
   {
     id: 1,
     type: "galpao",
-    title: "Galpão Logístico SP",
+    title: "Galpão Logístico",
     discount: "42%",
     thesis: "Renda",
     timeframe: "90 dias",
@@ -28,7 +28,7 @@ const mockResults = [
   {
     id: 2,
     type: "imovel",
-    title: "Edifício Comercial RJ",
+    title: "Edifício Comercial",
     discount: "35%",
     thesis: "Valorização",
     timeframe: "120 dias",
@@ -38,7 +38,7 @@ const mockResults = [
   {
     id: 3,
     type: "fabrica",
-    title: "Planta Industrial MG",
+    title: "Planta Industrial",
     discount: "58%",
     thesis: "Operação",
     timeframe: "180 dias",
@@ -48,7 +48,7 @@ const mockResults = [
   {
     id: 4,
     type: "maquinario",
-    title: "Linha de Produção SP",
+    title: "Linha de Produção",
     discount: "45%",
     thesis: "Trading",
     timeframe: "60 dias",
@@ -58,7 +58,7 @@ const mockResults = [
   {
     id: 5,
     type: "imovel",
-    title: "Torre Corporativa SP",
+    title: "Torre Corporativa",
     discount: "38%",
     thesis: "Renda",
     timeframe: "150 dias",
@@ -68,12 +68,32 @@ const mockResults = [
   {
     id: 6,
     type: "galpao",
-    title: "Centro Logístico RS",
+    title: "Centro Logístico",
     discount: "52%",
     thesis: "Valorização",
     timeframe: "110 dias",
     result: "Potencial 40% em 24m",
     highlights: ["Hub estratégico", "Expansão planejada"]
+  },
+  {
+    id: 7,
+    type: "imovel",
+    title: "Casa de Veraneio",
+    discount: "47%",
+    thesis: "Renda + Uso",
+    timeframe: "75 dias",
+    result: "Ocupação 68% a.a.",
+    highlights: ["Locação por temporada", "Região turística premium"]
+  },
+  {
+    id: 8,
+    type: "imovel",
+    title: "Portfólio MCMV",
+    discount: "31%",
+    thesis: "Escala",
+    timeframe: "200 dias",
+    result: "12 unidades adquiridas",
+    highlights: ["Baixa inadimplência", "Demanda estável garantida"]
   }
 ];
 
