@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -265,9 +266,9 @@ const Contato = () => {
                           />
                           <Label htmlFor="lgpd" className="text-sm leading-5 cursor-pointer">
                             Concordo em compartilhar meus dados para contato sobre soluções da LFCOM e aceito a{" "}
-                            <a href="/politica-de-privacidade" className="text-accent-blue hover:underline">
+                            <Link to="/politica-de-privacidade" className="text-accent-blue hover:underline">
                               Política de Privacidade
-                            </a>
+                            </Link>
                             . *
                           </Label>
                         </div>
