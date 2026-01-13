@@ -4,7 +4,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Building, Factory, Truck, Settings } from "lucide-react";
+import { Building, Factory, Truck, Settings, Wheat } from "lucide-react";
 
 const resultTypes = [
   { id: "all", label: "Todos", icon: null },
@@ -12,6 +12,7 @@ const resultTypes = [
   { id: "galpao", label: "Galpões", icon: Truck },
   { id: "fabrica", label: "Fábricas", icon: Factory },
   { id: "maquinario", label: "Maquinário", icon: Settings },
+  { id: "agro", label: "Agro", icon: Wheat },
 ];
 
 const mockResults = [
@@ -94,6 +95,26 @@ const mockResults = [
     timeframe: "200 dias",
     result: "12 unidades adquiridas",
     highlights: ["Baixa inadimplência", "Demanda estável garantida"]
+  },
+  {
+    id: 9,
+    type: "agro",
+    title: "Fazenda com Lavoura de Milho",
+    discount: "39%",
+    thesis: "Operação + Renda",
+    timeframe: "95 dias",
+    result: "Produtividade 180 sc/ha",
+    highlights: ["Safra em andamento", "Contrato de venda fechado"]
+  },
+  {
+    id: 10,
+    type: "agro",
+    title: "Lote de Máquinas Agrícolas",
+    discount: "54%",
+    thesis: "Trading",
+    timeframe: "45 dias",
+    result: "Revenda em 30 dias",
+    highlights: ["Colheitadeiras e tratores", "Alta liquidez no mercado"]
   }
 ];
 
