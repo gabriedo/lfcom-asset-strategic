@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useCookieConsent } from "@/hooks/useCookieConsent";
 import { Button } from "@/components/ui/button";
-import { Cookie, X } from "lucide-react";
+import { Cookie } from "lucide-react";
 
 export const CookieConsent = () => {
   const { showBanner, acceptCookies, rejectCookies } = useCookieConsent();
@@ -10,57 +10,46 @@ export const CookieConsent = () => {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4 md:p-6 animate-in slide-in-from-bottom-5 duration-500">
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-card/95 backdrop-blur-md border border-border rounded-xl shadow-2xl p-4 md:p-6">
-          <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
-            {/* Icon and Text */}
-            <div className="flex items-start gap-3 flex-1">
-              <div className="p-2 bg-accent-blue/10 rounded-lg shrink-0">
-                <Cookie className="w-5 h-5 text-accent-blue" />
-              </div>
-              <div className="space-y-1">
-                <p className="text-sm text-foreground font-medium">
-                  Utilizamos cookies para melhorar sua experiência
-                </p>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  Usamos cookies para análise de tráfego e melhoria contínua do site. 
-                  Ao aceitar, você concorda com nossa{" "}
-                  <Link 
-                    to="/politica-de-privacidade" 
-                    className="text-accent-blue hover:underline"
-                  >
-                    Política de Privacidade
-                  </Link>.
-                </p>
-              </div>
+      <div className="max-w-2xl mx-auto">
+        <div className="bg-card/98 backdrop-blur-lg border border-border rounded-2xl shadow-2xl p-5 md:p-6">
+          <div className="flex flex-col items-center text-center gap-4">
+            {/* Icon */}
+            <div className="p-3 bg-accent-blue/10 rounded-full">
+              <Cookie className="w-6 h-6 text-accent-blue" />
+            </div>
+            
+            {/* Text */}
+            <div className="space-y-2">
+              <p className="text-base text-foreground font-semibold">
+                Utilizamos cookies para melhorar sua experiência
+              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed max-w-md mx-auto">
+                Usamos cookies para análise de tráfego e melhoria contínua do site. 
+                Ao continuar navegando, você concorda com nossa{" "}
+                <Link 
+                  to="/politica-de-privacidade" 
+                  className="text-accent-blue hover:underline"
+                >
+                  Política de Privacidade
+                </Link>.
+              </p>
             </div>
 
-            {/* Buttons */}
-            <div className="flex items-center gap-2 w-full md:w-auto shrink-0">
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={rejectCookies}
-                className="flex-1 md:flex-none text-muted-foreground hover:text-foreground"
-              >
-                Recusar
-              </Button>
-              <Button
-                size="sm"
-                onClick={acceptCookies}
-                className="flex-1 md:flex-none bg-accent-blue hover:bg-accent-blue/90 text-white"
-              >
-                Aceitar
-              </Button>
-            </div>
+            {/* Primary Accept Button */}
+            <Button
+              size="lg"
+              onClick={acceptCookies}
+              className="w-full md:w-auto md:min-w-[200px] bg-accent-blue hover:bg-accent-blue/90 text-white font-medium py-3 text-base shadow-lg hover:shadow-xl transition-all"
+            >
+              Aceitar e Continuar
+            </Button>
 
-            {/* Close button for mobile */}
+            {/* Secondary Reject Link - subtle */}
             <button
               onClick={rejectCookies}
-              className="absolute top-2 right-2 md:hidden p-1 text-muted-foreground hover:text-foreground transition-colors"
-              aria-label="Fechar"
+              className="text-xs text-muted-foreground/60 hover:text-muted-foreground transition-colors underline-offset-2 hover:underline"
             >
-              <X className="w-4 h-4" />
+              Continuar sem aceitar
             </button>
           </div>
         </div>
