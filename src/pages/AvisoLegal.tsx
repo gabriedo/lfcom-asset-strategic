@@ -154,9 +154,8 @@ const AvisoLegal = () => {
                     Para esclarecimentos sobre este aviso legal ou nossos serviços:
                   </p>
                   <p className="text-body leading-relaxed">
-                    <strong>E-mail:</strong> juridico@lfcom.com.br<br />
-                    <strong>Telefone:</strong> (11) 99999-9999<br />
-                    <strong>Endereço:</strong> [Endereço da LFCOM]
+                    <strong>E-mail:</strong> suporte@lfcom.xyz<br />
+                    <strong>Endereço:</strong> R. Francisco Rocha, 198 – Batel, Curitiba – PR, 80420-130
                   </p>
                 </div>
 
