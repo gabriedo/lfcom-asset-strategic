@@ -1,3 +1,10 @@
+import leiloesEmpresarios from "@/assets/insights/leiloes-empresarios.jpg";
+import dueDiligence from "@/assets/insights/due-diligence.jpg";
+import maquinasIndustriais from "@/assets/insights/maquinas-industriais.jpg";
+import checklistArrematacao from "@/assets/insights/checklist-arrematacao.jpg";
+import patrimonioResidencial from "@/assets/insights/patrimonio-residencial.jpg";
+import reportLeiloes2026 from "@/assets/insights/report-leiloes-2026.jpg";
+
 export interface Post {
   id: string;
   title: string;
@@ -78,7 +85,8 @@ O sucesso, entretanto, exige governança, expertise técnica e execução sênio
     `,
     date: "2025-11-15",
     readingMinutes: 5,
-    tags: ["Estratégia", "Empresários", "Patrimônio", "CAPEX"]
+    tags: ["Estratégia", "Empresários", "Patrimônio", "CAPEX"],
+    coverImage: leiloesEmpresarios
   },
   {
     id: "2",
@@ -194,7 +202,8 @@ Na LFCOM, transformamos complexidade jurídica em clareza estratégica, permitin
     `,
     date: "2025-09-22", 
     readingMinutes: 6,
-    tags: ["Due Diligence", "Governança", "Metodologia", "Risco"]
+    tags: ["Due Diligence", "Governança", "Metodologia", "Risco"],
+    coverImage: dueDiligence
   },
   {
     id: "3",
@@ -349,7 +358,8 @@ Para grandes empresários, leilões de equipamentos industriais não representam
     `,
     date: "2024-07-10",
     readingMinutes: 7,
-    tags: ["CAPEX", "Modernização", "Equipamentos", "ROI"]
+    tags: ["CAPEX", "Modernização", "Equipamentos", "ROI"],
+    coverImage: maquinasIndustriais
   },
   {
     id: "4",
@@ -947,7 +957,8 @@ Na LFCOM, estruturamos cada operação com o rigor técnico e a governança que 
     `,
     date: "2026-01-10",
     readingMinutes: 18,
-    tags: ["Checklist", "Estratégia", "Governança", "Due Diligence", "Riscos", "Guia Prático"]
+    tags: ["Checklist", "Estratégia", "Governança", "Due Diligence", "Riscos", "Guia Prático"],
+    coverImage: checklistArrematacao
   },
   {
     id: "5",
@@ -1112,7 +1123,8 @@ Na LFCOM, estruturamos cada operação com o rigor e a discrição que grandes p
     `,
     date: "2025-06-18",
     readingMinutes: 8,
-    tags: ["Patrimônio", "Imóveis", "Diversificação", "Luxo", "Estratégia"]
+    tags: ["Patrimônio", "Imóveis", "Diversificação", "Luxo", "Estratégia"],
+    coverImage: patrimonioResidencial
   },
   {
     id: "6",
@@ -1446,7 +1458,8 @@ Na LFCOM, continuamos comprometidos em transformar a complexidade do mercado de 
     `,
     date: "2026-01-13",
     readingMinutes: 22,
-    tags: ["Report", "Tendências", "2026", "Digitalização", "Estratégia", "Mercado", "IA"]
+    tags: ["Report", "Tendências", "2026", "Digitalização", "Estratégia", "Mercado", "IA"],
+    coverImage: reportLeiloes2026
   }
 ];
 
