@@ -23,6 +23,7 @@ import AvisoLegal from "./pages/AvisoLegal";
 import Status from "./pages/Status";
 import NotFound from "./pages/NotFound";
 import { CookieConsent } from "./components/layout/CookieConsent";
+import { ScrollToTop } from "./hooks/useScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <CookieConsent />
         <Routes>
           <Route path="/" element={<Index />} />
