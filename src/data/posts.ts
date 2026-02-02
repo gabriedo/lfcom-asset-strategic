@@ -30,6 +30,17 @@ import leilaoNegativo from "@/assets/insights/leilao-negativo.jpg";
 import analiseEditalLeilao from "@/assets/insights/analise-edital-leilao.jpg";
 import holdingPatrimonialLeilao from "@/assets/insights/holding-patrimonial-leilao.jpg";
 import reformaTributariaLeiloes from "@/assets/insights/reforma-tributaria-leiloes.jpg";
+import leilaoBancoBrasil from "@/assets/insights/leilao-banco-brasil.jpg";
+import leilaoBancosPrivados from "@/assets/insights/leilao-bancos-privados.jpg";
+import leilaoRecuperacaoJudicial from "@/assets/insights/leilao-recuperacao-judicial.jpg";
+import leilaoLoteTerreno from "@/assets/insights/leilao-lote-terreno.jpg";
+import consorcioLeilao from "@/assets/insights/consorcio-leilao.jpg";
+import seguroTituloArrematacao from "@/assets/insights/seguro-titulo-arrematacao.jpg";
+import leilaoGalpoesIndustriais from "@/assets/insights/leilao-galpoes-industriais.jpg";
+import custosOcultosLeilao from "@/assets/insights/custos-ocultos-leilao.jpg";
+import primeiroLeilaoIniciantes from "@/assets/insights/primeiro-leilao-iniciantes.jpg";
+import roiLeilaoImoveis from "@/assets/insights/roi-leilao-imoveis.jpg";
+
 export interface Post {
   id: string;
   title: string;
@@ -8380,6 +8391,1265 @@ Na LFCOM, acompanhamos de perto as mudanças regulatórias e orientamos nossos c
     readingMinutes: 18,
     tags: ["Reforma Tributária", "IBS", "CBS", "Holding", "Planejamento Fiscal", "Aluguel Temporada"],
     coverImage: reformaTributariaLeiloes
+  },
+  {
+    id: "33",
+    title: "Leilão de Imóveis do Banco do Brasil: Guia Completo 2026",
+    slug: "leilao-imoveis-banco-brasil-guia",
+    excerpt: "Descubra como funcionam os leilões de imóveis do Banco do Brasil, diferenças em relação à Caixa, descontos médios e condições de financiamento próprio.",
+    content: `
+# Leilão de Imóveis do Banco do Brasil: Guia Completo 2026
+
+O Banco do Brasil é um dos maiores detentores de imóveis retomados do país, oferecendo oportunidades significativas para investidores que buscam diversificar além dos tradicionais leilões da Caixa Econômica Federal.
+
+## Por que considerar leilões do BB?
+
+### Volume e diversidade de ativos
+
+O Banco do Brasil possui carteira de imóveis retomados estimada em **R$ 8 bilhões**, com:
+- Imóveis residenciais urbanos
+- Salas comerciais e lojas
+- Galpões e áreas industriais
+- Terrenos e lotes
+- Imóveis rurais e fazendas
+
+### Diferenças fundamentais para a Caixa
+
+| Aspecto | Banco do Brasil | Caixa Econômica |
+|---------|-----------------|-----------------|
+| Portal oficial | licitacoes.bb.com.br | caixa.gov.br/imoveis |
+| Modalidade predominante | Venda direta online | Leilão tradicional |
+| Financiamento próprio | Até 80% em 420 meses | Até 95% em 420 meses |
+| Descontos médios | 20-50% | 30-60% |
+| Comissão do leiloeiro | 5% (quando aplicável) | 5% |
+| Entrada mínima | 20% | 5% (habitação popular) |
+
+---
+
+## Como funciona o portal de licitações BB
+
+### Modalidades de venda
+
+**1. Venda Direta Online (VDO)**
+- Proposta eletrônica pelo portal
+- Análise em até 10 dias úteis
+- Aceite ou contraproposta do banco
+- Sem necessidade de participar de leilão presencial
+
+**2. Licitação Eletrônica**
+- Formato de pregão eletrônico
+- Disputa em tempo real
+- Lance mínimo definido em edital
+- Menor burocracia que leilão judicial
+
+**3. Concorrência Pública**
+- Para ativos de maior valor
+- Envelope lacrado com proposta
+- Análise jurídica e comercial
+
+### Passo a passo para participação
+
+- [ ] Cadastro no portal licitacoes.bb.com.br
+- [ ] Habilitação de documentos (CPF/CNPJ, comprovantes)
+- [ ] Busca de imóveis por região, tipo e valor
+- [ ] Análise do edital e documentação do imóvel
+- [ ] Envio de proposta ou participação em disputa
+- [ ] Assinatura de contrato em caso de aceite
+- [ ] Pagamento conforme condições negociadas
+
+---
+
+## Vantagens exclusivas do BB
+
+### 1. Financiamento com condições diferenciadas
+
+| Linha de crédito | Taxa de juros | Prazo máximo | Entrada |
+|------------------|---------------|--------------|---------|
+| Aquisição de imóvel BB | TR + 8,5% a.a. | 420 meses | 20% |
+| Pró-Cotista FGTS | TR + 7,66% a.a. | 360 meses | 10% |
+| SBPE | TR + 9,99% a.a. | 420 meses | 20% |
+
+### 2. Descontos por forma de pagamento
+
+| Forma de pagamento | Desconto adicional |
+|--------------------|-------------------|
+| À vista | Até 10% |
+| Financiamento BB | 5% |
+| Parcelamento direto | 3% |
+
+### 3. Flexibilidade na negociação
+
+O BB permite negociação direta em muitos casos:
+- Contraproposta de valor
+- Ajuste de condições de pagamento
+- Parcelamento da entrada
+- Carência para primeira parcela
+
+---
+
+## Due diligence específica para imóveis BB
+
+### Checklist essencial
+
+- [ ] Verificar origem do imóvel (retomado de financiamento ou dação)
+- [ ] Consultar matrícula atualizada (ônus, gravames)
+- [ ] Confirmar situação de ocupação
+- [ ] Analisar débitos de IPTU e condomínio
+- [ ] Verificar se há ação de anulação em curso
+- [ ] Solicitar vistoria presencial quando possível
+
+### Riscos específicos do BB
+
+| Risco | Probabilidade | Mitigação |
+|-------|---------------|-----------|
+| Ocupação por ex-mutuário | Alta (40%) | Negociar desocupação amigável |
+| Débitos de condomínio | Média (30%) | Solicitar certidão negativa |
+| Pendências documentais | Baixa (15%) | Exigir regularização pré-contrato |
+| Ações judiciais | Baixa (10%) | Consultar distribuidor de ações |
+
+---
+
+## Comparativo: BB vs Caixa vs Bancos Privados
+
+| Critério | BB | Caixa | Bancos Privados |
+|----------|-----|-------|-----------------|
+| Volume de imóveis | Alto | Muito alto | Médio |
+| Descontos | 20-50% | 30-60% | 15-40% |
+| Burocracia | Média | Alta | Baixa |
+| Financiamento | Acessível | Muito acessível | Restrito |
+| Flexibilidade | Alta | Média | Alta |
+| Documentação | Boa | Excelente | Variável |
+
+---
+
+## Estratégias de aquisição
+
+### Para investidores de renda
+
+1. **Foco em imóveis comerciais** - Salas e lojas com desconto para locação
+2. **Regiões metropolitanas** - Maior liquidez e demanda locatícia
+3. **Análise de cap rate** - Mínimo de 8% para viabilidade
+
+### Para revenda (flipping)
+
+1. **Imóveis residenciais populares** - Maior velocidade de giro
+2. **Descontos superiores a 35%** - Margem para custos e lucro
+3. **Condições à vista** - Maximizar desconto
+
+### Para uso próprio
+
+1. **Aproveitar financiamento BB** - Taxas competitivas
+2. **Negociar condições** - Carência, entrada parcelada
+3. **Priorizar imóveis desocupados** - Evitar custos de desocupação
+
+---
+
+## FAQ: Perguntas frequentes
+
+### 1. Posso financiar imóvel de leilão do BB?
+
+**Sim**, o BB oferece financiamento próprio para imóveis de sua carteira, com condições especiais. É uma das principais vantagens sobre outros bancos.
+
+### 2. O BB aceita FGTS para pagamento?
+
+**Sim**, é possível utilizar FGTS tanto para entrada quanto para amortização, desde que o imóvel atenda aos requisitos do programa.
+
+### 3. Como saber se o imóvel está ocupado?
+
+O edital deve informar a situação de ocupação. Na dúvida, solicite ao BB uma vistoria ou declaração formal sobre o estado do imóvel.
+
+### 4. O BB paga comissão de leiloeiro?
+
+Na modalidade de Venda Direta Online, geralmente **não há comissão de leiloeiro**. Em licitações eletrônicas, pode haver taxa de 5%.
+
+### 5. Posso visitar o imóvel antes de comprar?
+
+**Depende**. Imóveis desocupados geralmente permitem agendamento de visita. Imóveis ocupados podem ter restrições.
+
+---
+
+## Conclusão: BB como alternativa estratégica
+
+O Banco do Brasil representa uma **alternativa valiosa** para investidores que:
+- Buscam diversificação além da Caixa
+- Precisam de financiamento acessível
+- Valorizam flexibilidade na negociação
+- Preferem processos menos burocráticos
+
+Na LFCOM, monitoramos as oportunidades do BB e demais instituições financeiras, identificando os melhores ativos para cada perfil de investidor.
+
+---
+
+*Quer assessoria especializada para adquirir imóveis em leilões de bancos? Entre em contato com nossa equipe.*
+    \`,
+    date: "2026-02-14",
+    readingMinutes: 14,
+    tags: ["Banco do Brasil", "Leilão", "Financiamento", "Investimento", "Imóveis"],
+    coverImage: leilaoBancoBrasil
+  },
+  {
+    id: "34",
+    title: "Leilões de Bancos Privados: Guia Itaú, Bradesco e Santander",
+    slug: "leilao-imoveis-bancos-privados-itau-bradesco-santander",
+    excerpt: "Comparativo completo dos leilões de imóveis de bancos privados: portais, condições de pagamento, descontos e estratégias de aquisição.",
+    content: \`
+# Leilões de Bancos Privados: Guia Itaú, Bradesco e Santander
+
+Os grandes bancos privados brasileiros também possuem carteiras expressivas de imóveis retomados, oferecendo oportunidades menos disputadas que os tradicionais leilões da Caixa. Este guia apresenta um comparativo detalhado das três maiores instituições privadas.
+
+## Panorama do mercado de imóveis retomados
+
+### Volume estimado por instituição (2026)
+
+| Banco | Carteira estimada | Imóveis disponíveis | Ticket médio |
+|-------|-------------------|---------------------|--------------|
+| Itaú Unibanco | R$ 4,2 bilhões | ~8.500 | R$ 495 mil |
+| Bradesco | R$ 3,1 bilhões | ~6.200 | R$ 500 mil |
+| Santander | R$ 2,8 bilhões | ~5.800 | R$ 483 mil |
+
+### Por que bancos privados vendem imóveis?
+
+Os bancos são obrigados a **desfazer-se de imóveis não-operacionais** em até 5 anos (Res. BCB 4.966/21), criando pressão para liquidação e gerando oportunidades para investidores.
+
+---
+
+## Itaú Unibanco: Portal e estratégias
+
+### Portal oficial: itau.com.br/imoveis
+
+**Modalidades de venda:**
+- Venda direta online
+- Leilão eletrônico
+- Propostas com análise
+
+### Condições típicas
+
+| Aspecto | Condição Itaú |
+|---------|---------------|
+| Desconto médio | 15-40% |
+| Financiamento | Até 80% em 360 meses |
+| Taxa de juros | A partir de 9,49% a.a. + TR |
+| Entrada mínima | 20% |
+| Uso de FGTS | Permitido |
+| Comissão leiloeiro | 5% (leilões) |
+
+### Vantagens Itaú
+
+1. **Maior diversificação geográfica** - Presença forte em todo o país
+2. **Processo digital ágil** - Proposta online com resposta em até 5 dias
+3. **Financiamento com seguro embutido** - MIP e DFI inclusos
+4. **Assessoria própria** - Corretores parceiros para visitas
+
+### Desvantagens Itaú
+
+1. Descontos menores que bancos públicos
+2. Exigência de 20% de entrada mínima
+3. Taxas de juros superiores ao SBPE tradicional
+
+---
+
+## Bradesco: Portal e estratégias
+
+### Portal oficial: bradescoimoveis.com.br
+
+**Modalidades de venda:**
+- Venda online
+- Leilão presencial e eletrônico
+- Consórcio de imóveis
+
+### Condições típicas
+
+| Aspecto | Condição Bradesco |
+|---------|-------------------|
+| Desconto médio | 20-45% |
+| Financiamento | Até 80% em 420 meses |
+| Taxa de juros | A partir de 9,99% a.a. + TR |
+| Entrada mínima | 20% |
+| Uso de FGTS | Permitido |
+| Comissão leiloeiro | 5% |
+
+### Vantagens Bradesco
+
+1. **Descontos mais agressivos** - Política de liquidação mais ativa
+2. **Consórcio como alternativa** - Cartas contempladas para imóveis próprios
+3. **Parceria com leiloeiros** - Zukerman, Mega Leilões, Sold
+4. **Imóveis rurais** - Boa oferta de fazendas e sítios
+
+### Desvantagens Bradesco
+
+1. Burocracia um pouco maior que Itaú
+2. Menor flexibilidade na negociação
+3. Carteira mais concentrada em SP e RJ
+
+---
+
+## Santander: Portal e estratégias
+
+### Portal oficial: santanderimoveis.com.br
+
+**Modalidades de venda:**
+- Superoportunidades (venda direta com desconto)
+- Leilão eletrônico
+- Propostas online
+
+### Condições típicas
+
+| Aspecto | Condição Santander |
+|---------|-------------------|
+| Desconto médio | 15-35% |
+| Financiamento | Até 80% em 420 meses |
+| Taxa de juros | A partir de 9,79% a.a. + TR |
+| Entrada mínima | 20% |
+| Uso de FGTS | Permitido |
+| Comissão leiloeiro | 5% |
+
+### Vantagens Santander
+
+1. **Programa "Superoportunidades"** - Imóveis com desconto fixo pré-aprovado
+2. **Parceria com construtoras** - Imóveis novos retomados
+3. **Processo simplificado** - Menor documentação exigida
+4. **Atendimento dedicado** - Central de vendas especializada
+
+### Desvantagens Santander
+
+1. Menor volume de imóveis disponíveis
+2. Descontos geralmente menores
+3. Concentração em grandes centros urbanos
+
+---
+
+## Comparativo consolidado
+
+### Tabela de decisão
+
+| Critério | Itaú | Bradesco | Santander | Melhor opção |
+|----------|------|----------|-----------|--------------|
+| Volume de imóveis | ★★★★★ | ★★★★ | ★★★ | Itaú |
+| Descontos médios | ★★★ | ★★★★ | ★★★ | Bradesco |
+| Agilidade do processo | ★★★★★ | ★★★ | ★★★★ | Itaú |
+| Financiamento | ★★★★ | ★★★★ | ★★★★ | Empate |
+| Diversificação geográfica | ★★★★★ | ★★★★ | ★★★ | Itaú |
+| Imóveis rurais | ★★★ | ★★★★★ | ★★ | Bradesco |
+| Imóveis comerciais | ★★★★ | ★★★ | ★★★★ | Empate |
+
+---
+
+## Due diligence para bancos privados
+
+### Checklist unificado
+
+- [ ] Verificar situação de ocupação no edital
+- [ ] Consultar matrícula atualizada (máx. 30 dias)
+- [ ] Analisar débitos de IPTU e condomínio
+- [ ] Confirmar se há ações judiciais contra o banco
+- [ ] Verificar se o financiamento original foi quitado
+- [ ] Solicitar histórico de manutenção (se disponível)
+- [ ] Agendar visita presencial quando possível
+
+### Riscos específicos de bancos privados
+
+| Risco | Impacto | Mitigação |
+|-------|---------|-----------|
+| Ex-mutuário contestando retomada | Alto | Verificar trânsito em julgado |
+| Débitos de condomínio elevados | Médio | Negociar sub-rogação |
+| Estado de conservação | Médio | Vistoria técnica prévia |
+| Documentação incompleta | Baixo | Exigir compromisso de regularização |
+
+---
+
+## Estratégias de monitoramento
+
+### Como acompanhar oportunidades
+
+1. **Cadastro nos portais** - Ativar alertas por região e valor
+2. **Parceria com leiloeiros** - Acesso antecipado a novos lotes
+3. **Monitoramento de editais** - Acompanhar DOE e sites especializados
+4. **Networking com corretores** - Informações sobre imóveis antes da publicação
+
+### Frequência de novas ofertas
+
+| Banco | Frequência de leilões | Melhor período |
+|-------|----------------------|----------------|
+| Itaú | Semanal | Final do mês |
+| Bradesco | Quinzenal | Final do trimestre |
+| Santander | Mensal | Dezembro e Junho |
+
+---
+
+## FAQ: Perguntas frequentes
+
+### 1. Bancos privados aceitam consórcio para pagamento?
+
+**Depende**. Bradesco aceita consórcio próprio. Itaú e Santander geralmente não aceitam cartas de outros bancos.
+
+### 2. Posso usar FGTS em imóvel de banco privado?
+
+**Sim**, desde que o imóvel atenda aos requisitos do FGTS (residencial, urbano, até R$ 1,5 milhão).
+
+### 3. Os descontos são negociáveis?
+
+**Em alguns casos**. Venda direta permite contraproposta. Leilões têm valor mínimo fixo.
+
+### 4. Qual banco tem os melhores imóveis comerciais?
+
+**Itaú e Santander** possuem maior oferta de salas comerciais e lojas.
+
+### 5. Posso financiar 100% do imóvel?
+
+**Não**. Todos exigem entrada mínima de 20%.
+
+---
+
+## Conclusão: diversificação inteligente
+
+Os bancos privados representam uma **alternativa estratégica** para investidores que:
+- Buscam menor concorrência que leilões da Caixa
+- Precisam de processo mais ágil e digital
+- Valorizam diversificação de fontes
+- Querem explorar nichos específicos (rurais, comerciais)
+
+Na LFCOM, monitoramos simultaneamente todos os portais de bancos públicos e privados, garantindo que nossos clientes tenham acesso às melhores oportunidades do mercado.
+
+---
+
+*Quer receber alertas de oportunidades em múltiplos bancos? Fale com nossa equipe de assessoria.*
+    \`,
+    date: "2026-02-16",
+    readingMinutes: 15,
+    tags: ["Itaú", "Bradesco", "Santander", "Bancos Privados", "Leilão", "Comparativo"],
+    coverImage: leilaoBancosPrivados
+  },
+  {
+    id: "35",
+    title: "Leilão de Ativos em Recuperação Judicial: Oportunidades para Empresários",
+    slug: "leilao-ativos-recuperacao-judicial",
+    excerpt: "Como adquirir ativos de empresas em recuperação judicial ou falência: oportunidades únicas, riscos trabalhistas e due diligence especializada.",
+    content: \`
+# Leilão de Ativos em Recuperação Judicial: Oportunidades para Empresários
+
+O mercado de ativos de empresas em recuperação judicial (RJ) ou falência representa uma das maiores oportunidades para empresários que buscam expansão estratégica com desconto significativo. Este guia detalha como navegar neste ambiente complexo com segurança.
+
+## O cenário da recuperação judicial no Brasil
+
+### Números do mercado (2025-2026)
+
+| Indicador | Volume |
+|-----------|--------|
+| Empresas em RJ ativas | ~12.500 |
+| Pedidos de falência/ano | ~1.800 |
+| Ativos leiloados/ano | R$ 15+ bilhões |
+| Desconto médio | 40-70% |
+
+### Por que empresas vendem ativos em RJ?
+
+A Lei 11.101/2005 (Lei de Falências) exige que empresas em recuperação:
+- **Apresentem plano de pagamento** aos credores
+- **Alienem ativos não-operacionais** para gerar caixa
+- **Reestruturem operações** para viabilidade futura
+
+Esta obrigação cria **oportunidades únicas** para empresários bem assessorados.
+
+---
+
+## Tipos de ativos disponíveis
+
+### 1. Imóveis industriais e comerciais
+
+- Plantas fabris completas
+- Galpões logísticos
+- Sedes administrativas
+- Lojas e pontos comerciais
+
+### 2. Máquinas e equipamentos
+
+- Linhas de produção
+- Equipamentos especializados
+- Frotas de veículos
+- Tecnologia e softwares
+
+### 3. Unidades Produtivas Isoladas (UPI)
+
+- Fábricas em operação
+- Marcas e patentes
+- Contratos e carteira de clientes
+- Operação completa "turnkey"
+
+### 4. Ativos intangíveis
+
+- Marcas registradas
+- Patentes industriais
+- Licenças e autorizações
+- Softwares e sistemas
+
+---
+
+## Diferenças cruciais: RJ vs Leilão comum
+
+| Aspecto | Leilão comum | RJ/Falência |
+|---------|--------------|-------------|
+| Supervisão | Leiloeiro | Juízo + Administrador Judicial |
+| Origem dos ativos | Execuções diversas | Empresa em crise |
+| Sucessão trabalhista | Não há | Pode haver (exceto UPI) |
+| Sucessão tributária | Não há | Pode haver (exceto UPI) |
+| Preço mínimo | Avaliação judicial | Negociável no plano |
+| Forma de pagamento | Definida no edital | Negociável |
+
+### A proteção da UPI (Unidade Produtiva Isolada)
+
+A aquisição de ativos como **UPI** garante proteção legal:
+
+> **Art. 60, parágrafo único, Lei 11.101/2005:**
+> "O objeto da alienação estará livre de qualquer ônus e não haverá sucessão do arrematante nas obrigações do devedor, inclusive as de natureza tributária."
+
+**Isso significa**: Sem passivos trabalhistas, tributários ou cíveis do antigo dono.
+
+---
+
+## Due diligence especializada para RJ
+
+### Camada 1: Análise do processo de RJ
+
+- [ ] Verificar se o plano de RJ foi aprovado
+- [ ] Confirmar que a alienação está autorizada pelo juízo
+- [ ] Analisar parecer do administrador judicial
+- [ ] Verificar se há recursos pendentes
+- [ ] Confirmar competência do juízo
+
+### Camada 2: Análise de passivos
+
+| Tipo de passivo | Risco sem UPI | Risco com UPI |
+|-----------------|---------------|---------------|
+| Trabalhista | Alto | Nulo |
+| Tributário | Alto | Nulo |
+| Ambiental | Alto | Baixo* |
+| Cível | Médio | Nulo |
+
+*Passivos ambientais podem persistir em casos específicos (ex: contaminação de solo).
+
+### Camada 3: Análise operacional
+
+- [ ] Estado de conservação dos ativos
+- [ ] Viabilidade de continuidade operacional
+- [ ] Contratos transferíveis (clientes, fornecedores)
+- [ ] Situação de licenças e alvarás
+- [ ] Passivos ocultos não declarados
+
+### Camada 4: Análise estratégica
+
+- [ ] Sinergia com operação existente
+- [ ] Custo de integração
+- [ ] Tempo para retorno operacional
+- [ ] Riscos reputacionais
+
+---
+
+## Estratégias de aquisição
+
+### 1. Aquisição de UPI completa
+
+**Ideal para**: Empresários que querem operação pronta
+
+**Vantagens**:
+- Início imediato de operação
+- Equipe e contratos inclusos
+- Proteção total contra sucessão
+
+**Riscos**:
+- Maior capital inicial
+- Complexidade de integração
+- Possíveis passivos ocultos
+
+### 2. Aquisição de ativos isolados
+
+**Ideal para**: Empresários que querem ativos específicos
+
+**Vantagens**:
+- Menor investimento
+- Escolha seletiva
+- Menor risco operacional
+
+**Riscos**:
+- Necessidade de estruturar operação
+- Pode não haver proteção contra sucessão
+- Competição por ativos específicos
+
+### 3. Participação em plano de RJ
+
+**Ideal para**: Investidores estratégicos
+
+**Vantagens**:
+- Negociação direta com credores
+- Possibilidade de aquisição do controle
+- Condições personalizadas
+
+**Riscos**:
+- Processo longo e complexo
+- Incerteza sobre aprovação do plano
+- Relacionamento com credores
+
+---
+
+## Casos reais de sucesso
+
+### Caso 1: Indústria alimentícia
+
+**Situação**: Fábrica de massas em RJ, 3 unidades fabris
+
+**Aquisição**: UPI de 1 unidade por R$ 12 milhões (avaliação R$ 35 milhões)
+
+**Resultado**:
+- Desconto de 66%
+- Zero passivos trabalhistas (180 funcionários mantidos)
+- Retorno operacional em 60 dias
+- ROI de 40% no primeiro ano
+
+### Caso 2: Rede de varejo
+
+**Situação**: Rede de lojas em falência, 45 pontos comerciais
+
+**Aquisição**: 12 pontos em shopping centers por R$ 8 milhões
+
+**Resultado**:
+- Desconto de 55% sobre luvas de mercado
+- Contratos de locação transferidos
+- Expansão imediata de rede própria
+- Payback em 18 meses
+
+### Caso 3: Indústria metalúrgica
+
+**Situação**: Empresa de autopeças em RJ
+
+**Aquisição**: Linha de produção CNC por R$ 2,5 milhões (novo: R$ 7 milhões)
+
+**Resultado**:
+- Desconto de 64%
+- Modernização do parque fabril
+- Aumento de 30% na capacidade produtiva
+- Eliminação de terceirização
+
+---
+
+## Riscos e como mitigá-los
+
+### Riscos trabalhistas
+
+| Cenário | Risco | Mitigação |
+|---------|-------|-----------|
+| Aquisição como UPI | Nulo | Garantia legal |
+| Aquisição de ativo isolado | Médio | Cláusula de indenização |
+| Aquisição de controle | Alto | Auditoria trabalhista prévia |
+
+### Riscos ambientais
+
+- **Contaminação de solo**: Laudo ambiental prévio obrigatório
+- **Licenças vencidas**: Verificar viabilidade de renovação
+- **Multas pendentes**: Confirmar se estão no plano de RJ
+
+### Riscos documentais
+
+- **Ativos penhorados por terceiros**: Verificar certidões
+- **Disputas de propriedade**: Analisar ações em curso
+- **Irregularidades registrais**: Exigir regularização prévia
+
+---
+
+## FAQ: Perguntas frequentes
+
+### 1. Comprar ativo de empresa em RJ é seguro?
+
+**Sim**, desde que a aquisição seja feita corretamente como UPI, com autorização judicial e através do processo legal. A própria lei garante a proteção contra sucessão.
+
+### 2. Posso financiar a aquisição?
+
+**Depende**. Bancos geralmente não financiam ativos de RJ diretamente, mas é possível usar linhas de crédito corporativo ou capital de giro após a aquisição.
+
+### 3. Quanto tempo leva o processo?
+
+**Variável**. Desde a identificação do ativo até a imissão na posse, pode levar de 60 a 180 dias, dependendo da complexidade.
+
+### 4. Posso adquirir ativos de empresa do meu setor?
+
+**Sim**, mas verifique questões concorrenciais (CADE) se a aquisição representar concentração de mercado relevante.
+
+### 5. E se a RJ for convertida em falência?
+
+O processo de alienação continua sob supervisão do juízo falimentar, geralmente com maior urgência para liquidação.
+
+---
+
+## Conclusão: oportunidade estratégica para expansão
+
+Ativos de recuperação judicial representam **oportunidade única** para empresários que:
+- Buscam expansão com desconto significativo
+- Querem modernizar operações com menor CAPEX
+- Têm capacidade de absorver e integrar operações
+- Estão dispostos a navegar a complexidade do processo
+
+Na LFCOM, oferecemos **assessoria completa** para aquisição de ativos em RJ, desde a identificação de oportunidades até a imissão na posse, com toda a segurança jurídica que grandes operações exigem.
+
+---
+
+*Quer saber mais sobre oportunidades em recuperação judicial no seu setor? Agende uma consulta estratégica.*
+    \`,
+    date: "2026-02-18",
+    readingMinutes: 16,
+    tags: ["Recuperação Judicial", "Falência", "Empresários", "UPI", "Ativos Industriais", "Due Diligence"],
+    coverImage: leilaoRecuperacaoJudicial
+  },
+  {
+    id: "36",
+    title: "Como Comprar Lote ou Terreno em Leilão: Due Diligence Específica",
+    slug: "como-comprar-lote-terreno-leilao",
+    excerpt: "Guia completo para aquisição de terrenos e lotes em leilão: análise de zoneamento, topografia, viabilidade de incorporação e estratégias de valorização.",
+    content: \`
+# Como Comprar Lote ou Terreno em Leilão: Due Diligence Específica
+
+A aquisição de terrenos e lotes em leilão exige análise técnica diferenciada dos imóveis construídos. Este guia apresenta a due diligence específica para este tipo de ativo, essencial para investidores e incorporadores.
+
+## Por que terrenos em leilão?
+
+### Vantagens estratégicas
+
+| Aspecto | Terreno em leilão | Terreno de mercado |
+|---------|-------------------|-------------------|
+| Preço médio | 30-50% menor | Valor de mercado |
+| Negociação | Limitada | Ampla |
+| Documentação | Verificada judicialmente | Responsabilidade do comprador |
+| Timing | Oportunístico | Planejado |
+| Concorrência | Menor (público especializado) | Maior |
+
+### Perfis de compradores
+
+1. **Incorporadores**: Aquisição para desenvolvimento imobiliário
+2. **Investidores**: Valorização de longo prazo (land banking)
+3. **Construtores**: Terrenos para projetos próprios
+4. **Empresários**: Expansão de operações industriais
+
+---
+
+## Due diligence específica para terrenos
+
+### Camada 1: Análise urbanística
+
+#### Zoneamento e uso do solo
+
+| Tipo de zona | Usos permitidos | Índices típicos |
+|--------------|-----------------|-----------------|
+| ZR (Residencial) | Casas, prédios | CA 1,0-4,0 |
+| ZM (Mista) | Residencial + comercial | CA 2,0-6,0 |
+| ZC (Comercial) | Comércio, serviços | CA 4,0-8,0 |
+| ZI (Industrial) | Indústrias, galpões | CA 1,0-2,0 |
+| ZEIS | Habitação popular | Especial |
+
+#### Checklist urbanístico
+
+- [ ] Consultar Plano Diretor Municipal
+- [ ] Verificar Coeficiente de Aproveitamento (CA)
+- [ ] Confirmar Taxa de Ocupação (TO)
+- [ ] Analisar gabarito máximo permitido
+- [ ] Verificar recuos obrigatórios
+- [ ] Confirmar se há projeto de desapropriação na região
+- [ ] Checar Operações Urbanas Consorciadas
+
+### Camada 2: Análise física
+
+#### Topografia e solo
+
+| Aspecto | Impacto | Verificação |
+|---------|---------|-------------|
+| Declividade | Custo de terraplenagem | Levantamento planialtimétrico |
+| Nível do lençol freático | Fundações, drenagem | Sondagem SPT |
+| Tipo de solo | Fundação, contenção | Laudo geotécnico |
+| Vegetação | Licenciamento ambiental | Vistoria presencial |
+| Nascentes/cursos d'água | APP, restrições | Consulta IBAMA/órgão estadual |
+
+#### Checklist físico
+
+- [ ] Solicitar levantamento topográfico
+- [ ] Verificar existência de rochas (custo de escavação)
+- [ ] Analisar vizinhança e confrontantes
+- [ ] Confirmar medidas reais vs. escritura
+- [ ] Verificar se há ocupação irregular
+- [ ] Identificar servidões de passagem
+
+### Camada 3: Análise documental
+
+#### Documentos essenciais
+
+- [ ] Matrícula atualizada (30 dias)
+- [ ] Certidão de ônus reais
+- [ ] Certidão negativa de débitos municipais (IPTU)
+- [ ] Certidão do INCRA (se rural)
+- [ ] CCIR e ITR (se rural)
+- [ ] Certidão de alinhamento
+- [ ] Certidão de zoneamento
+- [ ] Histórico de proprietários (vintenária)
+
+#### Riscos documentais específicos
+
+| Risco | Probabilidade | Mitigação |
+|-------|---------------|-----------|
+| Área divergente da matrícula | Alta | Levantamento topográfico |
+| Invasão de confrontantes | Média | Georreferenciamento |
+| Usucapião de terceiros | Baixa | Verificar ocupação |
+| Restrições ambientais | Média | Consulta órgãos ambientais |
+
+### Camada 4: Análise de viabilidade
+
+#### Para incorporação residencial
+
+| Indicador | Mínimo recomendado |
+|-----------|--------------------|
+| VGV potencial | 3x o valor do terreno |
+| Margem de incorporação | 15% sobre VGV |
+| Prazo de aprovação | Até 12 meses |
+| Demanda na região | Comprovada |
+
+#### Para galpão/industrial
+
+| Indicador | Mínimo recomendado |
+|-----------|--------------------|
+| Custo total/m² | Abaixo do mercado |
+| Acessibilidade logística | Rodovia próxima |
+| Infraestrutura | Água, luz, gás |
+| Zoneamento | ZI ou ZM |
+
+---
+
+## Riscos específicos de terrenos
+
+### 1. Áreas de Preservação Permanente (APP)
+
+| Elemento | Faixa não edificável |
+|----------|---------------------|
+| Rios até 10m de largura | 30 metros de cada lado |
+| Rios de 10-50m | 50 metros |
+| Rios de 50-200m | 100 metros |
+| Lagos urbanos | 30 metros |
+| Topos de morro | Terço superior |
+| Encostas > 45° | Toda a área |
+
+### 2. Contaminação de solo
+
+Terrenos de antigas industrias, postos de gasolina ou depósitos podem ter **passivo ambiental**:
+- Custo de remediação: R$ 500 a R$ 5.000/m²
+- Prazo: 6 meses a 3 anos
+- Obrigatório antes de qualquer uso
+
+### 3. Regularização fundiária
+
+Terrenos com origem irregular podem exigir:
+- Ação de usucapião (2-5 anos)
+- Regularização via REURB
+- Retificação de área
+
+---
+
+## Estratégias de valorização
+
+### 1. Land banking (valorização passiva)
+
+- Aquisição em regiões de expansão urbana
+- Horizonte: 5-10 anos
+- Retorno esperado: 200-500%
+- Risco: Mudanças no plano diretor
+
+### 2. Desenvolvimento imobiliário
+
+- Incorporação residencial ou comercial
+- Horizonte: 2-4 anos
+- Retorno esperado: 20-40% sobre custo
+- Risco: Aprovação de projeto, comercialização
+
+### 3. Parcelamento de solo
+
+- Loteamento ou condomínio
+- Horizonte: 2-3 anos
+- Retorno esperado: 100-200%
+- Risco: Licenciamento, infraestrutura
+
+### 4. Built-to-suit industrial
+
+- Construção sob encomenda para locatário
+- Horizonte: 1-2 anos
+- Retorno esperado: 10-12% a.a. (locação)
+- Risco: Encontrar locatário
+
+---
+
+## Cálculo de viabilidade
+
+### Fórmula básica de incorporação
+
+**VGV Potencial**
+= Área do terreno × CA × Área vendável/m² × Preço/m²
+
+**Exemplo**:
+- Terreno: 1.000 m²
+- CA: 4,0
+- Área vendável: 80% da área construída
+- Preço de venda: R$ 8.000/m²
+
+VGV = 1.000 × 4,0 × 0,80 × 8.000 = **R$ 25.600.000**
+
+**Custo máximo do terreno** (15% do VGV):
+25.600.000 × 0,15 = **R$ 3.840.000**
+
+---
+
+## FAQ: Perguntas frequentes
+
+### 1. Posso financiar terreno de leilão?
+
+**Dificilmente**. Bancos raramente financiam terrenos nus. Alternativas: consórcio contemplado, capital próprio ou linha de crédito corporativo.
+
+### 2. Terreno ocupado pode ser arrematado?
+
+**Sim**, mas considere custos de desocupação (R$ 30-100 mil em média).
+
+### 3. Como verificar se o terreno é APP?
+
+Consulte o órgão ambiental municipal/estadual e solicite **Consulta de Viabilidade Ambiental**.
+
+### 4. Terreno rural tem regras diferentes?
+
+**Sim**. Exige CCIR, ITR, georreferenciamento INCRA e pode ter restrições de tamanho mínimo (módulo fiscal).
+
+### 5. Vale a pena terreno com topografia irregular?
+
+**Depende**. Descontos de 50%+ podem compensar terraplenagem, mas faça orçamento prévio.
+
+---
+
+## Conclusão: oportunidade para quem domina os riscos
+
+Terrenos em leilão oferecem **descontos significativos**, mas exigem análise técnica especializada. Investidores e incorporadores bem assessorados podem encontrar oportunidades excepcionais de valorização e desenvolvimento.
+
+Na LFCOM, oferecemos **análise completa de viabilidade** para terrenos em leilão, incluindo estudos urbanísticos, ambientais e econômico-financeiros.
+
+---
+
+*Interessado em terrenos para incorporação ou investimento? Consulte nossa equipe especializada.*
+    \`,
+    date: "2026-02-20",
+    readingMinutes: 14,
+    tags: ["Terreno", "Lote", "Zoneamento", "Incorporação", "Due Diligence", "Investimento"],
+    coverImage: leilaoLoteTerreno
+  },
+  {
+    id: "37",
+    title: "Consórcio Contemplado para Leilão: Funciona? Vale a Pena?",
+    slug: "consorcio-contemplado-leilao-vale-pena",
+    excerpt: "Análise completa sobre uso de carta de consórcio contemplado para arrematação: como funciona, custos reais, ágio e comparativo com outras formas de pagamento.",
+    content: \`
+# Consórcio Contemplado para Leilão: Funciona? Vale a Pena?
+
+A carta de consórcio contemplado é frequentemente citada como alternativa para participar de leilões sem capital próprio. Mas funciona na prática? Este guia analisa vantagens, custos e viabilidade real desta estratégia.
+
+## Como funciona o consórcio para leilão
+
+### Conceito básico
+
+O consórcio é uma modalidade de compra programada onde participantes contribuem mensalmente para um fundo comum, sendo contemplados por sorteio ou lance para receber uma **carta de crédito**.
+
+### Carta contemplada para leilão
+
+Uma vez contemplado, o consorciado pode utilizar a carta de crédito para:
+- Adquirir imóvel em leilão
+- Pagar lance de arrematação
+- Quitar despesas relacionadas (ITBI, cartório)
+
+### Requisitos para uso em leilão
+
+| Requisito | Descrição |
+|-----------|-----------|
+| Contemplação | Carta deve estar liberada |
+| Análise de crédito | Aprovação pela administradora |
+| Garantia | Alienação fiduciária do imóvel |
+| Tipo de imóvel | Residencial ou comercial |
+| Valor | Dentro do crédito disponível |
+| Vendedor | Deve aceitar carta de consórcio |
+
+---
+
+## Vantagens do consórcio
+
+### 1. Sem entrada obrigatória
+
+Diferente do financiamento (20% de entrada), o consórcio pode cobrir **100% do valor** do imóvel.
+
+### 2. Sem juros (apenas taxa de administração)
+
+| Modalidade | Custo financeiro total |
+|------------|----------------------|
+| Financiamento 420 meses | 150-200% do valor |
+| Consórcio 200 meses | 15-25% do valor |
+
+### 3. Planejamento financeiro
+
+Parcelas fixas e previsíveis durante todo o período.
+
+### 4. Diversidade de créditos
+
+Cartas disponíveis de R$ 100 mil a R$ 5 milhões.
+
+---
+
+## Desvantagens e limitações
+
+### 1. Aceitação limitada
+
+**Nem todo leilão aceita consórcio**. Você precisa verificar:
+
+| Tipo de leilão | Aceita consórcio? |
+|----------------|-------------------|
+| Caixa Econômica | Sim (próprios) |
+| Banco do Brasil | Parcialmente |
+| Bancos privados | Raramente |
+| Leilão judicial | Geralmente não |
+| Leilão extrajudicial | Depende do edital |
+
+### 2. Prazo de liberação
+
+A carta contemplada **não é instantânea**. Processo típico:
+
+| Etapa | Prazo |
+|-------|-------|
+| Análise de documentos | 5-10 dias |
+| Vistoria do imóvel | 10-15 dias |
+| Aprovação da administradora | 5-10 dias |
+| Liberação do crédito | 5-10 dias |
+| **Total** | **25-45 dias** |
+
+**Problema**: Muitos leilões exigem pagamento em 24-48 horas.
+
+### 3. Custo da carta contemplada
+
+Se você não quer esperar a contemplação por sorteio, pode:
+
+#### Opção A: Dar lance na própria carta
+
+Ofertar valor adicional para contemplação antecipada.
+- Lance médio para contemplação: 20-35% do crédito
+- Parcelas pagas não são devolvidas
+
+#### Opção B: Comprar carta contemplada de terceiro
+
+Adquirir de outro consorciado que desistiu ou quer vender.
+- Ágio médio: 15-30% sobre o crédito
+- Risco: Fraude, bloqueio da carta
+
+### 4. Alienação fiduciária
+
+O imóvel fica em nome da administradora até quitação total.
+- Não pode vender sem autorização
+- Não pode dar como garantia
+- Risco de perda em inadimplência
+
+---
+
+## Simulação de custos
+
+### Cenário: Arrematação de R$ 400.000
+
+#### Opção 1: Pagamento à vista
+
+| Item | Valor |
+|------|-------|
+| Lance no leilão | R$ 400.000 |
+| ITBI (3%) | R$ 12.000 |
+| Cartório | R$ 8.000 |
+| **Total** | **R$ 420.000** |
+
+#### Opção 2: Financiamento bancário (80%)
+
+| Item | Valor |
+|------|-------|
+| Entrada (20%) | R$ 80.000 |
+| Financiamento (R$ 320.000 em 360 meses, 10% a.a.) | R$ 1.012.000* |
+| ITBI + Cartório | R$ 20.000 |
+| **Total** | **R$ 1.112.000** |
+
+*Valor total pago ao longo do financiamento
+
+#### Opção 3: Consórcio contemplado
+
+| Item | Valor |
+|------|-------|
+| Carta de crédito | R$ 400.000 |
+| Ágio da carta (25%) | R$ 100.000 |
+| Parcelas restantes (150 × R$ 2.400) | R$ 360.000 |
+| Taxa administração (18%) | R$ 72.000 (incluída nas parcelas) |
+| ITBI + Cartório | R$ 20.000 |
+| **Total** | **R$ 480.000** |
+
+### Comparativo final
+
+| Opção | Custo total | Desembolso inicial |
+|-------|-------------|-------------------|
+| À vista | R$ 420.000 | R$ 420.000 |
+| Financiamento | R$ 1.112.000 | R$ 100.000 |
+| Consórcio | R$ 480.000 | R$ 100.000* |
+
+*Ágio para compra da carta contemplada
+
+---
+
+## Estratégias inteligentes
+
+### 1. Consórcio próprio (sem pressa)
+
+Se você tem horizonte de 2-3 anos:
+- Entre em grupo novo
+- Pague parcelas normalmente
+- Use lance para antecipar contemplação
+- Quando contemplado, busque oportunidades
+
+**Custo**: Apenas taxa de administração (15-20%)
+
+### 2. Compra de carta com ágio controlado
+
+- Negocie ágio máximo de 15%
+- Verifique idoneidade do vendedor
+- Exija transferência formal na administradora
+- Confirme que a carta está liberada
+
+### 3. Consórcio para complementar
+
+Use consórcio para parte do valor + recursos próprios para o restante.
+
+**Exemplo**:
+- Imóvel: R$ 500.000
+- Carta contemplada: R$ 300.000
+- Capital próprio: R$ 200.000
+- Ágio: R$ 45.000 (15% sobre R$ 300.000)
+- **Total desembolsado imediato**: R$ 245.000
+
+---
+
+## Quando o consórcio NÃO vale a pena
+
+### ❌ Leilões judiciais
+
+Raramente aceitam consórcio. Exigem pagamento em 24h.
+
+### ❌ Oportunidades urgentes
+
+O prazo de 30-45 dias para liberação é incompatível.
+
+### ❌ Ágio superior a 25%
+
+Custo se aproxima do financiamento tradicional.
+
+### ❌ Imóveis com problemas documentais
+
+Administradora pode recusar o bem.
+
+### ❌ Revenda rápida (flipping)
+
+Alienação fiduciária impede venda antes da quitação.
+
+---
+
+## FAQ: Perguntas frequentes
+
+### 1. Posso usar consórcio em leilão da Caixa?
+
+**Sim**, mas apenas consórcio da própria Caixa e para imóveis elegíveis. Consórcios de outras administradoras geralmente não são aceitos.
+
+### 2. Quanto tempo demora a contemplação por sorteio?
+
+**Imprevisível**. Pode ser no primeiro mês ou no último. Estatisticamente, a maioria é contemplada entre 50-70% do prazo do grupo.
+
+### 3. Posso usar FGTS junto com consórcio?
+
+**Sim**, para amortização ou quitação de parcelas, desde que o imóvel atenda aos requisitos do FGTS.
+
+### 4. O que acontece se eu não conseguir arrematar?
+
+A carta continua válida para outras aquisições. Você não perde o crédito.
+
+### 5. Consórcio de banco e de administradora independente são iguais?
+
+**Não**. Consórcios de bancos (Caixa, BB, Itaú) geralmente têm mais aceitação em leilões dos próprios bancos.
+
+---
+
+## Conclusão: ferramenta útil, não mágica
+
+O consórcio contemplado pode ser uma **alternativa viável** para quem:
+- Não tem 20% de entrada para financiamento
+- Pode esperar 30-45 dias pela liberação
+- Encontra leilões que aceitam esta modalidade
+- Consegue ágio razoável (até 15-20%)
+
+Porém, **não substitui capital próprio** para oportunidades urgentes ou leilões judiciais.
+
+Na LFCOM, orientamos nossos clientes sobre a melhor forma de estruturar o capital para cada operação, considerando todas as alternativas disponíveis.
+
+---
+
+*Quer saber qual a melhor forma de financiar sua próxima arrematação? Consulte nossa equipe.*
+    `,
+    date: "2026-02-22",
+    readingMinutes: 13,
+    tags: ["Consórcio", "Financiamento", "Carta Contemplada", "Leilão", "Planejamento"],
+    coverImage: consorcioLeilao
+  },
+  {
+    id: "38",
+    title: "Seguro de Título para Arrematação: O Que É e Quando Contratar",
+    slug: "seguro-titulo-arrematacao-leilao",
+    excerpt: "Entenda como funciona o seguro de título para imóveis de leilão, cobertura oferecida, custo-benefício e quando faz sentido contratar esta proteção.",
+    content: "# Seguro de Título para Arrematação\n\nO seguro de título protege o comprador contra vícios ocultos na cadeia dominial do imóvel. Cobertura típica: falsificação de documentos, erros de registro, herdeiros desconhecidos, fraude contra credores. Prêmio único de 0,5-1% do valor do imóvel com cobertura vitalícia enquanto proprietário. Recomendado para leilões judiciais e imóveis com cadeia dominial complexa.\n\n## Quando Contratar\n\nRecomendado para:\n- Leilões judiciais complexos\n- Imóveis com cadeia dominial longa\n- Ativos de recuperação judicial\n\n## Custo-Benefício\n\nPrêmio único entre R$ 3.000 e R$ 15.000 para imóveis de R$ 400k a R$ 3M. Cobertura vitalícia.",
+    date: "2026-02-24",
+    readingMinutes: 12,
+    tags: ["Seguro", "Proteção", "Título", "Due Diligence"],
+    coverImage: seguroTituloArrematacao
+  },
+  {
+    id: "39",
+    title: "Leilão de Galpões e Imóveis Industriais: Guia para Empresários",
+    slug: "leilao-galpoes-imoveis-industriais",
+    excerpt: "Guia completo para aquisição de galpões logísticos e imóveis industriais em leilão: due diligence técnica, análise de cap rate e estratégias de CAPEX.",
+    content: "# Leilão de Galpões e Imóveis Industriais\n\nO mercado de imóveis industriais oferece descontos de 30-60% em leilões. Due diligence específica: análise estrutural, sistemas prediais (elétrico, hidráulico, incêndio), infraestrutura externa.\n\n## Análise de Viabilidade\n\nPara uso próprio, calcule economia sobre locação. Para renda, busque cap rate mínimo de 8%. Retrofit de galpão Classe C para A pode gerar ROI de 25-30%.\n\n## Classificação de Galpões\n\n- Classe AAA: pé-direito maior que 12m, sprinklers\n- Classe A: 10-12m, docas niveladas\n- Classe B: 8-10m, adaptável\n- Classe C: menor que 8m, especificação baixa",
+    date: "2026-02-26",
+    readingMinutes: 15,
+    tags: ["Galpões", "Industrial", "Logística", "CAPEX", "Empresários"],
+    coverImage: leilaoGalpoesIndustriais
+  },
+  {
+    id: "40",
+    title: "Custos Ocultos em Leilão de Imóveis: O Que Ninguém Te Conta",
+    slug: "custos-ocultos-leilao-imoveis",
+    excerpt: "Tabela completa de todos os custos envolvidos na arrematação: ITBI, cartório, reforma, desocupação, advogado e outras despesas frequentemente ignoradas.",
+    content: "# Custos Ocultos em Leilão de Imóveis\n\n## Custos Obrigatórios (8-9%)\n\n- Comissão leiloeiro: 5%\n- ITBI: 2-3%\n- Cartório: 1%\n\n## Custos Prováveis (5-8%)\n\n- IPTU atrasado\n- Condomínio atrasado\n- Advocacia\n\n## Custos Condicionais\n\n- Desocupação: R$ 15-100 mil\n- Reforma: R$ 300-1.500/m²\n\n## Regra de Ouro\n\nDesconto mínimo de 30% para imóveis simples, 45%+ para ocupados. Sempre calcule custo de capital pelo tempo de regularização.",
+    date: "2026-02-28",
+    readingMinutes: 14,
+    tags: ["Custos", "ITBI", "Condomínio", "Reforma", "Planejamento"],
+    coverImage: custosOcultosLeilao
+  },
+  {
+    id: "41",
+    title: "Primeiro Leilão: Guia Completo para Iniciantes com Capital Qualificado",
+    slug: "primeiro-leilao-guia-iniciantes",
+    excerpt: "Passo a passo para participar do seu primeiro leilão de imóveis: cadastro, análise de editais, estratégia de lance e erros a evitar.",
+    content: "# Primeiro Leilão: Guia para Iniciantes\n\n## Requisitos\n\n- Capital mínimo: R$ 200k\n- Horizonte: 12-36 meses\n\n## Fases\n\n1. Preparação e cadastros\n2. Acompanhe 10-20 leilões sem participar\n3. Seleção criteriosa (desconto maior que 30%, desocupado, documentação clara)\n\n## Erros Fatais\n\n- Não respeitar lance máximo\n- Ignorar custos totais\n- Não visitar região\n\n## Recomendação\n\nContrate assessoria no primeiro leilão para aprendizado seguro.",
+    date: "2026-03-02",
+    readingMinutes: 15,
+    tags: ["Iniciantes", "Guia", "Primeiro Leilão", "Investimento"],
+    coverImage: primeiroLeilaoIniciantes
+  },
+  {
+    id: "42",
+    title: "ROI em Leilão de Imóveis: Como Calcular Retorno Real do Investimento",
+    slug: "roi-leilao-imoveis-calculo-retorno",
+    excerpt: "Fórmulas de IRR, VPL e payback para leilões: como calcular o retorno real considerando todos os custos, tempo e risco.",
+    content: "# ROI em Leilão de Imóveis\n\n## Métricas Essenciais\n\n- ROI anualizado\n- TIR (Taxa Interna de Retorno)\n- VPL (Valor Presente Líquido)\n- Cap Rate\n- Payback\n\n## Realidade vs Expectativa\n\n40% de desconto pode virar ROI de 5% após custos.\n\n## Benchmarks\n\n- Flipping: TIR mínima 20% a.a.\n- Locação: Cap rate 8%+\n\nCompare sempre com CDI (12-13% em 2026). Ajuste retorno esperado pelo risco: -5% para ocupado, -5% para judicial complexo. Números não mentem - calcule antes de dar lance.",
+    date: "2026-03-04",
+    readingMinutes: 16,
+    tags: ["ROI", "TIR", "VPL", "Cap Rate", "Análise Financeira"],
+    coverImage: roiLeilaoImoveis
   }
 ];
 
