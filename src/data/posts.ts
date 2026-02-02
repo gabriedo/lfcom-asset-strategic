@@ -8,6 +8,7 @@ import calculoDescontoLeilao from "@/assets/insights/calculo-desconto-leilao.jpg
 import riscoJuridicoLeilao from "@/assets/insights/risco-juridico-leilao.jpg";
 import estrategiaLanceLeilao from "@/assets/insights/estrategia-lance-leilao.jpg";
 import imovelOcupadoLeilao from "@/assets/insights/imovel-ocupado-leilao.jpg";
+import certidoesArrematacao from "@/assets/insights/certidoes-arrematacao.jpg";
 export interface Post {
   id: string;
   title: string;
@@ -2202,6 +2203,370 @@ A diferença está na preparação. E preparação é o que separa investidor de
     readingMinutes: 13,
     tags: ["Imóvel Ocupado", "Avaliação", "Desocupação", "Risco", "Due Diligence"],
     coverImage: imovelOcupadoLeilao
+  },
+  {
+    id: "11",
+    title: "Certidões necessárias para arrematação: guia completo",
+    slug: "certidoes-necessarias-arrematacao",
+    excerpt: "As certidões são o raio-X do ativo. Aprenda quais são obrigatórias, onde obter, o que procurar em cada uma e como evitar surpresas após o lance.",
+    content: `
+# Certidões necessárias para arrematação: guia completo
+
+Em leilões, o desconto aparente pode evaporar quando surgem passivos ocultos, ônus não identificados ou vícios registrais que impedem a consolidação da propriedade. A única forma de evitar essas armadilhas é fazer o dever de casa antes do lance - e isso começa pelas certidões.
+
+Este guia apresenta o conjunto completo de certidões necessárias para arrematação, organizadas por função, com orientações práticas sobre onde obter, o que analisar e quais sinais de alerta devem interromper a operação.
+
+## Por que certidões são a base da diligência
+
+Certidões são documentos oficiais que atestam a situação jurídica, fiscal e registral de pessoas e bens. Em operações de leilão, elas cumprem três funções críticas:
+
+**Revelar ônus e gravames**: Penhoras, hipotecas, alienações fiduciárias, usufrutos, servidões e outros direitos de terceiros que podem afetar o ativo.
+
+**Identificar passivos**: Débitos tributários, trabalhistas, cíveis e ambientais que podem se transferir ao arrematante ou gerar execuções futuras.
+
+**Validar a cadeia dominial**: Confirmar que o vendedor (ou o processo) tem legitimidade para alienar e que não há disputas sobre a propriedade.
+
+Sem certidões atualizadas, você está comprando no escuro.
+
+## Certidões do imóvel
+
+### 1. Certidão de inteiro teor da matrícula
+
+**O que é**: Cópia completa da matrícula do imóvel no Cartório de Registro de Imóveis, contendo todo o histórico de transmissões, ônus e averbações.
+
+**Onde obter**: Cartório de Registro de Imóveis da circunscrição do bem.
+
+**Custo médio**: R$ 50 a R$ 150.
+
+**Prazo de validade**: 30 dias (para fins de diligência, obtenha a mais recente possível).
+
+**O que analisar**:
+- Cadeia de transmissões dos últimos 20 anos
+- Ônus ativos (hipotecas, penhoras, alienações fiduciárias)
+- Averbações de construção, desmembramento, unificação
+- Cláusulas restritivas (inalienabilidade, usufruto, direito de superfície)
+- Ações reais ou pessoais reipersecutórias averbadas
+
+**Sinais de alerta**:
+- Penhoras ou arrestos não relacionados ao processo do leilão
+- Divergência entre área registrada e área real
+- Ausência de averbação de construção existente
+- Proprietário diferente do executado
+
+### 2. Certidão de ônus reais
+
+**O que é**: Documento que lista especificamente os ônus e gravames incidentes sobre o imóvel.
+
+**Onde obter**: Cartório de Registro de Imóveis.
+
+**Custo médio**: R$ 30 a R$ 80.
+
+**O que analisar**:
+- Todos os ônus listados e sua natureza
+- Data de constituição de cada gravame
+- Credores beneficiários
+
+**Sinais de alerta**:
+- Múltiplas penhoras de diferentes credores
+- Hipoteca de valor superior ao do imóvel
+- Ônus recentes não mencionados no edital
+
+### 3. Certidão negativa de débitos de IPTU
+
+**O que é**: Atesta a situação fiscal do imóvel perante o município quanto ao Imposto Predial e Territorial Urbano.
+
+**Onde obter**: Prefeitura Municipal (Secretaria de Finanças) ou portal online.
+
+**Custo médio**: Gratuita a R$ 50.
+
+**O que analisar**:
+- Existência de débitos em aberto
+- Valor total devido (principal, multa, juros)
+- Execuções fiscais em andamento
+
+**Importante**: Débitos de IPTU acompanham o imóvel (obrigação propter rem). O arrematante pode ser responsável, dependendo do tipo de leilão e das condições do edital.
+
+### 4. Certidão de situação fiscal e enfitêutica (quando aplicável)
+
+**O que é**: Para imóveis em terreno de marinha, foreiro ou enfitêutico, atesta a situação junto ao senhorio direto (União, estados, municípios ou particulares).
+
+**Onde obter**: SPU (Secretaria de Patrimônio da União) para terrenos de marinha; cartório ou órgão competente para outras enfiteuses.
+
+**Custo médio**: Variável.
+
+**O que analisar**:
+- Valor do laudêmio devido na transmissão
+- Foro ou taxa de ocupação em atraso
+- Regularidade cadastral
+
+### 5. Certidão negativa de débitos condominiais
+
+**O que é**: Atesta a situação do imóvel perante o condomínio (para unidades em edificações).
+
+**Onde obter**: Administradora do condomínio ou síndico.
+
+**Custo médio**: Gratuita a R$ 100.
+
+**O que analisar**:
+- Débitos de cotas condominiais
+- Multas e juros
+- Ações de cobrança em curso
+
+**Importante**: Débitos condominiais também são propter rem e podem ser cobrados do arrematante.
+
+## Certidões do executado/vendedor
+
+### 6. Certidões de distribuidores cíveis
+
+**O que é**: Informa a existência de ações cíveis em que o executado é parte.
+
+**Onde obter**: 
+- Justiça Estadual: Fórum da comarca do domicílio e da situação do bem
+- Justiça Federal: Seção Judiciária correspondente
+
+**Custo médio**: R$ 20 a R$ 60 por certidão.
+
+**O que analisar**:
+- Ações que possam afetar o patrimônio (execuções, cobranças, indenizações)
+- Ações reais sobre o imóvel específico
+- Recuperação judicial ou falência
+
+**Sinais de alerta**:
+- Múltiplas execuções de alto valor
+- Ações de nulidade ou anulação de atos
+- Processos de inventário ou divórcio que afetem o bem
+
+### 7. Certidões de execuções fiscais
+
+**O que é**: Informa execuções fiscais federais, estaduais e municipais contra o executado.
+
+**Onde obter**:
+- Federal: Procuradoria-Geral da Fazenda Nacional (PGFN)
+- Estadual: Procuradoria do Estado
+- Municipal: Procuradoria do Município
+
+**Custo médio**: Gratuita a R$ 50.
+
+**O que analisar**:
+- Valor total das execuções
+- Bens penhorados
+- Risco de redirecionamento para o imóvel
+
+### 8. Certidão negativa de débitos trabalhistas (CNDT)
+
+**O que é**: Atesta a inexistência de débitos trabalhistas definitivos em nome do executado.
+
+**Onde obter**: Portal do TST (gratuita e online).
+
+**Custo médio**: Gratuita.
+
+**O que analisar**:
+- Existência de débitos em aberto
+- Valor e quantidade de processos
+
+**Sinais de alerta**:
+- Débitos trabalhistas de grande monta podem gerar penhoras sobre o imóvel
+
+### 9. Certidão de protesto
+
+**O que é**: Informa títulos protestados em nome do executado.
+
+**Onde obter**: Cartórios de Protesto (Central de Protesto, quando disponível).
+
+**Custo médio**: R$ 20 a R$ 50 por cartório.
+
+**O que analisar**:
+- Quantidade e valor dos protestos
+- Perfil de inadimplência
+
+### 10. Certidão de interdição e tutela
+
+**O que é**: Informa se o executado está interditado ou sob tutela/curatela.
+
+**Onde obter**: Cartório de Registro Civil das Pessoas Naturais e Vara de Família.
+
+**Custo médio**: R$ 20 a R$ 50.
+
+**Importância**: Incapacidade civil do executado pode afetar a validade de atos processuais.
+
+## Certidões específicas para pessoa jurídica
+
+### 11. Certidão simplificada da Junta Comercial
+
+**O que é**: Confirma a existência, situação cadastral e representação legal da empresa.
+
+**Onde obter**: Junta Comercial do estado de registro.
+
+**Custo médio**: R$ 20 a R$ 50.
+
+**O que analisar**:
+- Situação ativa ou inativa
+- Representantes legais atuais
+- Alterações societárias recentes
+
+### 12. Certidão negativa de falência e recuperação judicial
+
+**O que é**: Informa se há pedido ou decretação de falência ou recuperação judicial.
+
+**Onde obter**: Distribuidores judiciais cíveis (varas empresariais).
+
+**Custo médio**: R$ 30 a R$ 60.
+
+**Sinais de alerta**:
+- Recuperação judicial pode afetar a alienação de ativos
+- Falência tem regras específicas de arrematação
+
+### 13. Certidão de regularidade do FGTS (CRF)
+
+**O que é**: Atesta regularidade de recolhimentos do FGTS.
+
+**Onde obter**: Portal da Caixa Econômica Federal (gratuita).
+
+**O que analisar**:
+- Regularidade dos recolhimentos
+- Pode indicar passivos trabalhistas ocultos
+
+### 14. Certidão negativa de débitos federais (CND)
+
+**O que é**: Certidão conjunta da Receita Federal e PGFN sobre tributos federais e dívida ativa.
+
+**Onde obter**: Portal da Receita Federal (gratuita).
+
+**O que analisar**:
+- Débitos tributários federais
+- Inscrições em dívida ativa
+
+## Certidões ambientais (quando aplicável)
+
+### 15. Certidão de averbação de reserva legal
+
+**O que é**: Para imóveis rurais, confirma a averbação da reserva legal na matrícula.
+
+**Onde obter**: Cartório de Registro de Imóveis.
+
+**Importância**: Ausência pode gerar obrigações de regularização.
+
+### 16. Certidão do CAR (Cadastro Ambiental Rural)
+
+**O que é**: Confirma inscrição do imóvel rural no CAR.
+
+**Onde obter**: Sistema Nacional de Cadastro Ambiental Rural (SICAR).
+
+**Custo médio**: Gratuita.
+
+### 17. Certidão de passivo ambiental
+
+**O que é**: Informa autuações, multas e TACs (Termos de Ajustamento de Conduta) ambientais.
+
+**Onde obter**: IBAMA (federal), órgão ambiental estadual e municipal.
+
+**Sinais de alerta**:
+- Áreas contaminadas
+- Obrigações de recuperação
+- Multas não pagas
+
+## Matriz de certidões por tipo de operação
+
+| Certidão | Imóvel Urbano | Imóvel Rural | PJ Executada |
+|----------|---------------|--------------|--------------|
+| Inteiro teor da matrícula | ✓ | ✓ | ✓ |
+| Ônus reais | ✓ | ✓ | ✓ |
+| IPTU | ✓ | - | ✓ |
+| ITR | - | ✓ | ✓ |
+| Débitos condominiais | ✓ (se aplicável) | - | ✓ |
+| Distribuidores cíveis | ✓ | ✓ | ✓ |
+| Execuções fiscais | ✓ | ✓ | ✓ |
+| CNDT | ✓ | ✓ | ✓ |
+| Protestos | ✓ | ✓ | ✓ |
+| Junta Comercial | - | - | ✓ |
+| Falência/RJ | - | - | ✓ |
+| CAR | - | ✓ | ✓ |
+| Passivo ambiental | Recomendado | ✓ | ✓ |
+
+## Cronograma e custos típicos
+
+### Prazo para obtenção
+
+| Tipo | Prazo médio |
+|------|-------------|
+| Certidões online (TST, Receita) | Imediato |
+| Certidões de cartório | 1-5 dias úteis |
+| Certidões de distribuidores | 2-7 dias úteis |
+| Certidões ambientais | 5-15 dias úteis |
+
+**Recomendação**: Inicie a obtenção com pelo menos 15 dias de antecedência do leilão.
+
+### Custo total estimado
+
+| Perfil de operação | Custo aproximado |
+|-------------------|------------------|
+| Imóvel urbano simples | R$ 300 a R$ 600 |
+| Imóvel urbano complexo | R$ 600 a R$ 1.200 |
+| Imóvel rural | R$ 500 a R$ 1.500 |
+| Empresa executada | R$ 800 a R$ 2.000 |
+
+## Sinais de alerta que devem interromper a operação
+
+Algumas situações reveladas nas certidões exigem cautela extrema ou abandono da operação:
+
+**Interrompa imediatamente se**:
+- Proprietário registrado difere do executado sem explicação processual
+- Há ação de nulidade ou anulação do leilão anterior
+- Penhoras de múltiplos credores com valores superiores ao do imóvel
+- Passivo ambiental de grande monta sem provisão
+- Empresa em recuperação judicial com ativo essencial
+
+**Prossiga com cautela se**:
+- Débitos de IPTU/condomínio de valor moderado (precifique no DT)
+- Pequenas divergências de área (verifique viabilidade de retificação)
+- Averbações pendentes de construção (estime custo de regularização)
+- Penhoras que serão canceladas com a arrematação (confirme no edital)
+
+## Checklist de certidões para arrematação
+
+Antes de dar lance, confirme:
+
+- [ ] Inteiro teor da matrícula atualizado (máximo 30 dias)
+- [ ] Ônus reais identificados e compatíveis com edital
+- [ ] IPTU/ITR verificado e débitos precificados
+- [ ] Débitos condominiais levantados (se aplicável)
+- [ ] Certidões de distribuidores cíveis (estadual e federal)
+- [ ] Execuções fiscais mapeadas
+- [ ] CNDT do executado verificada
+- [ ] Protestos consultados
+- [ ] Situação societária confirmada (se PJ)
+- [ ] Certidões ambientais obtidas (se aplicável)
+- [ ] Todas as certidões dentro da validade
+- [ ] Sinais de alerta analisados e precificados
+
+## O papel das certidões no cálculo do teto de lance
+
+Certidões não são apenas documentos de verificação - elas alimentam diretamente o cálculo do desembolso total (DT).
+
+**Débitos propter rem** (IPTU, condomínio, ITR) entram como custo certo.
+
+**Ônus a cancelar** podem gerar custos de petição e prazo.
+
+**Passivos identificados** exigem provisão ou ajuste de margem.
+
+**Riscos revelados** podem exigir provisão adicional ou abandono.
+
+A regra é simples: tudo que a certidão revela deve virar número no seu modelo financeiro.
+
+## Conclusão: certidões são investimento, não burocracia
+
+O custo de obter todas as certidões necessárias raramente passa de R$ 2.000 - um valor irrelevante frente ao ticket de operações de leilão.
+
+O custo de não obter pode ser catastrófico: passivos ocultos, impossibilidade de registro, anos de litígio, perda total do investimento.
+
+Para quem trata leilão como decisão de investimento, as certidões são a primeira linha de defesa. Elas transformam incerteza em informação, e informação em controle.
+
+Na LFCOM, estruturamos a diligência documental como parte essencial de cada operação, garantindo que nenhum lance seja dado sem visibilidade completa da situação jurídica, fiscal e registral do ativo.
+    `,
+    date: "2026-02-03",
+    readingMinutes: 14,
+    tags: ["Certidões", "Due Diligence", "Documentação", "Registro", "Diligência"],
+    coverImage: certidoesArrematacao
   }
 ];
 
