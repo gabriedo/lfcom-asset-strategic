@@ -14,6 +14,7 @@ import penhoraOnusImovel from "@/assets/insights/penhora-onus-imovel.jpg";
 import fraudeLeilaoOnline from "@/assets/insights/fraude-leilao-online.jpg";
 import comissaoLeiloeiro from "@/assets/insights/comissao-leiloeiro.jpg";
 import riscoEviccaoLeilao from "@/assets/insights/risco-eviccao-leilao.jpg";
+import prazoPagamentoArrematacao from "@/assets/insights/prazo-pagamento-arrematacao.jpg";
 export interface Post {
   id: string;
   title: string;
@@ -3821,6 +3822,246 @@ O financiamento não é vilão nem salvador. É ferramenta que, usada com inteli
     readingMinutes: 11,
     tags: ["Financiamento", "Arrematação", "Crédito", "Estratégia", "Investimento"],
     coverImage: financiamentoArrematacao
+  },
+  {
+    id: "17",
+    title: "Prazo para pagar arrematação em leilão: regras, prazos e consequências",
+    slug: "prazo-para-pagar-arrematacao-leilao",
+    excerpt: "Qual o prazo para pagar arrematação em leilão judicial e extrajudicial? Entenda as regras do CPC, consequências do atraso e como se preparar para cumprir os prazos.",
+    content: `
+# Prazo para pagar arrematação em leilão: regras, prazos e consequências
+
+Arrematar um bem em leilão é apenas o primeiro passo. O que vem depois — o pagamento — é onde muitos investidores cometem erros fatais. Entender os prazos de pagamento em leilão, as regras do Código de Processo Civil (CPC) e as consequências do descumprimento é fundamental para qualquer operação bem-sucedida.
+
+## O que diz a lei sobre prazo de pagamento em leilão
+
+O Código de Processo Civil (CPC) estabelece as regras gerais para leilões judiciais. Contudo, o edital de cada leilão pode definir condições específicas.
+
+### Regra geral do CPC (Art. 892)
+
+> "O preço do bem arrematado será pago de imediato pelo arrematante, por depósito judicial ou por meio eletrônico."
+
+O termo "imediato" gerou interpretações diversas. Na prática judicial consolidada:
+
+| Tipo de leilão | Prazo típico | Base legal |
+|----------------|--------------|------------|
+| Leilão judicial presencial | 24 horas | CPC + edital |
+| Leilão judicial eletrônico | 24 a 48 horas | CPC + edital |
+| Leilão extrajudicial | Conforme edital | Lei 9.514/97 |
+
+### Prazo de pagamento em leilão judicial
+
+Na maioria dos leilões judiciais, o arrematante deve:
+
+1. **Pagar o lance**: Em até 24 horas após o encerramento
+2. **Depositar a comissão do leiloeiro**: Junto com o lance ou conforme edital
+3. **Comprovar o pagamento**: Apresentar comprovante nos autos
+
+### Prazo de pagamento em leilão extrajudicial
+
+Em leilões extrajudiciais (alienação fiduciária, por exemplo), as regras são mais flexíveis:
+
+- Prazo definido exclusivamente pelo edital
+- Pode variar de 24 horas a 30 dias
+- Possibilidade de parcelamento (se previsto)
+
+## Formas de pagamento aceitas em leilão
+
+### Leilão judicial
+
+- **Depósito judicial**: TED/DOC para conta do juízo
+- **Guia de depósito**: Emitida pelo tribunal
+- **Pagamento eletrônico**: Sistemas como PJe, e-SAJ
+
+### Leilão extrajudicial
+
+- **Transferência bancária**: TED/PIX
+- **Boleto bancário**: Com prazo definido
+- **Financiamento**: Se aceito pelo edital
+- **Carta de crédito**: Consórcio ou similar
+
+## O que acontece se não pagar no prazo?
+
+O descumprimento do prazo de pagamento em leilão tem consequências graves.
+
+### Consequências imediatas
+
+#### 1. Perda do sinal ou caução
+
+Se foi exigido sinal ou caução para participar:
+- Valor é retido pelo leiloeiro
+- Geralmente entre 5% e 30% do lance
+- Não há devolução
+
+#### 2. Multa por desistência
+
+O CPC prevê multa para o arrematante remisso:
+
+> **Art. 897**: "O arrematante que não pagar o preço no prazo estabelecido, perderá, em benefício da execução, o sinal depositado, ficando também sujeito às demais sanções."
+
+### Consequências processuais
+
+#### 3. Novo leilão às suas custas
+
+- O bem volta a leilão
+- Diferença entre lances (se menor) é cobrada do arrematante
+- Custas do novo leilão também são imputadas
+
+#### 4. Inclusão em cadastro de devedores
+
+- Possível negativação
+- Restrição em futuros leilões
+- Execução judicial do débito
+
+### Exemplo prático de consequência
+
+**Cenário**: Arrematante vence leilão com lance de R$ 500.000, sinal de R$ 50.000, mas não paga no prazo.
+
+**Consequências**:
+- Perde sinal: R$ 50.000
+- Novo leilão arrecada R$ 420.000
+- Diferença cobrada: R$ 80.000
+- Custas do novo leilão: R$ 15.000
+- **Prejuízo total: R$ 145.000**
+
+## Prazos específicos por tipo de ativo
+
+### Imóveis em leilão judicial
+
+| Etapa | Prazo típico |
+|-------|--------------|
+| Pagamento do lance | 24-48 horas |
+| Pagamento da comissão | Junto com lance |
+| Pagamento de ITBI | 30 dias (varia por município) |
+| Registro da carta | 30 dias após expedição |
+
+### Veículos em leilão
+
+| Etapa | Prazo típico |
+|-------|--------------|
+| Pagamento do lance | Imediato a 24 horas |
+| Pagamento de taxas | 24-48 horas |
+| Transferência DETRAN | 30 dias |
+
+### Máquinas e equipamentos
+
+| Etapa | Prazo típico |
+|-------|--------------|
+| Pagamento do lance | 24-72 horas |
+| Retirada do bem | 5-30 dias |
+| Regularização fiscal | Conforme tipo |
+
+## Como se preparar para cumprir os prazos
+
+### Antes do leilão
+
+- [ ] Ler edital completo, especialmente cláusulas de pagamento
+- [ ] Verificar prazo exato (horas ou dias úteis/corridos)
+- [ ] Confirmar formas de pagamento aceitas
+- [ ] Preparar recursos financeiros disponíveis
+- [ ] Verificar limites de transferência bancária
+- [ ] Deixar TED/PIX pré-configurado
+
+### No dia do leilão
+
+- [ ] Confirmar horário de encerramento
+- [ ] Ter dados bancários do leiloeiro/tribunal em mãos
+- [ ] Manter contato com banco para liberação de valores altos
+- [ ] Considerar fuso horário para leilões de outros estados
+
+### Após arrematar
+
+- [ ] Efetuar pagamento imediatamente (não esperar prazo máximo)
+- [ ] Guardar todos os comprovantes
+- [ ] Protocolar comprovante nos autos (leilão judicial)
+- [ ] Confirmar recebimento com leiloeiro/tribunal
+
+## Parcelamento do pagamento em leilão
+
+### Quando é possível parcelar?
+
+O parcelamento só é possível quando **expressamente previsto no edital**.
+
+#### CPC Art. 895 - Parcelamento
+
+> "O interessado em adquirir o bem penhorado em prestações poderá apresentar proposta por valor não inferior ao da avaliação, oferecendo pelo menos 25% à vista e o restante parcelado em até 30 meses."
+
+**Importante**: Esta regra se aplica apenas quando o edital permite.
+
+### Estrutura típica de parcelamento
+
+| Componente | Percentual/Condição |
+|------------|---------------------|
+| Entrada mínima | 25% do lance |
+| Parcelas | Até 30x |
+| Correção | Geralmente IPCA + 1% a.m. |
+| Garantia | Alienação fiduciária |
+
+## Prazo de pagamento vs. prazo de imissão na posse
+
+Não confunda:
+
+| Conceito | O que é | Prazo típico |
+|----------|---------|--------------|
+| Prazo de pagamento | Tempo para pagar o lance | 24-48 horas |
+| Prazo de imissão | Tempo para entrar no imóvel | 60-180 dias |
+
+O pagamento é imediato; a posse pode demorar meses, especialmente se houver ocupantes.
+
+## Dúvidas frequentes sobre prazo de pagamento
+
+### O prazo conta em dias úteis ou corridos?
+
+Depende do edital. Na ausência de especificação, tribunais tendem a considerar dias úteis.
+
+### Posso pedir prorrogação do prazo?
+
+Em leilões judiciais, apenas por decisão do juiz e em casos excepcionais. Não conte com isso.
+
+### O que acontece em feriado ou fim de semana?
+
+Se o prazo vence em dia não útil, geralmente prorroga para o primeiro dia útil seguinte. Verifique o edital.
+
+### PIX conta como pagamento imediato?
+
+Sim, PIX é aceito e considerado pagamento imediato na maioria dos tribunais.
+
+## Estratégias para não perder prazos
+
+### 1. Pague antes do prazo máximo
+
+Não espere o último minuto. Problemas bancários, sistemas fora do ar e imprevistos acontecem.
+
+### 2. Mantenha liquidez imediata
+
+Tenha o valor do lance + comissão + margem de segurança em conta corrente antes do leilão.
+
+### 3. Comunique seu banco
+
+Para valores altos (acima de R$ 100.000), avise seu gerente antes para evitar bloqueios de segurança.
+
+### 4. Tenha conta em mais de um banco
+
+Redundância é proteção. Se um banco falhar, use outro.
+
+## Conclusão: prazo de pagamento não é negociável
+
+Em leilões, especialmente judiciais, o prazo de pagamento é sagrado. Não há segunda chance, não há desculpa aceita, não há flexibilidade.
+
+O arrematante que não cumpre o prazo:
+- Perde dinheiro (sinal, multas, diferenças)
+- Perde o bem
+- Pode ser executado judicialmente
+- Fica com restrições em futuros leilões
+
+A preparação financeira e operacional antes do leilão é tão importante quanto a análise do ativo. Na LFCOM, estruturamos cada operação considerando não apenas a oportunidade, mas toda a logística de execução — incluindo o cumprimento rigoroso dos prazos de pagamento.
+
+Leilão não é para amadores. E o prazo de pagamento é onde os amadores são eliminados.
+    `,
+    date: "2025-12-21",
+    readingMinutes: 12,
+    tags: ["Prazo", "Pagamento", "Arrematação", "CPC", "Leilão Judicial"],
+    coverImage: prazoPagamentoArrematacao
   }
 ];
 
