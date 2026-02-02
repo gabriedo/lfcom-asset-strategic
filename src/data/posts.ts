@@ -9,6 +9,8 @@ import riscoJuridicoLeilao from "@/assets/insights/risco-juridico-leilao.jpg";
 import estrategiaLanceLeilao from "@/assets/insights/estrategia-lance-leilao.jpg";
 import imovelOcupadoLeilao from "@/assets/insights/imovel-ocupado-leilao.jpg";
 import certidoesArrematacao from "@/assets/insights/certidoes-arrematacao.jpg";
+import penhoraOnusImovel from "@/assets/insights/penhora-onus-imovel.jpg";
+
 export interface Post {
   id: string;
   title: string;
@@ -2567,6 +2569,284 @@ Na LFCOM, estruturamos a diligência documental como parte essencial de cada ope
     readingMinutes: 14,
     tags: ["Certidões", "Due Diligence", "Documentação", "Registro", "Diligência"],
     coverImage: certidoesArrematacao
+  },
+  {
+    id: "12",
+    title: "Penhora e ônus do imóvel leiloado: o que você precisa saber",
+    slug: "penhora-onus-imovel-leiloado",
+    excerpt: "Nem todo ônus impede a compra, mas todo ônus ignorado pode custar caro. Entenda os tipos de gravames, quando são cancelados e quando acompanham o arrematante.",
+    content: `
+# Penhora e ônus do imóvel leiloado: o que você precisa saber
+
+Em leilões, o imóvel quase sempre vem "carregado". Penhoras, hipotecas, alienações fiduciárias, usufrutos, servidões - a lista de possíveis gravames é extensa. O investidor inexperiente vê isso como obstáculo. O investidor disciplinado vê como informação que precisa ser lida, interpretada e precificada.
+
+A questão não é se o imóvel tem ônus. É: quais ônus serão cancelados com a arrematação, quais permanecem, e qual é o custo real para regularizar a situação registral?
+
+Este guia apresenta os principais tipos de ônus encontrados em imóveis leiloados, suas implicações jurídicas e o caminho para transformar complexidade em controle.
+
+## O que é ônus real e por que importa
+
+Ônus real é qualquer direito de terceiro que recai sobre o imóvel e que, por estar registrado na matrícula, acompanha o bem independentemente de quem seja o proprietário. São direitos "reais" porque incidem sobre a coisa, não sobre a pessoa.
+
+**Por que isso importa em leilão?**
+
+Porque a arrematação não é mágica. Alguns ônus são cancelados automaticamente, outros exigem procedimento específico, e alguns simplesmente permanecem vinculados ao imóvel - e, portanto, passam a ser problema do arrematante.
+
+A regra de ouro: **nunca presuma que o ônus será cancelado. Verifique.**
+
+## Tipos de ônus e seu tratamento na arrematação
+
+### 1. Penhora judicial
+
+**O que é**: Constrição determinada por juiz em processo de execução, que vincula o bem ao pagamento de uma dívida.
+
+**Origem típica**: Execuções cíveis, trabalhistas, fiscais, alimentícias.
+
+**O que acontece na arrematação**:
+
+| Tipo de leilão | Tratamento |
+|----------------|------------|
+| Leilão judicial (mesmo processo) | Penhora extinta com a arrematação |
+| Leilão judicial (processo diferente) | Depende de sub-rogação no preço |
+| Leilão extrajudicial | Penhora NÃO é automaticamente cancelada |
+
+**Atenção**: Em leilões extrajudiciais (alienação fiduciária, por exemplo), penhoras de outros credores podem permanecer ativas. O arrematante pode precisar pagar ou litigar para obter o cancelamento.
+
+**Caminho para cancelamento**: Petição nos autos da execução demonstrando a arrematação, com pedido de sub-rogação no preço ou extinção por perda de objeto.
+
+### 2. Hipoteca
+
+**O que é**: Garantia real constituída pelo proprietário em favor de credor (geralmente banco), dando ao credor preferência sobre o bem em caso de inadimplemento.
+
+**Origem típica**: Financiamento imobiliário, garantia de empréstimo empresarial.
+
+**O que acontece na arrematação**:
+
+Em leilão judicial:
+- Se a hipoteca foi constituída antes da penhora, o credor hipotecário tem preferência no recebimento
+- Após a arrematação e pagamento, a hipoteca deve ser cancelada
+- O cancelamento depende de ordem judicial e averbação no cartório
+
+Em leilão extrajudicial (alienação fiduciária):
+- Hipoteca de grau inferior à alienação fiduciária é extinta com a consolidação
+- Hipoteca de grau superior pode sobreviver (raro, mas possível)
+
+**Caminho para cancelamento**: Alvará judicial ou termo de quitação do credor + requerimento ao cartório.
+
+### 3. Alienação fiduciária
+
+**O que é**: Modalidade de garantia em que o devedor transfere a propriedade resolúvel ao credor até quitação da dívida.
+
+**Origem típica**: Financiamento imobiliário (SFI/SFH), garantia de operações de crédito.
+
+**O que acontece na arrematação**:
+
+Se o leilão é da própria alienação fiduciária:
+- A arrematação consolida a propriedade plena no arrematante
+- A alienação fiduciária é extinta automaticamente
+
+Se o leilão é de outro processo (execução contra o fiduciante):
+- A alienação fiduciária NÃO é afetada
+- O arrematante assume a posição de fiduciante (deve continuar pagando ou quitar)
+- **Este é um dos erros mais caros em leilões**
+
+**Atenção crítica**: Nunca arremate imóvel com alienação fiduciária ativa em leilão judicial comum sem entender que você pode estar comprando apenas o direito de continuar pagando o financiamento.
+
+### 4. Usufruto
+
+**O que é**: Direito real de usar e fruir do bem (morar, alugar, colher frutos) sem ser proprietário.
+
+**Origem típica**: Planejamento sucessório, doação com reserva, sentença judicial.
+
+**O que acontece na arrematação**:
+
+- Usufruto constituído ANTES da penhora: **permanece ativo**
+- Usufruto constituído DEPOIS da penhora: pode ser cancelado como fraude à execução
+
+**Implicação prática**: Se há usufruto vitalício, você compra a nua-propriedade. Só terá uso pleno após a extinção do usufruto (geralmente com a morte do usufrutuário).
+
+**Caminho para lidar**: Precifique o usufruto no DT (desconto significativo) ou negocie renúncia com o usufrutuário.
+
+### 5. Servidão
+
+**O que é**: Direito real que impõe restrição ao uso do imóvel em benefício de outro imóvel ou de interesse público.
+
+**Tipos comuns**:
+- Servidão de passagem
+- Servidão de aqueduto
+- Servidão administrativa (linhas de transmissão, gasodutos)
+
+**O que acontece na arrematação**:
+
+- Servidões registradas: **permanecem ativas**
+- A arrematação não extingue servidões
+
+**Implicação prática**: Verifique se a servidão afeta o uso pretendido do imóvel. Servidões administrativas podem impedir construção em faixas significativas.
+
+### 6. Direito de superfície
+
+**O que é**: Direito real de construir ou plantar em terreno alheio, mantendo a propriedade do que for edificado/plantado.
+
+**O que acontece na arrematação**:
+
+- Direito de superfície constituído e registrado: **permanece ativo**
+- Arrematante adquire o terreno, mas não necessariamente a construção
+
+**Atenção**: Situação rara, mas quando ocorre pode significar que você está comprando só o terreno, não o prédio.
+
+### 7. Cláusulas restritivas
+
+**O que é**: Restrições impostas em doações ou testamentos (inalienabilidade, impenhorabilidade, incomunicabilidade).
+
+**O que acontece na arrematação**:
+
+- Cláusula de inalienabilidade: em tese impede a alienação, mas execuções por dívidas do próprio beneficiário podem afastá-la
+- Impenhorabilidade: pode ser relativizada em execuções alimentícias ou fiscais
+- Análise caso a caso é obrigatória
+
+**Risco**: Se a cláusula não foi corretamente afastada no processo, a arrematação pode ser anulada.
+
+### 8. Direito real de habitação
+
+**O que é**: Direito do cônjuge sobrevivente de permanecer no imóvel residencial do casal.
+
+**O que acontece na arrematação**:
+
+- Se constituído antes da penhora: **permanece ativo**
+- O arrematante adquire a propriedade, mas não pode desalojar o habitante
+
+**Implicação prática**: Imóvel com direito real de habitação ativo tem uso muito limitado até a extinção do direito.
+
+### 9. Promessa de compra e venda registrada
+
+**O que é**: Contrato de promessa de compra e venda averbado na matrícula, que dá ao promitente comprador direito real de aquisição.
+
+**O que acontece na arrematação**:
+
+- Promessa registrada ANTES da penhora: promitente comprador pode ter preferência ou direito de adjudicação
+- Depende de análise do caso e do edital
+
+**Risco**: O arrematante pode enfrentar disputa com o promitente comprador.
+
+## Matriz de ônus: o que é cancelado e o que permanece
+
+| Tipo de ônus | Leilão judicial (mesmo credor) | Leilão judicial (outro credor) | Leilão extrajudicial |
+|--------------|-------------------------------|-------------------------------|---------------------|
+| Penhora do processo | Extinta | Sub-rogação no preço | Não automático |
+| Outras penhoras | Sub-rogação | Sub-rogação | Permanecem |
+| Hipoteca | Extinta (com pagamento) | Preferência no preço | Depende da ordem |
+| Alienação fiduciária | N/A | PERMANECE | Extinta (se é o leilão) |
+| Usufruto anterior | Permanece | Permanece | Permanece |
+| Servidão | Permanece | Permanece | Permanece |
+| Direito de superfície | Permanece | Permanece | Permanece |
+
+## O edital como fonte de verdade (e suas limitações)
+
+O edital do leilão deve informar os ônus conhecidos e as condições de sub-rogação. Mas o edital tem limitações:
+
+**O que o edital costuma informar**:
+- Penhoras e gravames averbados na matrícula
+- Condições de pagamento e sub-rogação
+- Responsabilidade por débitos propter rem
+
+**O que o edital pode omitir ou errar**:
+- Ônus constituídos após a última atualização da matrícula
+- Interpretação incorreta sobre cancelamento de gravames
+- Passivos não registrados (trabalhistas, ambientais)
+
+**Regra**: O edital é ponto de partida, não ponto de chegada. A diligência do arrematante é insubstituível.
+
+## Caminho para cancelamento de ônus pós-arrematação
+
+### Para penhoras e hipotecas
+
+1. Obter carta de arrematação ou termo de quitação
+2. Peticionar nos autos das execuções solicitando cancelamento
+3. Obter decisão judicial determinando o cancelamento
+4. Averbar cancelamento na matrícula do imóvel
+
+**Prazo típico**: 2 a 6 meses
+**Custo típico**: R$ 2.000 a R$ 10.000 (custas, emolumentos, honorários)
+
+### Para alienação fiduciária (quando você é o credor/arrematante do leilão extrajudicial)
+
+1. Consolidação da propriedade já ocorreu antes do leilão
+2. Registro da arrematação transfere propriedade plena
+3. Cancelamento dos gravames anteriores depende de ordem judicial ou quitação
+
+### Para ônus que permanecem
+
+- **Usufruto**: aguardar extinção natural ou negociar renúncia
+- **Servidão**: conviver ou negociar extinção com beneficiário
+- **Direito de superfície**: negociar aquisição ou aguardar termo
+
+## Checklist de análise de ônus
+
+Antes de dar lance, verifique:
+
+- [ ] Matrícula atualizada obtida (máximo 30 dias)
+- [ ] Todos os ônus ativos identificados
+- [ ] Natureza de cada ônus classificada
+- [ ] Edital analisado quanto a sub-rogação e cancelamento
+- [ ] Comparação entre edital e matrícula realizada
+- [ ] Ônus que permanecem após arrematação mapeados
+- [ ] Custo de cancelamento/regularização estimado
+- [ ] Ônus precificados no DT (desembolso total)
+- [ ] Riscos de ônus não canceláveis avaliados
+- [ ] Decisão de prosseguir ou abandonar documentada
+
+## Quando o ônus deve impedir o lance
+
+Algumas situações são incompatíveis com operações de investimento disciplinado:
+
+**Não prossiga se**:
+- Alienação fiduciária ativa em leilão judicial (você herdaria a dívida)
+- Usufruto vitalício sem perspectiva de extinção próxima
+- Múltiplas penhoras de valores superiores ao preço de arrematação
+- Direito de superfície sobre a construção principal
+- Ônus não identificáveis ou matrícula com histórico confuso
+
+**Prossiga com cautela se**:
+- Penhoras que serão claramente sub-rogadas no preço
+- Hipoteca de credor identificado com saldo conhecido
+- Servidão que não afeta o uso pretendido
+- Ônus que podem ser precificados com margem de segurança
+
+## O custo oculto do ônus: tempo
+
+Além do custo financeiro de cancelamento, existe o custo de tempo:
+
+- Enquanto há ônus ativo, o registro pode estar bloqueado
+- Sem registro limpo, financiamento ao comprador final é inviável
+- Operações de renda ficam comprometidas por insegurança jurídica
+- Revenda é dificultada ou exige desconto adicional
+
+**Regra prática**: Adicione 6 a 12 meses ao cronograma para regularização de ônus complexos.
+
+## O papel da diligência especializada
+
+Analisar ônus não é apenas ler a matrícula. É:
+
+- Interpretar cada averbação no contexto do leilão
+- Verificar se o edital reflete corretamente a situação registral
+- Projetar o caminho de cancelamento para cada gravame
+- Estimar custo e prazo com base em experiência prática
+- Identificar riscos que o edital não menciona
+
+Na LFCOM, essa análise faz parte do underwriting de cada operação. Não damos lance sem visibilidade completa sobre o que acontece com cada ônus após a arrematação.
+
+## Conclusão: ônus é dado, não destino
+
+Todo imóvel leiloado tem história - e essa história geralmente inclui gravames. O investidor que foge de ônus perde oportunidades. O investidor que ignora ônus perde dinheiro.
+
+A abordagem correta é tratar ônus como informação: identificar, classificar, precificar e decidir com base em números, não em intuição.
+
+Quando você sabe exatamente o que está comprando - incluindo o que acompanha o bem e o que será cancelado - o ônus deixa de ser risco e vira componente do cálculo. E é nesse ponto que leilões se transformam em operações de investimento com retorno previsível.
+    `,
+    date: "2026-02-09",
+    readingMinutes: 15,
+    tags: ["Penhora", "Ônus", "Gravames", "Registro", "Due Diligence"],
+    coverImage: penhoraOnusImovel
   }
 ];
 
