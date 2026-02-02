@@ -4272,31 +4272,9 @@ Não cobramos por análise. Nossa remuneração é atrelada ao sucesso da opera�
 
 ## Quanto custa uma assessoria de leilões de alto padrão?
 
-A remuneração típica de assessorias especializadas segue modelo de success fee:
+Uma assessoria completa para aquisição em leilões pode variar de **8% a 25% sobre o valor do lance**, dependendo da complexidade da operação, do nível de acompanhamento exigido e do perfil do ativo. Operações de maior valor e menor risco tendem a ter percentuais mais baixos, enquanto ativos que demandam due diligence aprofundada, regularização complexa ou gestão pós-aquisição justificam percentuais maiores. O modelo de remuneração é tipicamente atrelado ao sucesso da arrematação, alinhando os interesses da assessoria aos do investidor.
 
-| Faixa de operação | Assessoria típica |
-|-------------------|-------------------|
-| Até R$ 1.000.000 | 15% a 25% do lance |
-| R$ 1.000.000 a R$ 5.000.000 | 12% a 18% do lance |
-| R$ 5.000.000 a R$ 10.000.000 | 10% a 15% do lance |
-| Acima de R$ 10.000.000 | 8% a 12% (negociação) |
-
-### A matemática do custo-benefício
-
-**Cenário**: Imóvel avaliado em R$ 3.000.000
-
-| Abordagem | Lance provável | Economia vs. mercado | Custo assessoria | Resultado líquido |
-|-----------|----------------|---------------------|------------------|-------------------|
-| Sem assessoria | R$ 2.400.000 | R$ 600.000 | R$ 0 | R$ 600.000 |
-| Com assessoria | R$ 2.100.000 | R$ 900.000 | R$ 252.000 (12%) | R$ 648.000 |
-
-**Diferença**: R$ 216.000 a mais no bolso com assessoria.
-
-A assessoria paga-se através de:
-- Lances mais precisos (não pagar mais que o necessário)
-- Riscos evitados (operações problemáticas não realizadas)
-- Tempo economizado (foco em atividades mais valiosas)
-- Oportunidades acessadas (deal flow exclusivo)
+A assessoria paga-se através de lances mais precisos, riscos evitados em operações problemáticas, tempo economizado e acesso a oportunidades exclusivas de deal flow
 
 ---
 
