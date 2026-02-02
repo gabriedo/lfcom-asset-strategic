@@ -7944,335 +7944,322 @@ Na LFCOM, orientamos nossos clientes sobre estruturação patrimonial como parte
     id: "32",
     title: "Reforma Tributária 2026: Impactos para Investidores em Leilões de Imóveis",
     slug: "reforma-tributaria-impacto-investidores-leiloes",
-    excerpt: "Análise completa da nova reforma tributária e seus efeitos na compra, venda e locação de imóveis arrematados. Comparativo PF vs PJ, holdings, aluguel de temporada e planejamento fiscal estratégico.",
+    excerpt: "Análise completa da reforma tributária (EC 132/23, LC 214/25 e LC 227/26) e seus efeitos na compra, venda e locação de imóveis arrematados. Comparativo PF vs PJ, holdings, aluguel de temporada e planejamento fiscal estratégico.",
     content: `
 # Reforma Tributária 2026: Impactos para Investidores em Leilões de Imóveis
 
-A Reforma Tributária aprovada em 2023 (EC 132/2023) e regulamentada em 2024-2025 representa a **maior mudança no sistema tributário brasileiro em décadas**. Para investidores em leilões de imóveis, as alterações afetam diretamente a rentabilidade de operações de compra, venda e locação.
+A Reforma Tributária aprovada pela **Emenda Constitucional 132/2023** e regulamentada pelas **Leis Complementares 214/2025 e 227/2026** representa a maior mudança no sistema tributário brasileiro em décadas. Para investidores em leilões de imóveis, as alterações afetam diretamente a rentabilidade de operações de compra, venda e locação.
 
-Este guia analisa cada impacto e apresenta estratégias de planejamento fiscal para o novo cenário.
+Este guia analisa cada impacto com base na legislação vigente e apresenta estratégias de planejamento fiscal para o novo cenário.
 
 ---
 
 ## O que muda com a Reforma Tributária?
 
-### Visão geral das mudanças
+### A nova arquitetura tributária
 
-| Sistema Atual | Novo Sistema (2026-2033) |
-|---------------|--------------------------|
-| PIS/COFINS + ICMS + ISS + IPI | IBS + CBS (IVA Dual) |
-| Múltiplas alíquotas e regimes | Alíquota única por setor |
-| Cumulatividade em alguns casos | Não-cumulatividade plena |
-| Tributação na origem | Tributação no destino |
+A reforma cria um **IVA Dual** (Imposto sobre Valor Agregado) composto por dois tributos:
+
+| Tributo | Competência | Substitui |
+|---------|-------------|-----------|
+| **CBS** (Contribuição sobre Bens e Serviços) | Federal | PIS e COFINS |
+| **IBS** (Imposto sobre Bens e Serviços) | Estados e Municípios | ICMS e ISS |
+
+**Alíquota estimada total**: 26,5% a 28% (IBS + CBS somados) para a maioria das operações.
 
 ### Cronograma de transição
 
 | Ano | Evento |
 |-----|--------|
-| 2026 | Início da CBS (0,9%) e IBS (0,1%) - teste |
-| 2027 | CBS plena, extinção de PIS/COFINS |
-| 2027-2028 | Redução gradual de ICMS e ISS |
-| 2029-2032 | Transição progressiva para IBS |
-| 2033 | Novo sistema plenamente vigente |
+| 2026 | Início da CBS (0,9%) e IBS (0,1%) - fase de teste |
+| 2027 | CBS plena implementada, extinção gradual de PIS/COFINS |
+| 2027-2028 | Início da redução de ICMS e ISS |
+| 2029-2032 | Transição progressiva para IBS pleno |
+| 2033 | Novo sistema totalmente vigente |
 
-> **Alerta**: A transição de 7 anos exigirá planejamento cuidadoso e adaptação contínua das estratégias fiscais.
+> **Importante**: A transição de 7 anos exigirá acompanhamento constante e adaptação das estratégias fiscais.
+
+---
+
+## Regime especial para operações imobiliárias
+
+A LC 214/2025, alterada pela LC 227/2026, criou um **regime específico para operações com bens imóveis** com reduções significativas de alíquota:
+
+### Reduções de alíquota do IBS/CBS
+
+| Tipo de operação | Redução de alíquota | Alíquota efetiva aproximada |
+|------------------|--------------------|-----------------------------|
+| **Venda de imóveis** | 50% | ~13-14% |
+| **Locação, cessão onerosa ou arrendamento** | 70% | ~8-8,4% |
+| **Incorporação imobiliária (RET)** | Regime especial | 2,08% ou 0,53% (interesse social) |
+| **Loteamento** | Regime especial | 3,65% da receita bruta |
+
+### Redutor social na locação residencial
+
+Para proteger a moradia, a LC 227/2026 instituiu o **redutor social**:
+
+> Na locação de imóvel para uso **residencial**, o contribuinte pode deduzir **R$ 600,00 por mês** da base de cálculo do IBS/CBS, por imóvel.
+
+**Exemplo prático**:
+- Aluguel mensal: R$ 2.500
+- Base de cálculo: R$ 2.500 - R$ 600 = R$ 1.900
+- IBS/CBS (~8,4%): R$ 159,60 (em vez de R$ 210)
+
+---
+
+## Quando a pessoa física paga IBS/CBS?
+
+### Critérios de enquadramento como contribuinte
+
+A reforma **não tributa todo aluguel de pessoa física**. A LC 214/2025 estabeleceu critérios claros para definir quando a PF se torna contribuinte do IBS/CBS:
+
+| Critério | Descrição |
+|----------|-----------|
+| **Regra geral** | Mais de **3 imóveis** locados **E** receita anual superior a **R$ 240.000** |
+| **Imóvel de alto valor** | **1 imóvel** com receita anual superior a **R$ 288.000** |
+
+**Quem NÃO paga IBS/CBS**:
+- PF com até 3 imóveis E receita anual até R$ 240.000
+- Locador eventual, sem caráter profissional
+- Locação sem prestação de serviços agregados
+
+**Quem PAGA IBS/CBS**:
+- PF com 4+ imóveis E receita anual acima de R$ 240.000
+- PF com 1 imóvel com receita anual acima de R$ 288.000
+- PF que presta serviços típicos de hospedagem (limpeza, enxoval, gestão ativa)
+
+> **Atenção**: Os limites de R$ 240.000 e R$ 288.000 serão atualizados anualmente pelo IPCA.
 
 ---
 
 ## Impacto na aquisição de imóveis em leilão
 
-### ITBI: o que muda?
+### ITBI permanece inalterado
 
-O ITBI (Imposto sobre Transmissão de Bens Imóveis) **não é afetado diretamente** pela reforma tributária, pois é imposto municipal de competência constitucional específica.
+O ITBI (Imposto sobre Transmissão de Bens Imóveis) **não é afetado** pela reforma tributária:
 
-| Aspecto | Situação atual | Após reforma |
-|---------|----------------|--------------|
-| Competência | Municipal | Municipal (mantido) |
-| Alíquota média | 2-3% | 2-3% (mantido) |
-| Base de cálculo | Valor de arrematação | Valor de arrematação (mantido) |
-| Isenções | Integralização em PJ | Sob análise (possíveis mudanças) |
+| Aspecto | Situação |
+|---------|----------|
+| Competência | Municipal (mantida) |
+| Alíquota média | 2-3% (mantida) |
+| Base de cálculo | Valor de arrematação (jurisprudência STJ mantida) |
+| Isenção na integralização de capital | Mantida (exceto se atividade preponderantemente imobiliária) |
 
-### Custas e emolumentos
+### Custas cartoriais
 
-Os emolumentos cartorários **podem sofrer alterações** com a incidência do IBS sobre serviços:
-
-| Item | Atual | Projeção 2033 |
-|------|-------|---------------|
-| Registro de imóvel | ~0,5-1% do valor | Possível aumento de 5-10% |
-| Escritura pública | ~0,3-0,8% do valor | Possível aumento de 5-10% |
-| Certidões | Valores fixos | Possível reajuste |
+Os emolumentos cartorários **podem sofrer leve aumento** com a incidência do IBS sobre serviços, mas o impacto é marginal (estimativa de 5-10% de aumento).
 
 ---
 
 ## Impacto na venda de imóveis arrematados
 
-### Pessoa Física: Ganho de Capital
+### Pessoa física: ganho de capital
 
-A tributação sobre ganho de capital de pessoas físicas **não muda diretamente** com a reforma:
+A tributação sobre ganho de capital de PF **não muda**:
 
-| Faixa de ganho | Alíquota atual | Alíquota pós-reforma |
-|----------------|----------------|---------------------|
-| Até R$ 5 milhões | 15% | 15% (mantido) |
-| R$ 5-10 milhões | 17,5% | 17,5% (mantido) |
-| R$ 10-30 milhões | 20% | 20% (mantido) |
-| Acima R$ 30 milhões | 22,5% | 22,5% (mantido) |
+| Faixa de ganho | Alíquota |
+|----------------|----------|
+| Até R$ 5 milhões | 15% |
+| R$ 5-10 milhões | 17,5% |
+| R$ 10-30 milhões | 20% |
+| Acima de R$ 30 milhões | 22,5% |
 
-**Benefícios mantidos**:
-- [ ] Isenção para venda de único imóvel até R$ 440.000
-- [ ] Isenção se comprar outro imóvel em 180 dias
-- [ ] Fator de redução para imóveis antigos
+**Isenções mantidas**:
+- Venda de único imóvel até R$ 440.000
+- Reinvestimento em outro imóvel residencial em 180 dias
+- Fator de redução para imóveis antigos
 
-### Pessoa Jurídica: nova tributação sobre vendas
+### Pessoa jurídica: nova tributação
 
-Para holdings e empresas imobiliárias, a venda de imóveis terá tratamento diferenciado:
+A reforma **supera a antiga controvérsia** sobre permuta e ganho de capital. Agora, toda venda de imóvel é "operação com bem" sujeita ao IBS/CBS:
 
-| Regime | Atual | Novo sistema |
-|--------|-------|--------------|
-| **Lucro Presumido** | ~6,73% (sobre 8-32% da receita) | IBS + CBS sobre valor cheio + IR/CSLL |
-| **Lucro Real** | IR 25% + CSLL 9% sobre lucro | IBS + CBS + IR/CSLL sobre lucro |
+| Regime | Tributação atual | Tributação pós-reforma |
+|--------|------------------|----------------------|
+| **Lucro Presumido** | ~5,93% sobre receita | IBS/CBS (~13-14%) + IR/CSLL |
+| **Lucro Real** | 34% sobre lucro | IBS/CBS (~13-14%) + 34% sobre lucro |
 
-#### Simulação comparativa de venda
+**Exemplo comparativo** - Venda de imóvel por R$ 500.000 (custo R$ 300.000):
 
-**Cenário**: Imóvel arrematado por R$ 300.000, vendido por R$ 500.000
+| Cenário | Pessoa Física | Holding LP (atual) | Holding LP (pós-reforma) |
+|---------|---------------|-------------------|-------------------------|
+| Base tributável | R$ 200.000 (ganho) | R$ 500.000 (receita) | R$ 500.000 (receita) |
+| Tributos | R$ 30.000 (15%) | ~R$ 30.000 (~6%) | ~R$ 80.000 (~16%)* |
 
-| Regime | Tributos atuais | Tributos pós-reforma |
-|--------|-----------------|---------------------|
-| **Pessoa Física** | R$ 30.000 (15% s/ R$ 200k) | R$ 30.000 (mantido) |
-| **Lucro Presumido** | ~R$ 13.500 | ~R$ 35.000-45.000* |
-| **Lucro Real** | ~R$ 68.000 (34% s/ lucro) | ~R$ 68.000 + IBS/CBS* |
+*Estimativa incluindo IBS/CBS + IR/CSLL. Com créditos de IBS/CBS sobre insumos, o valor pode ser menor.
 
-*Valores estimados, dependendo da regulamentação final.
-
-> **Atenção**: A vantagem tributária de holdings para venda pode ser **significativamente reduzida** no novo sistema.
+> **Conclusão**: A vantagem tributária de holdings para venda de imóveis **será significativamente reduzida**.
 
 ---
 
 ## Impacto na locação de imóveis
 
-### Locação residencial de longo prazo
+### Comparativo completo: antes vs depois
 
-A locação residencial terá tratamento especial na reforma:
+| Cenário | Tributos ANTES | Tributos DEPOIS |
+|---------|----------------|-----------------|
+| **PF - até 3 imóveis, até R$ 240k/ano** | IRPF 7,5-27,5% | IRPF 7,5-27,5% (sem IBS/CBS) |
+| **PF - 4+ imóveis OU acima R$ 240k/ano** | IRPF 7,5-27,5% | IRPF 7,5-27,5% + IBS/CBS ~8,4% |
+| **PJ - Lucro Presumido (LP)** | ~11-14,5% total | IBS/CBS ~8,4% + IRPJ/CSLL ~11% = ~19% |
 
-| Aspecto | Atual | Novo sistema |
-|---------|-------|--------------|
-| **PF - Carnê-leão** | 7,5-27,5% | 7,5-27,5% (mantido) |
-| **PJ - Lucro Presumido** | ~11,33% | Redução de 60% no IBS/CBS |
-| **PJ - Lucro Real** | Variável | Redução de 60% no IBS/CBS |
+### Locação residencial via pessoa jurídica
 
-A **redução de 60%** no IBS/CBS para locação residencial de longo prazo foi incluída para evitar oneração excessiva da moradia.
+| Aspecto | Antes | Depois |
+|---------|-------|--------|
+| PIS/COFINS | 3,65% | Substituído por IBS/CBS |
+| IBS/CBS (com redução 70%) | N/A | ~8,4% |
+| IRPJ/CSLL (LP, base 32%) | ~10,88% | ~10,88% (mantido) |
+| **Carga total** | **~14,5%** | **~19%** |
+
+**Observação**: Apesar do aumento, a holding ainda é mais vantajosa que a PF na faixa de 27,5% de IR.
 
 ### Locação comercial
 
-| Aspecto | Atual | Novo sistema |
-|---------|-------|--------------|
-| **PF** | 7,5-27,5% | 7,5-27,5% (mantido) |
-| **PJ - LP** | ~11,33% | IBS + CBS integral (~26,5%) |
-| **PJ - LR** | Variável | IBS + CBS integral (~26,5%) |
+A locação comercial **NÃO tem redução de alíquota** do IBS/CBS:
 
-> **Impacto crítico**: Locação comercial via PJ pode ficar **significativamente mais cara** no novo sistema.
+| Aspecto | Antes | Depois |
+|---------|-------|--------|
+| IBS/CBS | N/A | ~26,5% (integral) |
+| IRPJ/CSLL | ~10,88% | ~10,88% |
+| **Carga total PJ** | **~14,5%** | **~37%** |
 
-### Aluguel de temporada (Airbnb, Booking, etc.)
+> **Impacto crítico**: Locação comercial via PJ ficará **muito mais onerosa**. Avaliar manutenção na pessoa física.
 
-O aluguel de temporada terá tratamento de **prestação de serviços de hospedagem**:
+---
 
-| Aspecto | Atual | Novo sistema |
-|---------|-------|--------------|
-| **Enquadramento** | Locação ou hospedagem (controvérsia) | Hospedagem (serviço) |
-| **PF** | Carnê-leão 7,5-27,5% | Mantido + possível cadastro |
-| **PJ - LP** | ~14-17% | IBS + CBS integral (~26,5%) |
-| **Redução hotelaria** | N/A | Redução de 40% do IBS/CBS |
+## Aluguel de temporada (Airbnb, Booking, etc.)
 
-#### Comparativo: temporada vs longo prazo
+### Enquadramento: locação ou hospedagem?
 
-| Tipo | Regime | Tributação atual | Tributação pós-reforma |
-|------|--------|------------------|----------------------|
-| Longo prazo residencial | PJ-LP | ~11% | ~10-11% (com redução 60%) |
-| Temporada | PJ-LP | ~14% | ~16-19% (com redução 40%) |
-| Temporada | PF | 7,5-27,5% | 7,5-27,5% |
+A reforma **encerra a controvérsia**: aluguel de temporada com serviços agregados é tratado como **prestação de serviços de hospedagem**.
 
-> **Estratégia**: Para imóveis de temporada, manter na **pessoa física** pode ser mais vantajoso após a reforma, dependendo da faixa de renda.
+| Característica | Locação pura | Hospedagem |
+|----------------|--------------|------------|
+| Serviços de limpeza frequente | Não | Sim |
+| Troca de enxoval | Não | Sim |
+| Gestão ativa de reservas | Não | Sim |
+| Recepção de hóspedes | Não | Sim |
+| **Tratamento tributário** | Redução 70% | Redução 40% (hotelaria) |
+
+### Quem paga IBS/CBS no aluguel de temporada?
+
+Mesmo com **1 único imóvel**, a PF pode ser enquadrada como contribuinte se:
+
+- Oferecer serviços típicos de hospedagem de forma recorrente
+- A atividade tiver caráter profissional e organizado
+- Receita anual superar os limites estabelecidos
+
+### Comparativo de tributação
+
+| Cenário | Tributação atual | Tributação pós-reforma |
+|---------|------------------|----------------------|
+| PF eventual (1-2 imóveis, sem serviços) | IRPF 7,5-27,5% | IRPF 7,5-27,5% |
+| PF profissional (4+ imóveis ou >R$ 240k) | IRPF 7,5-27,5% | IRPF + IBS/CBS ~16-17%* |
+| PJ Lucro Presumido | ~14-17% | ~22-25%** |
+
+*IBS/CBS com redução de 40% (hotelaria) + IRPF
+**IBS/CBS ~16% + IRPJ/CSLL ~8-9%
 
 ---
 
 ## Holdings patrimoniais: ainda vale a pena?
 
-### Comparativo atualizado PF vs PJ
+### Análise atualizada
 
-| Operação | PF atual | PJ atual | PF pós-reforma | PJ pós-reforma |
-|----------|----------|----------|----------------|----------------|
-| **Aluguel residencial** | 7,5-27,5% | ~11% | 7,5-27,5% | ~10-11% |
-| **Aluguel comercial** | 7,5-27,5% | ~11% | 7,5-27,5% | ~22-26% |
-| **Aluguel temporada** | 7,5-27,5% | ~14% | 7,5-27,5% | ~16-19% |
-| **Venda (ganho capital)** | 15-22,5% | ~6% | 15-22,5% | ~15-25%* |
+| Operação | PF (atual) | PJ LP (atual) | PF (pós) | PJ LP (pós) | Vencedor pós-reforma |
+|----------|------------|---------------|----------|-------------|---------------------|
+| Aluguel residencial | 7,5-27,5% | ~14% | 7,5-27,5% | ~19% | **PJ** (se PF > 19% IR) |
+| Aluguel comercial | 7,5-27,5% | ~14% | 7,5-27,5% | ~37% | **PF** |
+| Temporada | 7,5-27,5% | ~14% | 7,5-27,5%* | ~22-25% | **PF** (na maioria) |
+| Venda (ganho capital) | 15-22,5% | ~6% | 15-22,5% | ~16%+ | **PF** |
 
-*Estimativa, dependendo da regulamentação.
+*Se não enquadrado como contribuinte habitual
 
 ### Quando a holding ainda compensa
 
-**Cenários favoráveis à holding**:
-- [ ] Portfólio majoritariamente de locação residencial de longo prazo
-- [ ] Planejamento sucessório (transferência de cotas)
-- [ ] Proteção patrimonial
-- [ ] Acesso a crédito corporativo
-- [ ] Volume alto de imóveis (economia de escala)
+**Cenários favoráveis**:
+- Portfólio majoritariamente de locação residencial de longo prazo
+- Planejamento sucessório (doação de cotas com reserva de usufruto)
+- Proteção patrimonial
+- Acesso a crédito corporativo
+- PF na faixa de 27,5% de IR (holding ainda economiza ~8%)
 
 **Cenários desfavoráveis**:
-- [ ] Foco em venda rápida (flipping)
-- [ ] Locação comercial predominante
-- [ ] Aluguel de temporada como atividade principal
-- [ ] Poucos imóveis (custos fixos não compensam)
-
-### Decisão estratégica: matriz de escolha
-
-| Perfil | Recomendação pós-reforma |
-|--------|-------------------------|
-| Investidor buy and hold residencial | **Holding** (redução de 60% mantém vantagem) |
-| Investidor flip (compra e venda rápida) | **Pessoa física** (ganho capital mais simples) |
-| Locação comercial | **Pessoa física** (PJ fica mais onerosa) |
-| Aluguel temporada alto volume | **Avaliar caso a caso** (depende da faixa de IR) |
-| Planejamento sucessório | **Holding** (benefícios não-tributários) |
+- Foco em venda rápida (flipping)
+- Locação comercial predominante
+- Aluguel de temporada como atividade principal
+- Poucos imóveis (custos fixos não compensam)
 
 ---
 
-## Regime de transição: estratégias para 2026-2033
+## Planejamento tributário: ações práticas
 
-### Janela de oportunidade
+### Para pequenos investidores (até 3 imóveis)
 
-O período de transição oferece oportunidades únicas:
+1. **Manter na pessoa física** - Não será contribuinte de IBS/CBS
+2. **Evitar serviços de hospedagem** - Não oferecer limpeza, enxoval, etc.
+3. **Documentar ausência de habitualidade** - Contratos de longo prazo
 
-| Estratégia | Timing ideal |
-|------------|--------------|
-| Venda de imóveis via PJ | 2026-2028 (antes da CBS plena) |
-| Reestruturação societária | 2025-2026 (antes das mudanças) |
-| Compra de imóveis para locação comercial | Avaliar caso a caso |
-| Migração de regime tributário | Anualmente, conforme projeções |
+### Para investidores com 4+ imóveis
 
-### Checklist de preparação
+1. **Calcular carga tributária** nos dois cenários (PF vs PJ)
+2. **Segregar atividades** - Locação residencial na PJ, comercial na PF
+3. **Considerar cisão** se portfólio for misto
+4. **Consultar contador especializado** antes de decisões
 
-- [ ] Revisar estrutura societária atual
-- [ ] Simular tributação nos dois cenários (atual vs novo)
-- [ ] Avaliar antecipação de vendas planejadas
-- [ ] Consultar contador especializado em tributação imobiliária
-- [ ] Acompanhar regulamentação complementar
-- [ ] Revisar contratos de locação (cláusulas de repasse)
+### Para holdings existentes
 
----
-
-## Impactos específicos por tipo de operação
-
-### 1. Arrematação + Reforma + Venda (Flipping)
-
-| Fase | Impacto da reforma |
-|------|-------------------|
-| Compra (leilão) | Neutro (ITBI mantido) |
-| Reforma | IBS/CBS sobre materiais e mão de obra |
-| Venda PF | Neutro (ganho capital mantido) |
-| Venda PJ | **Negativo** (aumento de carga) |
-
-**Recomendação**: Considerar manter operações de flipping na **pessoa física**.
-
-### 2. Arrematação + Locação de longo prazo
-
-| Fase | Impacto da reforma |
-|------|-------------------|
-| Compra (leilão) | Neutro |
-| Locação residencial PJ | **Favorável** (redução 60%) |
-| Locação comercial PJ | **Desfavorável** (aumento) |
-
-**Recomendação**: Holding continua vantajosa para locação residencial.
-
-### 3. Arrematação + Aluguel de temporada
-
-| Fase | Impacto da reforma |
-|------|-------------------|
-| Compra (leilão) | Neutro |
-| Temporada PF | Neutro |
-| Temporada PJ | **Variável** (depende do volume) |
-
-**Recomendação**: Avaliar break-even entre PF e PJ com as novas alíquotas.
-
----
-
-## Planejamento tributário: ações imediatas
-
-### Para investidores pessoa física
-
-1. **Manter registros detalhados** de custos de aquisição e reforma
-2. **Avaliar timing de vendas** considerando a transição
-3. **Considerar estrutura mista** (alguns imóveis PF, outros PJ)
-4. **Aproveitar isenções** (único imóvel, reinvestimento em 180 dias)
-
-### Para investidores com holding
-
-1. **Revisar objeto social** e atividade preponderante
-2. **Simular cenários** de tributação 2027-2033
-3. **Avaliar segregação** de atividades (locação residencial vs comercial)
-4. **Considerar cisão** se houver atividades com tratamentos muito diferentes
-
-### Para novos investidores
-
-1. **Não criar holding** apenas por benefício tributário de venda
-2. **Analisar portfólio planejado** (residencial vs comercial vs temporada)
-3. **Considerar benefícios não-tributários** (sucessão, proteção)
-4. **Iniciar na PF** e migrar para PJ quando fizer sentido
+1. **Não dissolver precipitadamente** - Custos de dissolução são altos
+2. **Revisar mix de atividades** - Identificar o que fica mais oneroso
+3. **Avaliar reorganização societária** - Separar atividades favoráveis das desfavoráveis
+4. **Manter benefícios não-tributários** - Sucessão, proteção, governança
 
 ---
 
 ## FAQ: Perguntas frequentes
 
-### 1. A reforma tributária aumenta ou diminui impostos para investidores em leilões?
+### 1. Aluguel residencial vai pagar mais imposto?
 
-**Depende da operação**. Locação residencial de longo prazo via PJ fica mais favorável. Venda de imóveis e locação comercial via PJ ficam mais onerosas. Pessoa física praticamente não muda.
+**Para PF com até 3 imóveis e até R$ 240k/ano**: Não muda nada.
+**Para PF acima dos limites**: Sim, passará a pagar IBS/CBS (~8,4%) além do IR.
+**Para PJ**: Aumento de ~3,65% (PIS/COFINS) para ~8,4% (IBS/CBS), parcialmente compensado pelo redutor social.
 
 ### 2. Devo vender meus imóveis antes de 2027?
 
-**Não necessariamente**. Se a venda está planejada para os próximos 2-3 anos e você opera via PJ, pode ser vantajoso antecipar. Consulte um contador para simulação específica.
+Se a venda está planejada e você opera via PJ, **pode ser vantajoso antecipar** para aproveitar a tributação atual (~6%). A partir de 2027, a carga aumenta progressivamente.
 
-### 3. Aluguel de temporada vai pagar mais imposto?
+### 3. Aluguel de temporada vai pagar até 44% de imposto?
 
-**Via PJ, provavelmente sim**. O enquadramento como serviço de hospedagem atrai IBS/CBS integral (com redução de 40%, não 60%). Via PF, a tributação permanece no carnê-leão.
+**Na pior hipótese, sim**. Se a PF for enquadrada como contribuinte habitual (IRPF 27,5% + IBS/CBS ~16%), a carga pode chegar a ~43%. Mas isso só se aplica a locadores profissionais de alto volume.
 
-### 4. Vale a pena desfazer minha holding?
+### 4. Vale a pena criar holding agora?
 
-**Raramente**. Os custos de dissolução (ITBI, ganho capital, custas) geralmente superam a economia tributária. Melhor adaptar a estratégia dentro da estrutura existente.
+**Depende do perfil**. Se você tem portfólio diversificado (residencial + comercial + temporada), a holding pode **não ser a melhor opção** para todas as atividades. Analise caso a caso.
 
-### 5. Quando terei certeza sobre as alíquotas finais?
+### 5. A reforma afeta o ITBI em leilões?
 
-A **alíquota de referência** do IBS/CBS será definida em **2026**, com base na arrecadação. Projeções apontam para 26-28% somando IBS + CBS, mas isso ainda pode mudar.
-
----
-
-## Tabela resumo: impacto por cenário
-
-| Cenário | Impacto | Ação recomendada |
-|---------|---------|------------------|
-| Compra em leilão | ⚪ Neutro | Manter estratégia |
-| Venda PF | ⚪ Neutro | Manter na PF |
-| Venda PJ | 🔴 Negativo | Avaliar antecipação ou migração para PF |
-| Aluguel residencial PJ | 🟢 Positivo | Manter holding |
-| Aluguel comercial PJ | 🔴 Negativo | Avaliar migração para PF |
-| Aluguel temporada PJ | 🟡 Variável | Simular break-even |
-| Holding para sucessão | ⚪ Neutro | Manter (benefícios não-tributários) |
+**Não**. O ITBI continua municipal, com alíquota de 2-3%, e a base de cálculo em leilões segue sendo o valor de arrematação (Tema 1.113 do STJ).
 
 ---
 
-## Conclusão: adaptação é a palavra-chave
+## Conclusão: prepare-se para a nova realidade
 
-A Reforma Tributária de 2026-2033 exigirá dos investidores em leilões uma **reavaliação completa de estratégias fiscais**. Os principais pontos de atenção:
+A Reforma Tributária 2026-2033 exige dos investidores em leilões uma **reavaliação completa de estratégias**:
 
-- ✅ Locação residencial de longo prazo via PJ continua vantajosa
-- ⚠️ Venda de imóveis via PJ perde parte da vantagem
-- ⚠️ Locação comercial via PJ fica mais onerosa
-- ⚠️ Aluguel de temporada exige análise caso a caso
-- ✅ Benefícios não-tributários de holdings permanecem
+| Situação | Impacto | Ação |
+|----------|---------|------|
+| Locação residencial PJ | Moderado (aumento de ~4-5%) | Manter holding |
+| Locação comercial PJ | Severo (aumento de ~22%) | Migrar para PF |
+| Aluguel temporada PJ | Significativo (aumento de ~8-11%) | Avaliar PF |
+| Venda de imóveis PJ | Severo (aumento de ~10%) | Antecipar vendas ou operar via PF |
+| PF pequeno investidor | Nenhum | Manter estratégia atual |
 
-Na LFCOM, acompanhamos de perto as mudanças regulatórias e orientamos nossos clientes sobre as melhores estruturas para cada momento do ciclo econômico e tributário.
+Na LFCOM, acompanhamos de perto as mudanças regulatórias e orientamos nossos clientes sobre as melhores estruturas para cada momento do ciclo tributário.
 
 ---
 
-*Quer uma análise personalizada do impacto da reforma tributária na sua carteira de imóveis? Agende uma consulta com nossa equipe.*
+*Quer uma análise personalizada do impacto da reforma tributária na sua carteira de imóveis? Agende uma consulta com nossa equipe especializada.*
     `,
-    date: "2026-02-15",
+    date: "2026-02-02",
     readingMinutes: 18,
     tags: ["Reforma Tributária", "IBS", "CBS", "Holding", "Planejamento Fiscal", "Aluguel Temporada"],
     coverImage: reformaTributariaLeiloes
