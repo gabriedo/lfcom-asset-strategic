@@ -7,7 +7,7 @@ import reportLeiloes2026 from "@/assets/insights/report-leiloes-2026.jpg";
 import calculoDescontoLeilao from "@/assets/insights/calculo-desconto-leilao.jpg";
 import riscoJuridicoLeilao from "@/assets/insights/risco-juridico-leilao.jpg";
 import estrategiaLanceLeilao from "@/assets/insights/estrategia-lance-leilao.jpg";
-
+import imovelOcupadoLeilao from "@/assets/insights/imovel-ocupado-leilao.jpg";
 export interface Post {
   id: string;
   title: string;
@@ -1917,6 +1917,291 @@ Porque no longo prazo, as melhores operações não são as que você ganhou a q
     readingMinutes: 11,
     tags: ["Estratégia", "Lance", "Tática", "Investimento", "Governança"],
     coverImage: estrategiaLanceLeilao
+  },
+  {
+    id: "10",
+    title: "Como avaliar imóvel ocupado em leilão",
+    slug: "como-avaliar-imovel-ocupado-leilao",
+    excerpt: "Imóvel ocupado não é problema - é variável. Aprenda a diagnosticar o tipo de ocupação, estimar custos reais de desocupação e transformar risco em margem calculada.",
+    content: `
+# Como avaliar imóvel ocupado em leilão
+
+Quem compra imóvel em leilão com capital relevante sabe que "ocupado" não é sinônimo de problema. É uma variável que, quando bem diagnosticada, pode ser a origem do desconto mais significativo da operação. O erro não está em comprar ocupado - está em comprar sem saber o que a ocupação significa em termos de custo, prazo e risco.
+
+Este guia apresenta o framework que usamos para avaliar imóveis ocupados em leilão, transformando incerteza em número e risco em margem de segurança.
+
+## Por que imóveis ocupados têm desconto estrutural
+
+O desconto em imóveis ocupados não é acidente de mercado. Ele reflete três fatores objetivos:
+
+**Menor concorrência**: A maioria dos compradores evita ocupação por desconhecimento ou aversão ao atrito. Isso reduz a disputa no pregão.
+
+**Custo de transição**: Existe um desembolso real entre a arrematação e a posse efetiva - e esse custo precisa ser compensado no lance.
+
+**Incerteza de prazo**: O tempo até a imissão na posse pode variar de semanas a anos, dependendo do tipo de ocupação e da estratégia de desocupação.
+
+Para o investidor disciplinado, esses fatores não são obstáculos. São fontes de assimetria que, bem precificadas, geram retorno superior.
+
+## Os 4 tipos de ocupação e o que cada um significa
+
+Nem toda ocupação é igual. O primeiro passo é diagnosticar corretamente quem está no imóvel e qual é a base jurídica (ou a ausência dela) para a permanência.
+
+### 1. Ocupação pelo devedor ou família
+
+**Perfil**: O próprio executado ou seus familiares permanecem no imóvel após o leilão.
+
+**Dinâmica típica**: É o cenário mais comum. O devedor perdeu o imóvel judicialmente, mas ainda não saiu. Pode haver resistência emocional, mas raramente há base jurídica para permanência prolongada.
+
+**Caminho de desocupação**: 
+- Negociação direta (prazo para saída voluntária)
+- Imissão na posse judicial (quando não há acordo)
+- Prazo estimado: 2 a 8 meses, dependendo da comarca e da postura do ocupante
+
+**Custo médio de referência**: R$ 15.000 a R$ 50.000 (considerando suporte jurídico, eventual acordo e custos processuais)
+
+### 2. Ocupação por inquilino com contrato anterior ao leilão
+
+**Perfil**: Locatário que celebrou contrato de aluguel antes da penhora ou alienação fiduciária.
+
+**Dinâmica típica**: Dependendo do tipo de leilão e do registro do contrato, o inquilino pode ter direito de permanecer até o término da locação. Contratos não registrados têm proteção mais frágil.
+
+**Caminho de desocupação**:
+- Análise do contrato e da data de registro
+- Notificação de denúncia (se aplicável)
+- Ação de despejo (se necessário)
+- Prazo estimado: 6 a 18 meses
+
+**Custo médio de referência**: R$ 20.000 a R$ 80.000 (incluindo período sem receita, custas judiciais e eventuais acordos)
+
+### 3. Ocupação por terceiro sem vínculo contratual (invasão ou posse precária)
+
+**Perfil**: Pessoa que ocupa o imóvel sem qualquer base jurídica - invasão, cessão informal, ou permanência após término de relação.
+
+**Dinâmica típica**: Não há direito de permanência, mas pode haver resistência física ou tentativa de negociação oportunista.
+
+**Caminho de desocupação**:
+- Reintegração de posse ou imissão na posse (conforme o caso)
+- Apoio de oficial de justiça e, se necessário, força policial
+- Prazo estimado: 1 a 6 meses
+
+**Custo médio de referência**: R$ 10.000 a R$ 40.000
+
+### 4. Ocupação com disputa judicial ativa
+
+**Perfil**: Há litígio em curso que pode afetar a posse ou a propriedade - embargos de terceiro, ação anulatória, disputa de herança, usucapião alegado.
+
+**Dinâmica típica**: Cenário de maior incerteza. O ocupante alega direito que, se reconhecido, pode impedir ou atrasar significativamente a imissão.
+
+**Caminho de desocupação**:
+- Depende do desfecho do litígio
+- Pode exigir defesa ativa nos autos
+- Prazo estimado: 1 a 5 anos (alto grau de incerteza)
+
+**Custo médio de referência**: R$ 50.000 a R$ 200.000+ (incluindo risco de perda do ativo)
+
+## Framework de avaliação: da ocupação ao teto de lance
+
+A avaliação de imóvel ocupado exige integrar três dimensões: diagnóstico da ocupação, estimativa de custo e prazo, e ajuste do valor de referência.
+
+### Etapa 1: Diagnóstico da ocupação
+
+Antes de qualquer cálculo, você precisa responder:
+
+| Pergunta | Como descobrir |
+|----------|----------------|
+| Quem está no imóvel? | Visita local, certidão de inteiro teor, autos do processo |
+| Qual a base jurídica da permanência? | Análise de contrato, registro, decisões judiciais |
+| Há litígio ativo sobre posse ou propriedade? | Consulta aos autos, certidões de distribuição |
+| Qual a postura do ocupante? | Contato direto (quando possível), histórico processual |
+
+Sem esse diagnóstico, qualquer estimativa de custo é chute.
+
+### Etapa 2: Estimativa de custo de desocupação (CD)
+
+O custo de desocupação inclui:
+
+**Custos jurídicos**
+- Honorários advocatícios para imissão/despejo
+- Custas processuais e diligências
+- Oficial de justiça, arrombamento, chaveiro
+
+**Custos de negociação**
+- "Chave na mão" (pagamento para saída voluntária)
+- Frete/mudança do ocupante
+- Acordo de transição
+
+**Custos de carrego**
+- Condomínio e IPTU durante o período de ocupação
+- Custo de oportunidade do capital imobilizado
+- Seguro e manutenção emergencial
+
+**Custos de recuperação**
+- Limpeza e reparos pós-desocupação
+- Regularização de instalações (água, luz, gás)
+
+### Etapa 3: Estimativa de prazo até a posse (PP)
+
+O prazo importa porque:
+
+- Define o período de custo de carrego
+- Impacta o custo de oportunidade do capital
+- Afeta a janela de mercado para uso ou venda
+
+Trabalhe com três cenários:
+
+| Cenário | Prazo | Probabilidade |
+|---------|-------|---------------|
+| Otimista | Saída voluntária em 60-90 dias | 20-30% |
+| Realista | Processo judicial simples em 6-12 meses | 50-60% |
+| Pessimista | Litígio ou resistência em 18-36 meses | 10-20% |
+
+Use o cenário realista como base e provisione para o pessimista.
+
+### Etapa 4: Ajuste do valor de referência
+
+Com CD e PP estimados, ajuste o VR (valor de referência) para refletir a ocupação:
+
+**VRaj = VR - CD - (Custo de carrego × PP) - Provisão de risco**
+
+Ou, de forma equivalente, adicione esses custos ao DT (desembolso total):
+
+**DTaj = Lance + Comissões + CD + Carrego + Provisão**
+
+O teto de lance é:
+
+**Teto = VRaj × (1 - Margem mínima) - Custos fixos fora do lance**
+
+## Checklist de diligência para imóvel ocupado
+
+Antes de dar lance em imóvel ocupado, verifique:
+
+- [ ] Identidade do ocupante confirmada
+- [ ] Base jurídica da ocupação analisada
+- [ ] Autos do processo verificados para litígios ativos
+- [ ] Histórico de tentativas de desocupação no processo
+- [ ] Visita local realizada (mesmo que externa)
+- [ ] Custo de desocupação estimado por cenário
+- [ ] Prazo de imissão projetado (otimista, realista, pessimista)
+- [ ] Provisão de risco definida
+- [ ] Teto de lance calculado com margem de segurança
+- [ ] Plano de ação pós-arrematação estruturado
+
+Se algum item está em branco, você não tem controle suficiente para dar lance.
+
+## Quando não comprar imóvel ocupado
+
+Nem toda ocupação vale o desconto. Evite quando:
+
+**O litígio é de alta incerteza**: Disputas de usucapião com fundamento, embargos de terceiro não julgados, ou ações anulatórias com chance real de procedência.
+
+**O prazo é incompatível com seu mandato**: Se você precisa do ativo em 6 meses e a desocupação pode levar 2 anos, a operação não é para você.
+
+**O ocupante tem perfil de resistência extrema**: Há casos de resistência violenta, risco de dano ao imóvel, ou envolvimento de grupos organizados. O custo de execução pode superar a margem.
+
+**O desconto não compensa o risco**: Se, depois de precificar todos os custos, a margem é inferior ao retorno que você conseguiria em ativo desocupado, não faz sentido assumir o atrito.
+
+## Estratégias de desocupação: o plano pós-arrematação
+
+A arrematação é o começo, não o fim. Para imóveis ocupados, o plano de desocupação deve estar pronto antes do lance.
+
+### Negociação direta
+
+**Quando usar**: Ocupação pelo devedor, sem litígio ativo, postura não hostil.
+
+**Como funciona**: Oferecer prazo para saída (30-90 dias), auxílio-mudança, ou pequena indenização em troca de entrega voluntária.
+
+**Vantagem**: Rapidez, menor custo, preservação do imóvel.
+
+**Risco**: Ocupante pode não cumprir o acordo.
+
+### Imissão na posse judicial
+
+**Quando usar**: Após arrematação em leilão judicial, quando não há acordo.
+
+**Como funciona**: Petição nos autos, expedição de mandado, cumprimento por oficial de justiça.
+
+**Prazo típico**: 3 a 12 meses, dependendo da comarca.
+
+**Custo típico**: R$ 5.000 a R$ 20.000.
+
+### Ação de despejo
+
+**Quando usar**: Quando há locatário que se recusa a sair e não há direito de permanência.
+
+**Como funciona**: Ação judicial autônoma, com liminar se houver fundamento.
+
+**Prazo típico**: 6 a 18 meses.
+
+**Custo típico**: R$ 10.000 a R$ 40.000.
+
+### Reintegração de posse
+
+**Quando usar**: Invasão ou posse precária sem qualquer título.
+
+**Como funciona**: Ação possessória com pedido liminar.
+
+**Prazo típico**: 2 a 8 meses (com liminar), 12+ meses (sem liminar).
+
+**Custo típico**: R$ 8.000 a R$ 30.000.
+
+## Exemplo prático: imóvel ocupado pelo devedor
+
+**Situação**: Apartamento em São Paulo, leilão judicial de alienação fiduciária. Avaliação: R$ 800.000. Ocupado pelo ex-mutuário e família.
+
+**Diagnóstico**:
+- Ocupante: devedor, sem base jurídica para permanência
+- Litígio: não há embargos ou ação anulatória
+- Postura: contato indica disposição para negociar prazo
+
+**Estimativa de custos**:
+- Negociação (auxílio-mudança): R$ 15.000
+- Suporte jurídico: R$ 10.000
+- Condomínio/IPTU durante transição (6 meses): R$ 12.000
+- Reparos pós-desocupação: R$ 20.000
+- **CD total**: R$ 57.000
+
+**Prazo estimado**: 4-6 meses (cenário realista)
+
+**Custo de oportunidade** (capital @ 12% a.a., 6 meses): R$ 24.000
+
+**Provisão de risco** (10% do CD): R$ 5.700
+
+**Ajuste total**: R$ 86.700
+
+**VR ajustado**: R$ 800.000 - R$ 86.700 = R$ 713.300
+
+**Teto de lance** (com margem de 15%): R$ 713.300 × 0,85 - R$ 45.000 (comissões e custos) = **R$ 561.300**
+
+Se o leilão encerrar abaixo desse valor, há margem. Acima, não.
+
+## O papel da assessoria especializada
+
+Avaliar imóvel ocupado exige experiência prática, não apenas conhecimento teórico. O investidor disciplinado sabe que:
+
+- O diagnóstico inicial determina 80% do resultado
+- A estimativa de prazo é tão importante quanto a de custo
+- O plano de desocupação deve existir antes do lance
+- A execução pós-arrematação exige acompanhamento ativo
+
+Na LFCOM, atuamos desde a triagem de oportunidades até a imissão na posse, garantindo que cada operação tenha controle de risco e execução profissional.
+
+## Conclusão: ocupado não é problema, é oportunidade
+
+Imóveis ocupados representam uma das melhores fontes de desconto estrutural em leilões. Mas o desconto só se materializa quando:
+
+1. O diagnóstico é preciso
+2. Os custos são corretamente estimados
+3. O prazo é compatível com o mandato
+4. O teto de lance reflete a realidade, não a esperança
+
+Para quem tem método, imóvel ocupado é oportunidade. Para quem não tem, é armadilha.
+
+A diferença está na preparação. E preparação é o que separa investidor de apostador.
+    `,
+    date: "2026-02-03",
+    readingMinutes: 13,
+    tags: ["Imóvel Ocupado", "Avaliação", "Desocupação", "Risco", "Due Diligence"],
+    coverImage: imovelOcupadoLeilao
   }
 ];
 
