@@ -6,6 +6,7 @@ import patrimonioResidencial from "@/assets/insights/patrimonio-residencial.jpg"
 import reportLeiloes2026 from "@/assets/insights/report-leiloes-2026.jpg";
 import calculoDescontoLeilao from "@/assets/insights/calculo-desconto-leilao.jpg";
 import riscoJuridicoLeilao from "@/assets/insights/risco-juridico-leilao.jpg";
+import estrategiaLanceLeilao from "@/assets/insights/estrategia-lance-leilao.jpg";
 
 export interface Post {
   id: string;
@@ -1729,6 +1730,193 @@ A boa notícia é que leilões podem, sim, ser um canal disciplinado de aquisiç
     readingMinutes: 14,
     tags: ["Risco Jurídico", "Due Diligence", "Governança", "Imóveis", "Estratégia"],
     coverImage: riscoJuridicoLeilao
+  },
+  {
+    id: "9",
+    title: "Estratégia de lance em leilão: como vencer sem pagar demais",
+    slug: "estrategia-lance-leilao-como-vencer",
+    excerpt: "Ganhar um leilão não é sobre quem dá mais. É sobre quem preparou melhor. Aprenda a estruturar sua estratégia de lance com disciplina, teto definido e execução precisa.",
+    content: `
+# Estratégia de lance em leilão: como vencer sem pagar demais
+
+Ganhar um leilão não é sobre quem dá mais. É sobre quem preparou melhor. A maioria dos compradores entra no pregão com uma ideia vaga de "até onde ir" e improvisa no calor do momento. Para quem aloca capital com responsabilidade, isso é o oposto de estratégia - é exposição sem controle.
+
+Uma estratégia de lance bem construída transforma o leilão em decisão prévia, não em reação emocional. O pregão se torna apenas a execução de um plano que já foi aprovado, testado e documentado. Este artigo apresenta o framework que usamos para estruturar lances com disciplina institucional.
+
+## O problema do lance intuitivo
+
+O lance intuitivo segue um padrão previsível: o comprador define um "limite mental", entra no pregão, vê a competição, e ajusta o limite "só mais um pouco". Quando percebe, está pagando 15% acima do que planejava - e justifica com "já que vim até aqui".
+
+Esse comportamento tem nome: **escalation of commitment**. É um viés cognitivo documentado em que o investimento já feito (tempo, análise, expectativa) distorce a avaliação do investimento futuro. Em leilões, esse viés custa caro porque o ambiente é desenhado para amplificá-lo: tempo curto, competição visível, pressão de escassez.
+
+> O antídoto é simples, mas exige disciplina: **definir o teto antes do pregão e não negociar consigo mesmo durante**.
+
+## Os três pilares de uma estratégia de lance
+
+Uma estratégia de lance robusta se apoia em três pilares que precisam estar resolvidos antes de você abrir a plataforma ou entrar na sala:
+
+### 1) Teto de lance fundamentado
+
+O teto não é um número arbitrário. É o resultado de um cálculo que considera:
+
+| Componente | Descrição |
+|------------|-----------|
+| Valor de referência ajustado (VRaj) | Quanto o ativo vale para você, após ajustes de risco e liquidez |
+| Desembolso total projetado (DT) | Todos os custos além do lance: comissão, impostos, regularização, posse, obra |
+| Margem mínima exigida | O retorno mínimo que justifica a operação dado seu custo de capital |
+| Provisão de risco | Reserva para contingências e incertezas não precificáveis |
+
+A fórmula básica:
+
+> **Teto de Lance = VRaj × (1 - Margem mínima) - Custos fixos fora do lance**
+
+Se o seu VRaj é R$ 1.000.000, você exige 15% de margem, e tem R$ 150.000 em custos fixos, seu teto é:
+
+**Teto = 1.000.000 × 0,85 - 150.000 = R$ 700.000**
+
+Acima disso, a operação não remunera o risco. Simples assim.
+
+### 2) Gatilhos de saída definidos
+
+Além do teto, você precisa de gatilhos que disparam a saída antes mesmo de chegar lá. Exemplos:
+
+- **Gatilho de velocidade**: se o lance subir muito rápido no início, pode indicar concorrência forte de operador que conhece o ativo melhor que você
+- **Gatilho de competição**: se mais de X participantes estiverem ativos, a probabilidade de pagar próximo do mercado aumenta
+- **Gatilho de comportamento**: se um concorrente demonstrar disposição irracional, recuar pode ser a melhor decisão
+
+Gatilhos não são fraqueza. São gestão de risco em tempo real.
+
+### 3) Plano de execução tático
+
+O plano tático define como você vai se comportar no pregão:
+
+- **Momento de entrada**: entrar cedo para sinalizar interesse ou esperar para avaliar a competição?
+- **Incrementos de lance**: usar incrementos mínimos ou saltos maiores para intimidar?
+- **Ritmo**: responder rápido para pressionar ou devagar para esfriar o ambiente?
+- **Comunicação**: quem está autorizado a dar lance? Há necessidade de aprovação em tempo real?
+
+Cada escolha tática deve estar alinhada com o objetivo estratégico e com o perfil do leilão.
+
+## Táticas de lance: o que funciona (e o que é mito)
+
+### O que funciona
+
+**Lance âncora inicial**
+Em alguns leilões, um lance inicial forte e acima do mínimo pode desencorajar concorrentes menos preparados. Funciona melhor quando há muitos participantes casuais e poucos profissionais.
+
+**Incrementos mínimos consistentes**
+Demonstra frieza e disposição para ir até o fim. Funciona bem contra concorrentes emocionais que esperam que você desista.
+
+**Pausa estratégica**
+Não responder imediatamente pode fazer o concorrente duvidar se você ainda está no jogo. Funciona melhor em leilões com tempo de resposta flexível.
+
+**Lance de fechamento decisivo**
+Um salto maior no momento certo pode encerrar a disputa. Risco: você pode estar pagando mais do que precisava.
+
+### O que é mito
+
+**"Quem dá mais lances vence"**
+Falso. Quem define melhor o teto e executa com disciplina vence no longo prazo. Vencer um leilão pagando demais é perder.
+
+**"Preciso esconder meu interesse"**
+Parcialmente falso. Em leilões online com múltiplos lotes, a discrição pode ajudar. Em leilões presenciais ou com poucos participantes, demonstrar preparo e seriedade pode afastar concorrentes.
+
+**"O leiloeiro é meu inimigo"**
+Falso. O leiloeiro quer vender, mas também quer um processo limpo. Relação profissional com leiloeiros pode gerar acesso a informações e oportunidades.
+
+## Anatomia de um lance vencedor
+
+Vamos analisar uma operação real (valores alterados por confidencialidade):
+
+**Contexto**: Imóvel comercial em leilão extrajudicial, lance mínimo de R$ 800.000.
+
+**Preparação**:
+- VRaj calculado: R$ 1.150.000
+- DT projetado (além do lance): R$ 180.000
+- Margem mínima exigida: 12%
+- **Teto calculado**: R$ 832.000
+
+**Gatilhos definidos**:
+- Saída se mais de 5 participantes ativos após 3 rodadas
+- Saída se lance ultrapassar R$ 750.000 nos primeiros 2 minutos
+
+**Execução**:
+- Entrada no lance 3, após observar dois participantes
+- Incrementos mínimos até R$ 780.000
+- Concorrente desistiu em R$ 785.000
+- **Lance vencedor: R$ 790.000**
+
+**Resultado**:
+- Margem realizada: 15,3% (acima do mínimo)
+- Operação aprovada em comitê antes do pregão
+- Documentação completa para auditoria
+
+A diferença entre esse resultado e um "lance emocional" de R$ 900.000 seria R$ 110.000 - quase 14% do valor do ativo.
+
+## Erros comuns em estratégia de lance
+
+### 1) Teto definido no pregão
+
+Se você está calculando seu limite enquanto o lance sobe, já perdeu. O ambiente de leilão não favorece pensamento analítico - favorece reação rápida e emocional.
+
+### 2) Ignorar custos de aquisição
+
+O lance é só o começo. Ignorar comissão, impostos, regularização e posse é calcular margem fantasiosa.
+
+### 3) Competir por ego
+
+"Não vou deixar ele ganhar" é a frase mais cara do mercado de leilões. Seu concorrente pode ter informação que você não tem, capacidade de execução diferente, ou simplesmente estar disposto a pagar mais porque a tese dele é outra.
+
+### 4) Não documentar a decisão
+
+Se você não consegue explicar por que deu aquele lance específico, você não tem estratégia - tem palpite. E palpite não sobrevive a auditoria.
+
+### 5) Subestimar o pós-arrematação
+
+Ganhar o leilão é o começo do trabalho. Se você não tem plano de execução para o que vem depois, a "vitória" pode se transformar em problema.
+
+## O papel do assessor na estratégia de lance
+
+Em operações de maior porte, a figura do assessor especializado agrega valor em três dimensões:
+
+**Inteligência de mercado**
+Conhecimento sobre valores reais, histórico de leilões similares, e perfil de concorrentes habituais.
+
+**Modelagem financeira**
+Cálculo rigoroso de VRaj, DT e margem, com premissas documentadas e cenários de sensibilidade.
+
+**Execução disciplinada**
+Capacidade de executar o plano tático sem desvio emocional, reportando em tempo real para o comitê.
+
+Na LFCOM, atuamos exatamente nessa camada - do underwriting à execução do lance - para garantir que cada arrematação seja uma decisão de investimento, não uma aposta.
+
+## Framework resumido
+
+Para sua próxima operação, use este checklist:
+
+- [ ] VRaj calculado com metodologia defensável
+- [ ] DT completo incluindo todos os custos pós-lance
+- [ ] Margem mínima definida com base no custo de capital
+- [ ] Teto de lance aprovado antes do pregão
+- [ ] Gatilhos de saída documentados
+- [ ] Plano tático definido (entrada, incrementos, ritmo)
+- [ ] Autoridade de lance clara (quem decide no pregão)
+- [ ] Plano de execução pós-arrematação estruturado
+
+Se algum item estiver em branco, você não está pronto para dar lance.
+
+## Conclusão: disciplina é vantagem competitiva
+
+O mercado de leilões favorece quem tem método. Enquanto a maioria compete com intuição e emoção, o investidor disciplinado compete com números, plano e controle.
+
+A estratégia de lance não é sobre coragem ou agressividade. É sobre preparação. **Quem chega ao pregão com o trabalho feito já venceu - mesmo que não arremate nada naquele dia.**
+
+Porque no longo prazo, as melhores operações não são as que você ganhou a qualquer custo. São as que você ganhou pelo preço certo - ou teve a disciplina de não fazer.
+    `,
+    date: "2026-02-03",
+    readingMinutes: 11,
+    tags: ["Estratégia", "Lance", "Tática", "Investimento", "Governança"],
+    coverImage: estrategiaLanceLeilao
   }
 ];
 
