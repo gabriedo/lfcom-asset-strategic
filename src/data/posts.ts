@@ -5053,7 +5053,7 @@ Porque o melhor negócio em leilão não é o maior desconto. É o que você con
 
 *Precisa de apoio para estruturar uma estratégia de imissão? Fale com nosso time.*
     `,
-    date: "2025-11-22",
+    date: "2025-02-03",
     readingMinutes: 16,
     tags: ["Imissão na Posse", "Posse", "Leilão Judicial", "Desocupação", "Processo"],
     coverImage: imissaoNaPosse
