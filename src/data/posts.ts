@@ -5,6 +5,7 @@ import checklistArrematacao from "@/assets/insights/checklist-arrematacao.jpg";
 import patrimonioResidencial from "@/assets/insights/patrimonio-residencial.jpg";
 import reportLeiloes2026 from "@/assets/insights/report-leiloes-2026.jpg";
 import calculoDescontoLeilao from "@/assets/insights/calculo-desconto-leilao.jpg";
+import riscoJuridicoLeilao from "@/assets/insights/risco-juridico-leilao.jpg";
 
 export interface Post {
   id: string;
@@ -1602,6 +1603,132 @@ Se você quiser um norte prático para o próximo leilão, faça uma pergunta si
     readingMinutes: 12,
     tags: ["Cálculo", "Desconto", "Estratégia", "Investimento", "Risco"],
     coverImage: calculoDescontoLeilao
+  },
+  {
+    id: "8",
+    title: "Risco jurídico em leilão: o que pode dar errado",
+    slug: "risco-juridico-leilao-o-que-pode-dar-errado",
+    excerpt: "Quem compra imóvel em leilão com capital relevante não perde dinheiro no lance. Perde no pós-arrematação, quando o ativo ainda não é investimento - é uma sequência de etapas jurídicas onde um detalhe fora do controle vira custo.",
+    content: `
+# Risco jurídico em leilão: o que pode dar errado
+
+Quem compra imóvel em leilão com capital relevante não perde dinheiro no lance. Perde no pós-arrematação, quando o ativo ainda não é "investimento" - é uma sequência de etapas jurídicas, cartorárias e operacionais em que um detalhe fora do controle vira atraso, custo incremental e exposição reputacional.
+
+O risco jurídico em leilão de imóveis não é um conceito abstrato. Ele aparece como ineficácia de ato, nulidade discutida, cadeia dominial com ruído, débitos que não migraram como se imaginava, ocupação resistente, ou impossibilidade prática de registrar e imitir-se na posse dentro do timing do seu comitê. Para quem compra com disciplina institucional, o ponto não é "se existe risco", e sim se ele é identificável, precificável e gerenciável dentro de um plano de controle.
+
+## Risco jurídico em leilão de imóveis: onde ele nasce
+
+Em leilões, a assimetria de informação é estrutural. O edital e a matrícula são necessários, mas insuficientes. O risco nasce na interseção entre:
+
+1. **O tipo de leilão e o rito aplicável**
+2. **A situação registral e processual do bem**
+3. **O estado real de uso e ocupação**
+
+Leilão judicial, extrajudicial, falimentar, de alienação fiduciária, de execução fiscal - cada um traz regras próprias de intimação, preferência, purgação de mora, assinatura de autos, expedição de carta, sub-rogação de ônus e possibilidade de questionamento. O investidor que trata "leilão como leilão" errou a classe de risco já no primeiro passo.
+
+> Também existe uma diferença relevante entre "risco jurídico" e "risco operacional com consequência jurídica". Um exemplo simples: matrícula atualizada é jurídica; a ausência de cópia integral do processo e das intimações é jurídica e operacional ao mesmo tempo, porque impede o diagnóstico e cria surpresa depois. Em decisões de alto impacto, isso deveria ser tratado como falha de governança, não como "custo de oportunidade".
+
+## Os pontos de falha que mais derrubam teses
+
+Há dezenas de cenários, mas alguns se repetem com frequência suficiente para serem tratados como padrão de controle.
+
+### 1) Intimações e ciência do devedor e do cônjuge
+
+Muitas anulações e discussões pós-leilão nascem de intimação insuficiente, ciência precária ou controvérsia sobre quem deveria ter sido intimado. Isso é mais sensível em execuções e em alguns ritos extrajudiciais, em que a formalidade não é perfumaria - é condição de validade.
+
+Na prática, o que importa para o comprador é: **existe trilha documental verificável, dentro dos autos, que sustenta a regularidade do procedimento?** Sem isso, o "desconto" do leilão vira prêmio de risco que você talvez não queira carregar.
+
+### 2) Cadeia dominial e vícios de registro
+
+A matrícula é o centro de gravidade do ativo. Só que ela não é um documento "autoexplicativo" quando há histórico de desmembramentos, incorporações, retificações, construções não averbadas, ou conflitos entre a realidade física e o que está descrito.
+
+O risco aqui não é apenas um terceiro alegar direito. É você não conseguir registrar a carta de arrematação ou o instrumento aplicável, não conseguir averbar os compromissos, ou cair em exigências que travam o cronograma. Para quem responde a comitê e auditoria, travar em cartório sem plano de ação é custo e desgaste.
+
+### 3) Ônus, gravames e sub-rogação que "não acontece sozinha"
+
+Os editais costumam trazer frases padrão sobre sub-rogação, cancelamento de penhoras, preferência e responsabilidade por débitos. O risco real aparece quando a tese jurídica do edital encontra a execução prática.
+
+Mesmo quando há base para cancelamento de gravame, o caminho até a baixa registral pode exigir petições, decisões e prazo. Se você modela o ativo como se a baixa fosse automática, você errou o fluxo de caixa e, pior, perdeu o controle do risco de saída.
+
+### 4) Débitos condominiais, IPTU e obrigações propter rem
+
+Condomínios e tributos municipais são áreas onde os investidores se surpreendem menos pela existência do débito e mais pela dinâmica de cobrança e pela negociação.
+
+A questão não é "quem paga", no plano teórico. É: qual é o valor efetivo, quais multas e juros estão correndo, qual é a postura do condomínio, se há execuções em curso, e se a estratégia de regularização é compatível com o seu plano de posse e uso. Em ativos ocupados, o condomínio pode ser um vetor de pressão operacional que antecipa o custo.
+
+### 5) Ocupação, posse e tempo real de desocupação
+
+O risco jurídico em leilão de imóveis costuma ser subestimado na variável mais material: **conseguir a posse**. A tese "arrematei, logo posso entrar" não se sustenta no mundo real.
+
+Se houver ocupação, você precisa estimar o caminho de desocupação e imissão na posse, incluindo o risco de resistência, necessidade de ação judicial e custos de transição. O investidor disciplinado transforma isso em cronograma e orçamento, não em esperança.
+
+### 6) Preferências, meações e disputas familiares
+
+Meação, inventário, usufruto, cláusulas restritivas e disputas entre herdeiros podem transformar um ativo em uma discussão longa, ainda que o leilão tenha ocorrido.
+
+Aqui, o risco não é apenas perder o ativo, mas entrar em uma zona cinzenta de litígio em que seu capital fica imobilizado. Se o seu mandato exige liquidez e previsibilidade, essa classe de risco exige critérios claros de elegibilidade.
+
+## O que é diligência "grau de investimento" em leilão
+
+A diligência que funciona para ticket pequeno é insuficiente quando o objetivo é transformar a arrematação em patrimônio estratégico. Em alto nível, a diligência de grau de investimento separa três camadas:
+
+| Camada | O que analisa |
+|--------|---------------|
+| **Validade do procedimento** | Rito correto, intimações, prazos, publicações, decisões e recursos com potencial de afetar o ato |
+| **Registrabilidade do título** | Se você consegue registrar com o que existe hoje; o que o cartório vai exigir; inconsistências de área, confrontações, estado civil |
+| **Executabilidade do plano** | Quanto custa e quanto demora para desocupar, regularizar, negociar débitos, ajustar cadastro municipal e, se necessário, litigar |
+
+**Validade do procedimento** é olhar para o rito certo, para as intimações, prazos, publicações, decisões e recursos eventuais com potencial de afetar o ato. Isso costuma exigir a leitura de peças relevantes e a verificação de marcos processuais, não apenas uma consulta superficial.
+
+**Registrabilidade do título** é questão operacional com consequência jurídica: com o que existe hoje, você consegue registrar? O cartório vai exigir o quê? Há inconsistências de área, confrontações, estado civil, qualificação das partes, ou falta de averbações básicas? Investidor que ignora isso descobre depois, quando o relógio já está correndo.
+
+**Executabilidade do plano** é onde muitos "cases" morrem. Quanto custa e quanto demora para desocupar, regularizar, negociar débitos, ajustar cadastro municipal, lidar com concessionárias e, se necessário, litigar? Se você não consegue descrever o caminho, você não tem controle de risco - só tem exposição.
+
+## Quando o risco é aceitável e quando ele é assimétrico contra você
+
+Risco aceitável não é risco baixo. É risco com:
+
+- **(i)** Probabilidade e impacto mapeados
+- **(ii)** Mitigadores disponíveis
+- **(iii)** Preço que remunera o risco
+- **(iv)** Governança para executar
+
+Já o risco assimétrico contra o comprador aparece quando o resultado é binário ou quando o tempo é a variável mais cara. Exemplos típicos: dependência de decisão judicial incerta para cancelar gravame, tese de nulidade com fundamento documental, ou posse com alta chance de judicialização longa.
+
+Existe também o cenário "risco pequeno, mas invisível". Ele é perigoso porque não entra no comitê. Quando aparece, vira surpresa e consome energia da diretoria. É por isso que a disciplina de documentação e o registro de premissas são parte do investimento, não burocracia.
+
+## Controle de risco: governança, não improviso
+
+O investidor sério trata leilão como um processo de aquisição com trilha de auditoria. Isso significa que cada decisão precisa de base documental, cada premissa precisa ser explicitada, e cada risco precisa de um responsável e de um plano.
+
+Na prática, funciona como underwriting: enquadrar o ativo em uma matriz de riscos, definir condições de lance (preço máximo e gatilhos de saída), prever custos totais de aquisição e regularização, e desenhar a estratégia pós-arrematação com prazos realistas.
+
+> Também é onde a experiência pesa. Leilão é um ambiente em que a velocidade é diferencial, mas velocidade sem controle vira erro caro. Quando a decisão é de alto ticket, o comprador precisa de senioridade na leitura do risco e na execução até o registro e a posse.
+
+Para operações que exigem padrão institucional, a LFCOM atua exatamente nessa camada de controle - da diligência jurídica e do underwriting até a estratégia de lance e a execução completa do pós, com foco em segurança jurídica e previsibilidade de fechamento.
+
+## O que muda conforme o tipo de comprador
+
+**Empresas operacionais** costumam sofrer mais com risco de posse e continuidade: elas precisam do ativo para uso, não apenas para valorização. Para esse perfil, a tolerância a complicações é menor, e os critérios de elegibilidade devem privilegiar executabilidade.
+
+**Family offices e grandes investidores privados** costumam aceitar mais complexidade jurídica se a assimetria de preço for clara e se houver margem de tempo. Ainda assim, é preciso transformar a complexidade em governança: tese, documentação e plano.
+
+**Operadores de ativos problemáticos** podem aceitar riscos que outros não aceitem, mas normalmente porque possuem estrutura para executar desocupação, regularização e litigância. O erro é um investidor "comprar como operador" sem ter a mesma capacidade instalada.
+
+## A pergunta que decide: você consegue defender esta compra?
+
+Em comitês, auditorias e disputas, a compra precisa ser defensável. Defensável não é "deu certo". É: havia documentos, análises, critérios e planos compatíveis com o risco assumido.
+
+Se você não consegue explicar, com clareza, por que o procedimento é válido, por que o título é registrável e como você vai converter arrematação em posse e propriedade regular, então o risco jurídico em leilão de imóveis não está controlado - ele está apenas adiado.
+
+---
+
+A boa notícia é que leilões podem, sim, ser um canal disciplinado de aquisição. Mas a disciplina começa antes do lance e continua depois, quando quase ninguém mais está olhando. **Com capital grande, o diferencial não é coragem. É controle.**
+    `,
+    date: "2026-02-02",
+    readingMinutes: 14,
+    tags: ["Risco Jurídico", "Due Diligence", "Governança", "Imóveis", "Estratégia"],
+    coverImage: riscoJuridicoLeilao
   }
 ];
 
