@@ -8053,9 +8053,24 @@ Os emolumentos cartorários **podem sofrer leve aumento** com a incidência do I
 
 ## Impacto na venda de imóveis arrematados
 
-### Pessoa física: ganho de capital
+### IBS e CBS na venda de imóveis: entenda o conceito
 
-A tributação sobre ganho de capital de PF **não muda**:
+O IBS (Imposto sobre Bens e Serviços) e a CBS (Contribuição sobre Bens e Serviços) são tributos sobre o **valor agregado**, não sobre o patrimônio. Isso significa que incidem sobre operações de **circulação de bens e serviços com habitualidade**.
+
+**Ponto crucial**: A venda eventual de imóvel por **pessoa física** que **não exerce atividade imobiliária** como profissão **NÃO é fato gerador de IBS/CBS**.
+
+| Situação | Paga IBS/CBS? | Paga IR sobre Ganho de Capital? |
+|----------|---------------|--------------------------------|
+| PF vende imóvel próprio (uso pessoal) | **NÃO** | SIM (15-22,5%) |
+| PF investidor eventual (1-2 operações/ano) | **NÃO** | SIM (15-22,5%) |
+| PF "flipping" profissional (habitualidade) | **SIM** (~13-14%) | SIM (15-22,5%) ou lucro como PF |
+| PJ vende imóvel do ativo | **SIM** (~13-14%) | SIM (IR/CSLL sobre lucro) |
+
+> **Importante**: A LC 214/2025 estabelece que operações **sem habitualidade** e **sem intuito comercial** por pessoa física não configuram fato gerador dos novos tributos.
+
+### Pessoa física: ganho de capital (mantido)
+
+A tributação sobre ganho de capital de PF **NÃO muda com a reforma**:
 
 | Faixa de ganho | Alíquota |
 |----------------|----------|
@@ -8067,27 +8082,129 @@ A tributação sobre ganho de capital de PF **não muda**:
 **Isenções mantidas**:
 - Venda de único imóvel até R$ 440.000
 - Reinvestimento em outro imóvel residencial em 180 dias
-- Fator de redução para imóveis antigos
+- Fator de redução para imóveis antigos (adquiridos antes de 1988)
 
-### Pessoa jurídica: nova tributação
+---
 
-A reforma **supera a antiga controvérsia** sobre permuta e ganho de capital. Agora, toda venda de imóvel é "operação com bem" sujeita ao IBS/CBS:
+## Simulação completa: antes vs depois (Pessoa Física)
 
-| Regime | Tributação atual | Tributação pós-reforma |
-|--------|------------------|----------------------|
-| **Lucro Presumido** | ~5,93% sobre receita | IBS/CBS (~13-14%) + IR/CSLL |
-| **Lucro Real** | 34% sobre lucro | IBS/CBS (~13-14%) + 34% sobre lucro |
+### Cenário: Arrematação e venda de imóvel por PF
 
-**Exemplo comparativo** - Venda de imóvel por R$ 500.000 (custo R$ 300.000):
+**Dados da operação**:
+- Valor de arrematação em leilão: **R$ 400.000**
+- ITBI (3%): R$ 12.000
+- Custas cartoriais: R$ 3.000
+- Reformas e regularização: R$ 35.000
+- **Custo total de aquisição**: R$ 450.000
+- Valor de venda após 18 meses: **R$ 650.000**
+- **Ganho de capital**: R$ 200.000
 
-| Cenário | Pessoa Física | Holding LP (atual) | Holding LP (pós-reforma) |
-|---------|---------------|-------------------|-------------------------|
-| Base tributável | R$ 200.000 (ganho) | R$ 500.000 (receita) | R$ 500.000 (receita) |
-| Tributos | R$ 30.000 (15%) | ~R$ 30.000 (~6%) | ~R$ 80.000 (~16%)* |
+### Simulação ANTES da reforma (sistema atual)
 
-*Estimativa incluindo IBS/CBS + IR/CSLL. Com créditos de IBS/CBS sobre insumos, o valor pode ser menor.
+| Tributo | Base de Cálculo | Alíquota | Valor |
+|---------|-----------------|----------|-------|
+| ITBI (aquisição) | R$ 400.000 | 3% | R$ 12.000 |
+| IR Ganho de Capital | R$ 200.000 | 15% | R$ 30.000 |
+| PIS/COFINS | N/A (PF) | 0% | R$ 0 |
+| **TOTAL DE TRIBUTOS** | - | - | **R$ 42.000** |
 
-> **Conclusão**: A vantagem tributária de holdings para venda de imóveis **será significativamente reduzida**.
+**Lucro líquido**: R$ 650.000 - R$ 450.000 - R$ 30.000 = **R$ 170.000** (26,2% de retorno)
+
+### Simulação DEPOIS da reforma (a partir de 2027)
+
+| Tributo | Base de Cálculo | Alíquota | Valor |
+|---------|-----------------|----------|-------|
+| ITBI (aquisição) | R$ 400.000 | 3% | R$ 12.000 |
+| IR Ganho de Capital | R$ 200.000 | 15% | R$ 30.000 |
+| IBS/CBS | **N/A (PF eventual)** | 0% | **R$ 0** |
+| **TOTAL DE TRIBUTOS** | - | - | **R$ 42.000** |
+
+**Lucro líquido**: **R$ 170.000** (26,2% de retorno) - **IDÊNTICO**
+
+> **Conclusão**: Para pessoa física investidora eventual (sem habitualidade), **a reforma NÃO altera a tributação na venda de imóveis**. O ganho de capital continua sendo a única incidência.
+
+---
+
+## Quando a PF PAGA IBS/CBS na venda?
+
+A pessoa física será enquadrada como contribuinte do IBS/CBS se caracterizar **habitualidade** na atividade imobiliária:
+
+| Critério | Descrição |
+|----------|-----------|
+| Volume de operações | 3+ vendas de imóveis por ano |
+| Aquisição com finalidade comercial | Compra exclusivamente para revenda |
+| Prazo entre compra e venda | Menos de 12 meses (indício de especulação) |
+| Atividade organizada | Marketing ativo, equipe, estrutura |
+| Declaração de IR | Rendimentos como "atividade comercial" |
+
+### Simulação: PF com habitualidade (trader imobiliário)
+
+**Dados da operação** (mesmos valores anteriores):
+- Custo total: R$ 450.000
+- Venda: R$ 650.000
+- Ganho: R$ 200.000
+
+| Tributo | Base de Cálculo | Alíquota | Valor |
+|---------|-----------------|----------|-------|
+| ITBI (aquisição) | R$ 400.000 | 3% | R$ 12.000 |
+| IBS/CBS (com redução 50%) | R$ 650.000 | ~13,25% | **R$ 86.125** |
+| IR sobre resultado* | R$ 113.875 | 27,5% | **R$ 31.315** |
+| **TOTAL DE TRIBUTOS** | - | - | **R$ 129.440** |
+
+*Considerando tributação como rendimento de atividade (não ganho de capital)
+
+**Lucro líquido**: R$ 650.000 - R$ 450.000 - R$ 117.440 = **R$ 70.560** (10,9% de retorno)
+
+> **Impacto devastador**: O enquadramento como atividade habitual pode **reduzir o retorno de 26% para 11%**.
+
+---
+
+## Simulação: Compra e venda via Pessoa Jurídica
+
+### Cenário: Holding patrimonial (Lucro Presumido)
+
+**Dados da operação** (mesmos valores):
+- Custo total aquisição: R$ 450.000
+- Valor de venda: R$ 650.000
+
+### ANTES da reforma (sistema atual)
+
+| Tributo | Base de Cálculo | Alíquota | Valor |
+|---------|-----------------|----------|-------|
+| ITBI | R$ 400.000 | 3% | R$ 12.000 |
+| PIS/COFINS | R$ 650.000 | 3,65% | R$ 23.725 |
+| IRPJ (base 8%) | R$ 52.000 | 15% | R$ 7.800 |
+| CSLL (base 12%) | R$ 78.000 | 9% | R$ 7.020 |
+| **TOTAL DE TRIBUTOS** | - | - | **R$ 50.545** |
+
+**Lucro líquido PJ**: R$ 650.000 - R$ 450.000 - R$ 38.545 = **R$ 149.455** (23% de retorno)
+
+### DEPOIS da reforma (a partir de 2033)
+
+| Tributo | Base de Cálculo | Alíquota | Valor |
+|---------|-----------------|----------|-------|
+| ITBI | R$ 400.000 | 3% | R$ 12.000 |
+| IBS/CBS (redução 50%) | R$ 650.000 | ~13,25% | **R$ 86.125** |
+| IRPJ (base 8%) | R$ 52.000 | 15% | R$ 7.800 |
+| CSLL (base 12%) | R$ 78.000 | 9% | R$ 7.020 |
+| **TOTAL DE TRIBUTOS** | - | - | **R$ 112.945** |
+
+**Lucro líquido PJ**: R$ 650.000 - R$ 450.000 - R$ 100.945 = **R$ 87.055** (13,4% de retorno)
+
+---
+
+## Quadro comparativo final: Venda de imóvel R$ 650.000
+
+| Cenário | Tributos Antes | Tributos Depois | Diferença |
+|---------|----------------|-----------------|-----------|
+| **PF eventual (sem habitualidade)** | R$ 42.000 | R$ 42.000 | **0%** |
+| **PF com habitualidade** | R$ 42.000 | R$ 129.440 | **+208%** |
+| **PJ Lucro Presumido** | R$ 50.545 | R$ 112.945 | **+123%** |
+
+> **Conclusão estratégica**: 
+> - PF eventual continua sendo a forma mais eficiente para venda de imóveis
+> - Holdings perdem competitividade significativa para operações de flipping
+> - Evitar caracterização de habitualidade é fundamental
 
 ---
 
