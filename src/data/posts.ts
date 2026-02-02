@@ -11,6 +11,7 @@ import imovelOcupadoLeilao from "@/assets/insights/imovel-ocupado-leilao.jpg";
 import certidoesArrematacao from "@/assets/insights/certidoes-arrematacao.jpg";
 import penhoraOnusImovel from "@/assets/insights/penhora-onus-imovel.jpg";
 import fraudeLeilaoOnline from "@/assets/insights/fraude-leilao-online.jpg";
+import comissaoLeiloeiro from "@/assets/insights/comissao-leiloeiro.jpg";
 
 export interface Post {
   id: string;
@@ -3126,6 +3127,238 @@ Se parece bom demais para ser verdade, provavelmente é.
     readingMinutes: 12,
     tags: ["Fraude", "Segurança", "Leilão Online", "Proteção", "Golpes"],
     coverImage: fraudeLeilaoOnline
+  },
+  {
+    id: "14",
+    title: "Comissão do leiloeiro: quem paga?",
+    slug: "comissao-leiloeiro-quem-paga",
+    excerpt: "A comissão do leiloeiro é custo do arrematante, do vendedor, ou de ambos? Entenda como funciona, quanto custa e como incluir no seu cálculo de investimento.",
+    content: `
+# Comissão do leiloeiro: quem paga?
+
+Uma das dúvidas mais frequentes entre investidores que começam a operar em leilões é sobre a comissão do leiloeiro. Quem paga? Quanto custa? Está incluída no lance ou é cobrada à parte? A resposta, como quase tudo em leilões, depende do tipo de leilão e das condições do edital.
+
+Este guia esclarece como funciona a comissão do leiloeiro nos diferentes tipos de leilão, apresenta os percentuais praticados no mercado e mostra como incorporar esse custo corretamente no cálculo do desembolso total.
+
+## O que é a comissão do leiloeiro
+
+A comissão do leiloeiro é a remuneração pelo serviço de condução do leilão. O leiloeiro é um profissional regulamentado (no caso de leilões judiciais, auxiliar da justiça) responsável por:
+
+- Publicar e divulgar o leilão
+- Receber e validar cadastros de participantes
+- Conduzir o pregão (presencial ou online)
+- Receber lances e declarar o arrematante
+- Emitir documentação da arrematação
+
+Essa atividade tem custo, e alguém precisa pagar. A questão é: quem?
+
+## A regra geral: quem paga é o arrematante
+
+Na grande maioria dos leilões de imóveis no Brasil, **a comissão do leiloeiro é paga pelo arrematante**, não pelo vendedor ou pelo credor.
+
+Isso significa que o valor do lance não é o único desembolso. Além do lance vencedor, você pagará um percentual adicional diretamente ao leiloeiro.
+
+**Exemplo simples**:
+- Lance vencedor: R$ 500.000
+- Comissão do leiloeiro: 5%
+- Valor da comissão: R$ 25.000
+- **Desembolso total (só nessa etapa)**: R$ 525.000
+
+Esse é o primeiro erro de cálculo que muitos investidores cometem: olhar apenas o lance e esquecer a comissão.
+
+## Percentuais praticados no mercado
+
+Os percentuais de comissão variam conforme o tipo de leilão, o leiloeiro e as condições do edital. Aqui está um panorama geral:
+
+| Tipo de leilão | Comissão típica | Quem paga |
+|----------------|-----------------|-----------|
+| Leilão judicial | 5% | Arrematante |
+| Leilão extrajudicial (alienação fiduciária) | 5% | Arrematante |
+| Leilão de bancos e instituições | 5% | Arrematante |
+| Leilão de falência/recuperação judicial | 5% a 10% | Arrematante |
+| Venda direta (sem leilão formal) | Negociável | Variável |
+
+**Observação importante**: Alguns editais preveem comissões diferentes para primeiro e segundo leilão, ou estabelecem valores fixos em vez de percentuais. **Sempre leia o edital.**
+
+## Comissão no leilão judicial
+
+Em leilões judiciais, a comissão do leiloeiro é regulamentada pelo Código de Processo Civil e pelas normas de cada tribunal.
+
+**Regra geral (art. 884, CPC)**:
+- A comissão é de até 5% sobre o valor da arrematação
+- É paga pelo arrematante
+- Deve constar expressamente no edital
+
+**Variações por tribunal**:
+Alguns tribunais estabelecem regras específicas em seus provimentos e normas internas. Por exemplo:
+- TJSP: comissão de 5% paga pelo arrematante
+- TJRJ: comissão de 5% paga pelo arrematante
+- TRFs: geralmente 5%, mas pode variar por região
+
+**Primeiro vs. segundo leilão**:
+Em geral, a comissão é a mesma independentemente de ser primeiro ou segundo leilão. O que muda é o preço mínimo do lance, não a comissão.
+
+## Comissão no leilão extrajudicial
+
+Em leilões extrajudiciais (principalmente de alienação fiduciária, regidos pela Lei 9.514/97), a comissão também é tipicamente paga pelo arrematante.
+
+**Características**:
+- Percentual de 5% é o mais comum
+- Pode haver comissão fixa em vez de percentual
+- Condições devem constar no edital e no contrato de alienação
+
+**Atenção**: Em leilões extrajudiciais de bancos, a comissão às vezes é "embutida" no valor do lance - ou seja, o banco absorve o custo. Isso é raro, mas pode acontecer em situações de grande volume de imóveis retomados. **Verifique o edital.**
+
+## Quando o vendedor paga a comissão
+
+Existem situações em que a comissão é paga pelo vendedor (credor) e não pelo arrematante:
+
+**Vendas diretas de bancos e instituições**:
+Alguns bancos, especialmente em operações de volume, absorvem a comissão como custo de venda.
+
+**Leilões de ativos de massa falida**:
+Em alguns casos, a comissão é deduzida do produto da venda antes da distribuição aos credores.
+
+**Leilões promocionais**:
+Ocasionalmente, para atrair mais participantes, o vendedor assume a comissão.
+
+**Como identificar**: O edital sempre informará quem é responsável pelo pagamento da comissão. Se não informar, presuma que é o arrematante.
+
+## Comissão é negociável?
+
+Em leilões judiciais, a comissão é definida pelo juiz no momento da nomeação do leiloeiro e não é negociável pelo arrematante.
+
+Em leilões extrajudiciais e vendas diretas, pode haver margem de negociação, especialmente:
+- Em ativos de alto valor
+- Em compras de múltiplos lotes
+- Em relacionamentos recorrentes com o leiloeiro
+
+Na prática, a negociação de comissão é rara e geralmente só acontece em operações de grande porte conduzidas por assessorias especializadas.
+
+## Como a comissão afeta o cálculo do investimento
+
+A comissão do leiloeiro deve ser incluída no cálculo do Desembolso Total (DT) para definição correta do teto de lance.
+
+### Fórmula básica
+
+**DT = Lance + Comissão do leiloeiro + Outros custos de aquisição**
+
+Onde "outros custos de aquisição" incluem:
+- ITBI
+- Custas de registro
+- Emolumentos cartorários
+- Custos de regularização
+
+### Exemplo completo
+
+**Situação**: Imóvel com valor de mercado de R$ 800.000, leilão judicial, comissão de 5%.
+
+**Cálculo do teto de lance**:
+
+| Item | Valor |
+|------|-------|
+| Valor de referência ajustado (VRaj) | R$ 720.000 |
+| Margem mínima desejada | 15% |
+| VRaj após margem | R$ 612.000 |
+| (-) ITBI estimado (3%) | R$ 18.360 |
+| (-) Custas de registro | R$ 5.000 |
+| (-) Regularização | R$ 10.000 |
+| (=) Valor disponível para lance + comissão | R$ 578.640 |
+| Teto de lance (÷ 1,05) | **R$ 551.086** |
+
+Neste exemplo, o teto de lance é R$ 551.086. Com a comissão de 5%, o desembolso no lance seria R$ 578.640, deixando margem para os demais custos.
+
+**Erro comum**: Calcular o teto de lance sem considerar a comissão e depois descobrir que o desembolso total ultrapassa o planejado.
+
+## Comissão e forma de pagamento
+
+A comissão do leiloeiro geralmente é paga junto com o lance, nas mesmas condições de pagamento.
+
+**Pagamento à vista**:
+- Lance + comissão pagos integralmente no prazo do edital (geralmente 24h a 15 dias)
+
+**Pagamento parcelado (quando permitido)**:
+- Comissão pode ser exigida integralmente na entrada
+- Ou pode ser parcelada junto com o lance
+- Condições variam por edital
+
+**Atenção**: Alguns leiloeiros exigem pagamento da comissão antes mesmo da emissão do auto de arrematação. Verifique o edital para evitar surpresas.
+
+## Comissão em caso de desistência ou anulação
+
+O que acontece com a comissão se o arrematante desiste ou o leilão é anulado?
+
+**Desistência do arrematante**:
+- A comissão geralmente é devida mesmo assim
+- O arrematante pode perder o sinal/entrada E pagar a comissão
+- Algumas situações permitem recuperação parcial
+
+**Anulação do leilão por vício processual**:
+- Se a anulação não decorreu de culpa do arrematante, a comissão deve ser devolvida
+- Na prática, pode ser necessário acionar judicialmente para recuperar
+
+**Arrematação por preço vil (quando reconhecida posteriormente)**:
+- Situação controversa
+- Depende de decisão judicial caso a caso
+
+## Outras taxas e custos do leiloeiro
+
+Além da comissão principal, alguns leiloeiros cobram taxas adicionais:
+
+| Taxa | Descrição | Valor típico |
+|------|-----------|--------------|
+| Taxa de cadastro | Cobrança para se cadastrar na plataforma | R$ 0 a R$ 500 |
+| Taxa de habilitação | Para participar de leilão específico | R$ 0 a R$ 200 |
+| Taxa de desistência | Penalidade por desistir após arrematar | 5% a 20% do lance |
+| Taxa administrativa | Custos operacionais diversos | Variável |
+
+**Importante**: Taxas de cadastro e habilitação são cada vez menos comuns em leiloeiros sérios. Desconfie de leiloeiros que cobram valores altos apenas para participar.
+
+## Comissão e assessoria: cuidado com a dupla cobrança
+
+Se você utiliza uma assessoria especializada para participar de leilões, atenção para não confundir:
+
+**Comissão do leiloeiro**: Paga ao leiloeiro oficial que conduz o leilão. Inevitável.
+
+**Honorários da assessoria**: Paga à empresa que assessora sua participação (diligência, estratégia, execução). Contratação opcional.
+
+São custos diferentes e cumulativos. Uma assessoria séria deixa claro que seus honorários são adicionais à comissão do leiloeiro.
+
+## Matriz resumo: comissão por tipo de leilão
+
+| Tipo | Percentual | Pago por | Base de cálculo | Observações |
+|------|------------|----------|-----------------|-------------|
+| Judicial imóvel | 5% | Arrematante | Valor do lance | Padrão CPC |
+| Judicial móvel | 5% | Arrematante | Valor do lance | Pode variar |
+| Extrajudicial AF | 5% | Arrematante | Valor do lance | Lei 9.514/97 |
+| Banco (venda direta) | 0-5% | Variável | Valor da venda | Verificar edital |
+| Falência | 5-10% | Arrematante | Valor do lance | Definido pelo juiz |
+| Particular | Negociável | Negociável | Negociável | Contrato livre |
+
+## Checklist: comissão no cálculo do investimento
+
+Antes de dar lance, confirme:
+
+- [ ] Percentual de comissão identificado no edital
+- [ ] Responsável pelo pagamento confirmado (arrematante ou vendedor)
+- [ ] Forma de pagamento da comissão verificada
+- [ ] Comissão incluída no cálculo do DT
+- [ ] Teto de lance calculado considerando comissão
+- [ ] Outras taxas do leiloeiro identificadas
+- [ ] Honorários de assessoria (se aplicável) considerados separadamente
+
+## Conclusão: comissão é custo, não surpresa
+
+A comissão do leiloeiro não é opcional e não é novidade - está prevista em lei e consta em todo edital. O investidor disciplinado a trata como qualquer outro custo de aquisição: identifica, quantifica e incorpora no modelo financeiro.
+
+O erro está em calcular a "oportunidade" olhando apenas o lance e descobrir depois que o desembolso real é 5% maior. Em um imóvel de R$ 1 milhão, são R$ 50.000 a mais. Ignorar isso não é otimismo - é descuido.
+
+A comissão do leiloeiro faz parte do jogo. Quem a contabiliza corretamente compete em condições reais. Quem ignora, compete contra uma ilusão.
+    `,
+    date: "2026-01-29",
+    readingMinutes: 10,
+    tags: ["Comissão", "Leiloeiro", "Custos", "Investimento", "Edital"],
+    coverImage: comissaoLeiloeiro
   }
 ];
 
