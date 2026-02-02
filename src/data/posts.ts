@@ -12,7 +12,7 @@ import certidoesArrematacao from "@/assets/insights/certidoes-arrematacao.jpg";
 import penhoraOnusImovel from "@/assets/insights/penhora-onus-imovel.jpg";
 import fraudeLeilaoOnline from "@/assets/insights/fraude-leilao-online.jpg";
 import comissaoLeiloeiro from "@/assets/insights/comissao-leiloeiro.jpg";
-
+import riscoEviccaoLeilao from "@/assets/insights/risco-eviccao-leilao.jpg";
 export interface Post {
   id: string;
   title: string;
@@ -3359,6 +3359,274 @@ A comissão do leiloeiro faz parte do jogo. Quem a contabiliza corretamente comp
     readingMinutes: 10,
     tags: ["Comissão", "Leiloeiro", "Custos", "Investimento", "Edital"],
     coverImage: comissaoLeiloeiro
+  },
+  {
+    id: "15",
+    title: "Risco de evicção em leilão: o que é e como se proteger",
+    slug: "risco-eviccao-leilao",
+    excerpt: "Evicção é o pesadelo de quem arremata: perder o imóvel para um terceiro com direito superior. Entenda quando isso pode acontecer e como minimizar o risco.",
+    content: `
+# Risco de evicção em leilão: o que é e como se proteger
+
+Entre os riscos jurídicos de uma arrematação, a evicção é o mais severo. Não se trata de atraso, custo extra ou burocracia - é a perda do bem. O arrematante paga, registra, toma posse, e depois descobre que um terceiro tem direito superior sobre o imóvel. O resultado: você perde a propriedade e, muitas vezes, o dinheiro também.
+
+Este guia explica o que é evicção, quando ela pode ocorrer em leilões, quais são os direitos do arrematante evicto e, principalmente, como identificar e evitar esse risco antes de dar lance.
+
+## O que é evicção
+
+Evicção é a perda de um bem adquirido em razão de decisão judicial que reconhece direito anterior de terceiro sobre esse bem.
+
+Em termos simples: você comprou algo que não era (totalmente) do vendedor. Alguém com direito melhor aparece, prova esse direito em juízo, e você perde o que comprou.
+
+**Elementos da evicção**:
+1. Aquisição onerosa (você pagou pelo bem)
+2. Perda total ou parcial da posse ou propriedade
+3. Decisão judicial reconhecendo direito de terceiro
+4. Direito do terceiro anterior à aquisição
+
+**Base legal**: Código Civil, artigos 447 a 457.
+
+## Evicção em leilão: o problema especial
+
+Em compras comuns, o comprador evicto pode acionar o vendedor para recuperar o que pagou (direito de regresso). Em leilões, a situação é mais complexa:
+
+**Quem é o "vendedor" em leilão judicial?**
+Não há vendedor no sentido tradicional. O bem é alienado por ordem judicial para satisfazer uma dívida. O devedor não "vende" voluntariamente.
+
+**O arrematante tem garantia contra evicção?**
+Sim, mas com limitações. O Código de Processo Civil (art. 903, §1º) estabelece que a arrematação é irretratável após assinado o auto, salvo vícios específicos. Porém, se o leilão for anulado por defeito no processo, o arrematante pode perder o bem.
+
+**Contra quem o arrematante evicto pode agir?**
+- Contra o devedor/executado (geralmente insolvente)
+- Contra o credor (em casos específicos de má-fé)
+- Pedido de restituição nos próprios autos da execução
+
+A recuperação do valor pago é incerta e frequentemente frustrante.
+
+## Situações que geram risco de evicção em leilão
+
+### 1. Vício na intimação do executado ou terceiros
+
+Se o devedor, cônjuge, coproprietário ou outro interessado não foi corretamente intimado do leilão, pode haver nulidade do ato.
+
+**Consequência**: O leilão é anulado, e o arrematante perde o bem.
+
+**Como verificar**: Analisar os autos do processo para confirmar que todas as intimações foram realizadas corretamente.
+
+### 2. Bem de família não reconhecido
+
+Se o imóvel é bem de família e essa proteção não foi corretamente afastada, a penhora pode ser anulada posteriormente.
+
+**Consequência**: A execução sobre aquele bem é extinta, e a arrematação cai.
+
+**Como verificar**: Analisar se houve alegação de bem de família, como foi decidida, e se a decisão transitou em julgado.
+
+### 3. Fraude à execução não configurada
+
+Se o bem foi adquirido pelo executado antes da citação ou da averbação da penhora, e não havia insolvência, a alienação anterior pode ser válida.
+
+**Consequência**: O terceiro adquirente (anterior ao leilão) pode ter direito sobre o bem.
+
+**Como verificar**: Analisar a cadeia de transmissões na matrícula e as datas de citação/penhora nos autos.
+
+### 4. Direitos de terceiros não considerados
+
+Meação do cônjuge, direitos de herdeiros, usufruto, direito real de habitação, promessa de compra e venda registrada - qualquer direito de terceiro não corretamente tratado pode gerar evicção parcial ou total.
+
+**Consequência**: O terceiro reivindica seu direito, e o arrematante perde parte ou todo o bem.
+
+**Como verificar**: Análise completa da matrícula e dos autos para identificar todos os interessados.
+
+### 5. Nulidade do título de propriedade do executado
+
+Se o próprio título de propriedade do devedor era nulo (escritura falsa, procuração irregular, vício de consentimento), essa nulidade pode ser reconhecida depois.
+
+**Consequência**: O executado nunca foi proprietário legítimo, logo não podia ter o bem penhorado e vendido.
+
+**Como verificar**: Análise da cadeia dominial completa (20+ anos) e verificação da regularidade de cada transmissão.
+
+### 6. Ação anulatória ou embargos de terceiro pendentes
+
+Se há ação judicial em curso questionando a propriedade ou a penhora, o resultado pode afetar a arrematação.
+
+**Consequência**: Se a ação for julgada procedente, o leilão pode ser anulado ou o bem reivindicado.
+
+**Como verificar**: Consultar os autos e as certidões de distribuição para identificar ações relacionadas.
+
+## O que diz a lei sobre evicção em leilão
+
+### Código de Processo Civil (art. 903)
+
+> "Qualquer que seja a modalidade de leilão, assinado o auto pelo juiz, pelo arrematante e pelo leiloeiro, a arrematação será considerada perfeita, acabada e irretratável."
+
+Isso significa que, em regra, a arrematação não pode ser desfeita por simples arrependimento. Mas há exceções:
+
+**§1º**: Pode ser invalidada se houver:
+- Vício de nulidade do processo
+- Não pagamento do preço
+- Preço vil (manifestamente inferior ao valor de mercado)
+
+**§2º**: O arrematante pode desistir se houver ônus não mencionado no edital.
+
+### Código Civil (arts. 447-457)
+
+Estabelece a garantia geral contra evicção em contratos onerosos:
+
+**Art. 447**: O alienante responde pela evicção, mesmo que a cláusula de garantia seja excluída.
+
+**Art. 450**: O evicto tem direito a:
+- Restituição integral do preço
+- Indenização dos frutos que teve que restituir
+- Custas judiciais e honorários advocatícios
+- Benfeitorias necessárias e úteis não abonadas
+
+**Art. 457**: Em hasta pública (leilão judicial), não há obrigação de garantia, mas o evicto pode reaver o preço pago.
+
+## Direitos do arrematante evicto
+
+Se você for evicto após arrematação, tem direito a:
+
+| Direito | Base legal | Observação |
+|---------|------------|------------|
+| Restituição do preço | CC, art. 450 | Valor integral pago |
+| Comissão do leiloeiro | CC, art. 450 | Custo da aquisição |
+| Custas e emolumentos | CC, art. 450 | Registro, ITBI, certidões |
+| Benfeitorias | CC, art. 453 | Necessárias e úteis |
+| Frutos restituídos | CC, art. 450 | Se teve que devolver |
+
+**Problema prático**: Recuperar esses valores depende de encontrar alguém solvente para pagar:
+- O executado geralmente está insolvente
+- O credor pode alegar boa-fé
+- O processo de cobrança pode levar anos
+
+## Como minimizar o risco de evicção
+
+### 1. Análise completa dos autos
+
+Não basta ler o edital. É preciso acessar o processo e verificar:
+- Regularidade das intimações
+- Decisões sobre bem de família
+- Existência de embargos ou impugnações
+- Alegações de terceiros
+- Recursos pendentes
+
+### 2. Diligência registral aprofundada
+
+A matrícula deve ser analisada em profundidade:
+- Cadeia dominial de 20+ anos
+- Regularidade de cada transmissão
+- Averbações de casamento, divórcio, óbito
+- Ônus e gravames
+- Ações reais averbadas
+
+### 3. Verificação de certidões de distribuição
+
+Consultar se há ações cíveis envolvendo:
+- O executado
+- Proprietários anteriores
+- O próprio imóvel (ações reais)
+
+### 4. Análise do tipo de leilão
+
+Alguns tipos de leilão têm risco de evicção diferenciado:
+
+| Tipo de leilão | Risco de evicção |
+|----------------|------------------|
+| Judicial (execução comum) | Moderado |
+| Judicial (falência) | Moderado a alto |
+| Extrajudicial (alienação fiduciária) | Baixo |
+| Extrajudicial (particular) | Variável |
+
+Leilões de alienação fiduciária têm risco menor porque o credor já era proprietário fiduciário, e o procedimento é mais padronizado.
+
+### 5. Atenção a sinais de alerta
+
+**Não dê lance se**:
+- Há embargos de terceiro pendentes
+- Bem de família foi alegado e não há decisão transitada em julgado
+- Intimação do executado ou cônjuge foi feita por edital sem esgotamento de diligências
+- Há divergência significativa entre matrícula e realidade
+- Proprietários anteriores têm ações de nulidade em curso
+
+## Checklist anti-evicção
+
+Antes de arrematar, confirme:
+
+- [ ] Autos do processo acessados e analisados
+- [ ] Intimações verificadas (executado, cônjuge, coproprietários)
+- [ ] Bem de família analisado (alegação, decisão, trânsito)
+- [ ] Embargos de terceiro verificados
+- [ ] Recursos pendentes mapeados
+- [ ] Matrícula com cadeia dominial completa
+- [ ] Transmissões anteriores verificadas quanto à regularidade
+- [ ] Certidões de distribuição consultadas
+- [ ] Ações reais ou pessoais reipersecutórias verificadas
+- [ ] Tipo de leilão e procedimento específico compreendidos
+
+## O que fazer se houver risco de evicção
+
+Se identificar risco de evicção durante a diligência:
+
+**Opção 1: Não dar lance**
+A escolha mais segura. Se o risco não pode ser quantificado ou mitigado, evite a operação.
+
+**Opção 2: Precificar o risco**
+Se o risco é quantificável (probabilidade estimável, perda máxima conhecida), você pode ajustar o teto de lance para compensar. Isso exige experiência e tolerância a risco.
+
+**Opção 3: Buscar garantias adicionais**
+Em casos muito específicos, pode ser possível negociar garantias com o credor ou obter parecer jurídico que sustente a segurança da operação.
+
+## Seguro de título: proteção complementar
+
+Em alguns países, existe "title insurance" (seguro de título) que protege o comprador contra evicção. No Brasil, esse produto é pouco desenvolvido, mas algumas seguradoras oferecem coberturas limitadas para aquisições em leilão.
+
+**O que pode cobrir**:
+- Perda por vício de título
+- Custos de defesa
+- Ônus não revelados
+
+**Limitações**:
+- Cobertura restrita
+- Exclusões frequentes
+- Custo pode ser significativo
+
+Se o valor da operação justificar, consulte seguradoras especializadas.
+
+## Caso real: evicção por bem de família
+
+**Situação**: Investidor arremata apartamento em leilão judicial por R$ 400.000. Após registro e imissão na posse, o executado ingressa com ação alegando que o imóvel era bem de família e que a matéria não havia sido corretamente decidida no processo.
+
+**Decisão**: O tribunal reconhece que a intimação do cônjuge foi irregular e que a alegação de bem de família não foi adequadamente apreciada. Anula a arrematação.
+
+**Consequência**: O investidor perdeu o imóvel e teve que buscar restituição nos autos. O executado era insolvente. Após 4 anos de litígio, recuperou apenas 60% do valor pago, sem correção integral.
+
+**Lição**: A verificação da regularidade das intimações e do tratamento dado à alegação de bem de família teria evitado a operação.
+
+## O papel da assessoria especializada
+
+Evicção é risco técnico que exige análise jurídica profunda. Não basta ler o edital ou confiar no leiloeiro. É preciso:
+
+- Acessar e analisar os autos completos
+- Compreender o histórico processual
+- Identificar pontos de vulnerabilidade
+- Avaliar a probabilidade e o impacto de cada risco
+
+Na LFCOM, a análise de risco de evicção faz parte do protocolo de due diligence. Não recomendamos lance em operações com risco de evicção não mitigado, independentemente do desconto aparente.
+
+## Conclusão: evicção é risco binário
+
+Diferente de outros riscos que podem ser precificados e absorvidos (custos de regularização, prazo de desocupação), a evicção é risco binário: ou você mantém o bem, ou perde tudo.
+
+Por isso, a tolerância a risco de evicção deve ser muito baixa. O desconto no lance nunca compensa a possibilidade real de perder o imóvel e o capital investido.
+
+A única proteção efetiva é a prevenção: diligência rigorosa antes do lance, análise dos autos, verificação registral completa e decisão informada de não participar quando o risco não puder ser eliminado.
+
+Em leilões, como em qualquer investimento, o melhor negócio às vezes é aquele que você não faz.
+    `,
+    date: "2026-02-05",
+    readingMinutes: 13,
+    tags: ["Evicção", "Risco Jurídico", "Due Diligence", "Proteção", "Arrematação"],
+    coverImage: riscoEviccaoLeilao
   }
 ];
 
