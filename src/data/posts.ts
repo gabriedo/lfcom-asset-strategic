@@ -4274,12 +4274,12 @@ Não cobramos por análise. Nossa remuneração é atrelada ao sucesso da opera�
 
 A remuneração típica de assessorias especializadas segue modelo de success fee:
 
-| Faixa de operação | Success fee típico |
+| Faixa de operação | Assessoria típica |
 |-------------------|-------------------|
-| Até R$ 1.000.000 | 4% a 6% do lance |
-| R$ 1.000.000 a R$ 5.000.000 | 3% a 5% do lance |
-| R$ 5.000.000 a R$ 10.000.000 | 2% a 4% do lance |
-| Acima de R$ 10.000.000 | Negociação específica |
+| Até R$ 1.000.000 | 15% a 25% do lance |
+| R$ 1.000.000 a R$ 5.000.000 | 12% a 18% do lance |
+| R$ 5.000.000 a R$ 10.000.000 | 10% a 15% do lance |
+| Acima de R$ 10.000.000 | 8% a 12% (negociação) |
 
 ### A matemática do custo-benefício
 
@@ -4288,7 +4288,7 @@ A remuneração típica de assessorias especializadas segue modelo de success fe
 | Abordagem | Lance provável | Economia vs. mercado | Custo assessoria | Resultado líquido |
 |-----------|----------------|---------------------|------------------|-------------------|
 | Sem assessoria | R$ 2.400.000 | R$ 600.000 | R$ 0 | R$ 600.000 |
-| Com assessoria | R$ 2.100.000 | R$ 900.000 | R$ 84.000 (4%) | R$ 816.000 |
+| Com assessoria | R$ 2.100.000 | R$ 900.000 | R$ 252.000 (12%) | R$ 648.000 |
 
 **Diferença**: R$ 216.000 a mais no bolso com assessoria.
 
@@ -4613,12 +4613,12 @@ Se você decidir contratar, saiba o que exigir:
 
 ### Faixas típicas de mercado
 
-| Faixa do imóvel | Success fee médio | Fee fixo médio |
+| Faixa do imóvel | Assessoria típica | Fee fixo médio |
 |-----------------|-------------------|----------------|
-| Até R$ 500.000 | 5% a 7% | R$ 8.000 a R$ 15.000 |
-| R$ 500.000 a R$ 1.500.000 | 4% a 6% | R$ 15.000 a R$ 35.000 |
-| R$ 1.500.000 a R$ 5.000.000 | 3% a 5% | R$ 35.000 a R$ 80.000 |
-| Acima de R$ 5.000.000 | 2% a 4% | Negociação |
+| Até R$ 500.000 | 18% a 25% | R$ 15.000 a R$ 30.000 |
+| R$ 500.000 a R$ 1.500.000 | 15% a 20% | R$ 30.000 a R$ 60.000 |
+| R$ 1.500.000 a R$ 5.000.000 | 12% a 18% | R$ 60.000 a R$ 120.000 |
+| Acima de R$ 5.000.000 | 8% a 15% | Negociação |
 
 ---
 
@@ -4632,11 +4632,11 @@ Se você decidir contratar, saiba o que exigir:
 - Custo assessoria: R$ 0
 - Resultado: R$ 400.000 de ganho
 
-**Com assessoria** (5% de success fee):
+**Com assessoria** (15% de assessoria):
 - Lance: R$ 600.000
 - Economia: R$ 400.000
-- Custo assessoria: R$ 30.000
-- Resultado: R$ 370.000 de ganho
+- Custo assessoria: R$ 90.000
+- Resultado: R$ 310.000 de ganho
 
 **Diferença aparente**: R$ 30.000 a menos com assessoria.
 
@@ -5304,12 +5304,12 @@ Uma consultoria de excelência opera em múltiplas frentes simultâneas. Entende
 
 ### Faixas de mercado (2026)
 
-| Valor do imóvel | Success fee | Fee fixo |
-|-----------------|-------------|----------|
-| Até R$ 500.000 | 5% a 7% | R$ 15.000 a R$ 25.000 |
-| R$ 500.000 a R$ 1.500.000 | 4% a 6% | R$ 25.000 a R$ 50.000 |
-| R$ 1.500.000 a R$ 5.000.000 | 3% a 5% | R$ 50.000 a R$ 100.000 |
-| Acima de R$ 5.000.000 | 2% a 4% | Negociação |
+| Valor do imóvel | Assessoria | Fee fixo |
+|-----------------|------------|----------|
+| Até R$ 500.000 | 18% a 25% | R$ 20.000 a R$ 40.000 |
+| R$ 500.000 a R$ 1.500.000 | 15% a 20% | R$ 40.000 a R$ 80.000 |
+| R$ 1.500.000 a R$ 5.000.000 | 12% a 18% | R$ 80.000 a R$ 150.000 |
+| Acima de R$ 5.000.000 | 8% a 15% | Negociação |
 
 ### ROI da consultoria
 
