@@ -19,6 +19,16 @@ import assessoriaLeiloesInvestidores from "@/assets/insights/assessoria-leiloes-
 import assessoriaLeilaoImovel from "@/assets/insights/assessoria-leilao-imovel.jpg";
 import imissaoNaPosse from "@/assets/insights/imissao-na-posse.jpg";
 import consultoriaLeilaoImoveis from "@/assets/insights/consultoria-leilao-imoveis.jpg";
+import leilaoCaixaGuia from "@/assets/insights/leilao-caixa-guia.jpg";
+import leilaoJudicialExtrajudicial from "@/assets/insights/leilao-judicial-extrajudicial.jpg";
+import itbiLeilaoImoveis from "@/assets/insights/itbi-leilao-imoveis.jpg";
+import cartaArrematacao from "@/assets/insights/carta-arrematacao.jpg";
+import financiamentoLeilao from "@/assets/insights/financiamento-leilao.jpg";
+import leilaoFazendasRurais from "@/assets/insights/leilao-fazendas-rurais.jpg";
+import debitosCondominioLeilao from "@/assets/insights/debitos-condominio-leilao.jpg";
+import leilaoNegativo from "@/assets/insights/leilao-negativo.jpg";
+import analiseEditalLeilao from "@/assets/insights/analise-edital-leilao.jpg";
+import holdingPatrimonialLeilao from "@/assets/insights/holding-patrimonial-leilao.jpg";
 export interface Post {
   id: string;
   title: string;
