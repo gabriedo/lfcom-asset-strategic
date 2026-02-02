@@ -10,6 +10,7 @@ import estrategiaLanceLeilao from "@/assets/insights/estrategia-lance-leilao.jpg
 import imovelOcupadoLeilao from "@/assets/insights/imovel-ocupado-leilao.jpg";
 import certidoesArrematacao from "@/assets/insights/certidoes-arrematacao.jpg";
 import penhoraOnusImovel from "@/assets/insights/penhora-onus-imovel.jpg";
+import fraudeLeilaoOnline from "@/assets/insights/fraude-leilao-online.jpg";
 
 export interface Post {
   id: string;
@@ -2847,6 +2848,284 @@ Quando você sabe exatamente o que está comprando - incluindo o que acompanha o
     readingMinutes: 15,
     tags: ["Penhora", "Ônus", "Gravames", "Registro", "Due Diligence"],
     coverImage: penhoraOnusImovel
+  },
+  {
+    id: "13",
+    title: "Como evitar fraude em leilão online",
+    slug: "como-evitar-fraude-leilao-online",
+    excerpt: "O ambiente digital trouxe conveniência, mas também novos riscos. Aprenda a identificar golpes, validar leiloeiros e proteger seu capital em leilões online.",
+    content: `
+# Como evitar fraude em leilão online
+
+A digitalização dos leilões trouxe agilidade e acesso. Hoje, é possível arrematar um imóvel em São Paulo a partir de qualquer lugar do Brasil - ou do mundo. Mas essa conveniência veio acompanhada de um efeito colateral: a proliferação de fraudes sofisticadas que exploram a distância entre comprador e ativo.
+
+Para o investidor disciplinado, leilão online não é mais arriscado que leilão presencial. É diferente. E requer um conjunto específico de verificações que, quando bem executadas, eliminam a maior parte dos golpes antes que causem dano.
+
+Este guia apresenta os tipos mais comuns de fraude em leilão online, os sinais de alerta e o protocolo de segurança que usamos para proteger operações de alto valor.
+
+## Por que fraudes em leilão online são tão eficazes
+
+Golpistas exploram três vulnerabilidades estruturais do ambiente digital:
+
+**Distância física**: O comprador não vê o ativo, não conhece o leiloeiro pessoalmente, e muitas vezes não visita o imóvel antes do lance.
+
+**Urgência fabricada**: Leilões têm prazo. Golpistas usam essa pressão temporal para impedir que a vítima faça verificações básicas.
+
+**Aparência de legitimidade**: Sites falsos, editais forjados e comunicações profissionais criam uma fachada convincente que engana até compradores experientes.
+
+A boa notícia: fraudes em leilão seguem padrões reconhecíveis. Quem conhece esses padrões consegue identificar a armadilha antes de cair nela.
+
+## Os 7 tipos mais comuns de fraude em leilão online
+
+### 1. Site falso de leiloeiro
+
+**Como funciona**: Golpistas criam sites que imitam leiloeiros conhecidos ou inventam leiloeiros fictícios. O site parece profissional, tem "lotes" atrativos com descontos absurdos, e direciona a vítima para pagamento em conta de terceiros.
+
+**Sinais de alerta**:
+- URL diferente do site oficial (verifique letra por letra)
+- Leiloeiro não consta no cadastro do tribunal ou junta comercial
+- Contato apenas por WhatsApp ou e-mail genérico
+- Descontos muito acima do mercado (70%, 80%, 90%)
+- Pressão para pagamento imediato
+
+**Como verificar**:
+- Consulte o site do tribunal para confirmar o leiloeiro designado
+- Verifique o CNPJ do leiloeiro na Receita Federal
+- Ligue para o tribunal e confirme a existência do leilão
+- Compare a URL com registros oficiais
+
+### 2. Edital forjado ou adulterado
+
+**Como funciona**: Golpistas distribuem editais falsos com informações alteradas - valor de avaliação inflado, condições de pagamento diferentes, ou até imóveis que não existem.
+
+**Sinais de alerta**:
+- Edital recebido por e-mail ou WhatsApp (não obtido diretamente do site oficial)
+- Formatação diferente dos editais do mesmo tribunal
+- Número de processo que não existe ou se refere a outro caso
+- Assinatura digital ausente ou inválida
+
+**Como verificar**:
+- Acesse o site do tribunal e baixe o edital diretamente
+- Consulte o processo pelo número informado
+- Verifique a assinatura digital do documento
+- Compare com editais anteriores do mesmo leiloeiro
+
+### 3. Golpe do intermediário
+
+**Como funciona**: Alguém se apresenta como "assessor", "despachante" ou "facilitador" e oferece ajuda para participar do leilão. Cobra taxas antecipadas, promete vantagens inexistentes, e desaparece com o dinheiro.
+
+**Sinais de alerta**:
+- Contato não solicitado oferecendo "oportunidade imperdível"
+- Promessa de acesso privilegiado ou desconto adicional
+- Exigência de pagamento antecipado para "reservar" o lote
+- Resistência a fornecer contrato formal ou comprovantes
+
+**Como verificar**:
+- Nunca pague antecipadamente para participar de leilão
+- Verifique se a pessoa tem vínculo formal com o leiloeiro
+- Exija contrato com identificação completa e CNPJ
+- Consulte referências e histórico da empresa
+
+### 4. Phishing e roubo de credenciais
+
+**Como funciona**: Golpistas enviam e-mails ou mensagens que parecem vir do leiloeiro ou do tribunal, solicitando atualização de cadastro, confirmação de dados ou pagamento. O link direciona para site falso que captura senhas e dados bancários.
+
+**Sinais de alerta**:
+- E-mail com erros de português ou formatação estranha
+- Solicitação de senha ou dados bancários por e-mail
+- Link que não corresponde ao domínio oficial
+- Urgência excessiva ("sua conta será bloqueada")
+
+**Como verificar**:
+- Nunca clique em links de e-mails suspeitos
+- Acesse o site do leiloeiro digitando o endereço manualmente
+- Ligue para o leiloeiro e confirme a comunicação
+- Use autenticação de dois fatores quando disponível
+
+### 5. Manipulação de lance (shill bidding)
+
+**Como funciona**: O próprio vendedor ou pessoas ligadas a ele dão lances falsos para inflar o preço, forçando o comprador legítimo a pagar mais do que deveria.
+
+**Sinais de alerta**:
+- Lances de último segundo que sempre superam o seu por pouco
+- Mesmo padrão de lances em vários leilões do mesmo leiloeiro
+- Lances de usuários com histórico vazio ou recém-criados
+- Desistência do "arrematante" logo após o leilão, reabrindo o lote
+
+**Como verificar**:
+- Defina seu teto de lance ANTES e não ultrapasse
+- Observe o padrão de lances em leilões anteriores do leiloeiro
+- Desconfie de leilões que reabrem repetidamente
+- Prefira leiloeiros com reputação estabelecida
+
+### 6. Imóvel inexistente ou com situação diversa
+
+**Como funciona**: O leilão é real, mas as informações sobre o imóvel são falsas ou desatualizadas. O comprador descobre depois que o imóvel não existe, está em situação completamente diferente, ou pertence a terceiros.
+
+**Sinais de alerta**:
+- Fotos genéricas ou de banco de imagens
+- Endereço vago ou impreciso
+- Recusa em permitir visita presencial
+- Avaliação muito abaixo do mercado sem justificativa
+
+**Como verificar**:
+- Sempre visite o imóvel presencialmente antes do lance
+- Obtenha matrícula atualizada diretamente do cartório
+- Compare fotos do edital com a realidade
+- Verifique o endereço no Google Maps e em visita local
+
+### 7. Golpe pós-arrematação
+
+**Como funciona**: O leilão foi legítimo, mas após a arrematação surgem cobranças falsas - "taxas de transferência", "seguros obrigatórios", "impostos antecipados" - que não existem no procedimento real.
+
+**Sinais de alerta**:
+- Cobrança de valores não previstos no edital
+- Pagamento solicitado em conta diferente da usada no lance
+- Pressão para pagar rapidamente "ou perder o lote"
+- Comunicação por canais não oficiais
+
+**Como verificar**:
+- Releia o edital e confirme todas as taxas previstas
+- Pague apenas nos canais oficiais indicados no edital
+- Em caso de dúvida, contate o tribunal diretamente
+- Nunca faça PIX ou transferência para contas de pessoa física
+
+## Protocolo de segurança para leilões online
+
+### Antes de se cadastrar
+
+| Verificação | Como fazer |
+|-------------|------------|
+| Leiloeiro é oficial? | Consultar site do tribunal ou junta comercial |
+| Site é legítimo? | Verificar URL, certificado SSL, CNPJ |
+| Leilão existe? | Confirmar no site do tribunal pelo número do processo |
+| Contato é oficial? | Ligar para número publicado no site do tribunal |
+
+### Antes de dar lance
+
+| Verificação | Como fazer |
+|-------------|------------|
+| Edital é autêntico? | Baixar diretamente do site oficial |
+| Imóvel existe? | Visita presencial + matrícula atualizada |
+| Ônus são os declarados? | Comparar edital com matrícula |
+| Condições são claras? | Ler edital completo, incluindo letras pequenas |
+
+### Durante o leilão
+
+| Cuidado | Ação |
+|---------|------|
+| Teto de lance | Definir antes e não ultrapassar |
+| Conexão segura | Usar rede confiável, evitar Wi-Fi público |
+| Autenticação | Ativar 2FA se disponível |
+| Registro | Salvar prints de cada lance |
+
+### Após a arrematação
+
+| Verificação | Como fazer |
+|-------------|------------|
+| Pagamento | Apenas nos canais oficiais do edital |
+| Documentos | Obter auto de arrematação oficial |
+| Comunicações | Desconfiar de contatos não solicitados |
+| Prazos | Seguir cronograma do edital, não de terceiros |
+
+## Checklist anti-fraude
+
+Antes de participar de qualquer leilão online:
+
+- [ ] URL do site verificada (letra por letra)
+- [ ] Leiloeiro confirmado no cadastro oficial
+- [ ] CNPJ do leiloeiro consultado na Receita Federal
+- [ ] Processo consultado no site do tribunal
+- [ ] Edital baixado diretamente da fonte oficial
+- [ ] Imóvel visitado presencialmente
+- [ ] Matrícula obtida diretamente do cartório
+- [ ] Condições de pagamento claras e compatíveis com o mercado
+- [ ] Canais de pagamento oficiais identificados
+- [ ] Contato telefônico realizado com o leiloeiro
+
+Se algum item falhar, não participe.
+
+## O que fazer se identificar uma fraude
+
+### Se ainda não pagou
+
+1. Interrompa toda comunicação com o suspeito
+2. Documente tudo (prints, e-mails, conversas)
+3. Denuncie ao tribunal competente
+4. Registre boletim de ocorrência
+5. Alerte outros investidores em comunidades do setor
+
+### Se já pagou
+
+1. Tente estornar o pagamento imediatamente (banco, operadora de cartão)
+2. Registre boletim de ocorrência detalhado
+3. Comunique o banco sobre a fraude
+4. Consulte advogado sobre medidas judiciais
+5. Documente todo o prejuízo para eventual ação
+
+## Por que investidores experientes também caem
+
+Fraudes sofisticadas não miram apenas iniciantes. Investidores experientes caem porque:
+
+- **Excesso de confiança**: "Eu conheço o mercado, não preciso verificar tudo"
+- **Pressão de oportunidade**: "Se eu não agir rápido, perco o negócio"
+- **Familiaridade aparente**: "Esse leiloeiro parece legítimo, já vi o nome antes"
+- **Fadiga de diligência**: "Já verifiquei tantos leilões, esse deve ser igual"
+
+A disciplina de verificação não é paranoia. É protocolo. E protocolos existem justamente para funcionar quando a intuição falha.
+
+## Leiloeiros legítimos: como identificar
+
+Características de leiloeiros confiáveis:
+
+**Registro oficial**
+- Cadastro ativo no tribunal ou junta comercial
+- CNPJ regular e ativo
+- Endereço físico verificável
+
+**Histórico verificável**
+- Anos de atuação no mercado
+- Histórico de leilões concluídos
+- Referências de outros investidores
+
+**Comunicação profissional**
+- Site com certificado SSL
+- Canais de contato claros
+- Respostas documentadas
+
+**Transparência**
+- Editais completos e acessíveis
+- Condições claras de pagamento
+- Informações sobre comissões e taxas
+
+## O papel da assessoria especializada
+
+Em operações de alto valor, a verificação não deve depender apenas do investidor. Uma assessoria especializada adiciona camadas de segurança:
+
+**Validação institucional**: Relacionamento prévio com leiloeiros e tribunais permite verificação rápida e confiável.
+
+**Diligência documental**: Análise de editais, matrículas e processos por profissionais experientes.
+
+**Visita técnica**: Inspeção presencial do imóvel antes de qualquer lance.
+
+**Execução controlada**: Acompanhamento do leilão e do pós-arrematação com protocolos estabelecidos.
+
+Na LFCOM, nenhuma operação é executada sem validação completa da legitimidade do leilão, do leiloeiro e do ativo.
+
+## Conclusão: segurança é processo, não evento
+
+Evitar fraude em leilão online não exige paranoia - exige método. As verificações listadas neste guia levam menos de uma hora e podem evitar perdas de dezenas ou centenas de milhares de reais.
+
+O golpista conta com a pressa, a ganância e a confiança excessiva da vítima. O investidor disciplinado responde com verificação, documentação e paciência.
+
+Em leilões, como em qualquer operação de investimento, a melhor proteção é a preparação. E preparação significa nunca dar lance em algo que você não conseguiu verificar completamente.
+
+Se parece bom demais para ser verdade, provavelmente é.
+    `,
+    date: "2026-01-29",
+    readingMinutes: 12,
+    tags: ["Fraude", "Segurança", "Leilão Online", "Proteção", "Golpes"],
+    coverImage: fraudeLeilaoOnline
   }
 ];
 
