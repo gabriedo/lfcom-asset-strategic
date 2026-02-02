@@ -4,6 +4,7 @@ import maquinasIndustriais from "@/assets/insights/maquinas-industriais.jpg";
 import checklistArrematacao from "@/assets/insights/checklist-arrematacao.jpg";
 import patrimonioResidencial from "@/assets/insights/patrimonio-residencial.jpg";
 import reportLeiloes2026 from "@/assets/insights/report-leiloes-2026.jpg";
+import calculoDescontoLeilao from "@/assets/insights/calculo-desconto-leilao.jpg";
 
 export interface Post {
   id: string;
@@ -1460,6 +1461,147 @@ Na LFCOM, continuamos comprometidos em transformar a complexidade do mercado de 
     readingMinutes: 22,
     tags: ["Report", "Tendências", "2026", "Digitalização", "Estratégia", "Mercado", "IA"],
     coverImage: reportLeiloes2026
+  },
+  {
+    id: "7",
+    title: "Como calcular desconto em leilão: a fórmula que separa sensação de realidade",
+    slug: "como-calcular-desconto-leilao",
+    excerpt: "O desconto que aparece na tela não é o desconto real. Aprenda a calcular a margem econômica verdadeira, ajustada por custos, prazo, liquidez e risco jurídico.",
+    content: `
+# Como calcular desconto em leilão: a fórmula que separa sensação de realidade
+
+Em leilão, o "desconto" que aparece na tela não é desconto. É apenas a diferença entre um número de referência e um lance - e, para quem aloca capital com responsabilidade, isso não basta. O que importa é a distância real entre o valor econômico do ativo e o desembolso total, já ajustado por custos, prazo, liquidez e risco jurídico.
+
+Ao calcular desconto com método, você transforma um leilão em uma compra defendível: com metas claras, margem de segurança e um teto de lance compatível com governança. A seguir, o design que usamos para tirar o tema do campo do "parece barato" e levar para o nível de decisão de investimento.
+
+## O que "desconto" significa, de fato, em um leilão
+
+No mercado, é comum ver "50% abaixo da avaliação" e aceitar oportunidade. Em ambientes de alta complexidade, isso é ruído. O desconto relevante é o **desconto sobre o valor líquido e ajustado ao risco** - isto é, o quanto você está pagando abaixo do que o ativo vale para você, depois de todos os custos e fricções.
+
+Dois compradores olham o mesmo lote e procuram descontos diferentes, porque o valor pode depender do plano (uso próprio, renda, revenda), do apetite de risco e da capacidade de execução de desocupação, regularização e obra. Por isso, o cálculo precisa separar o preço da vitrine da economia real.
+
+## Como calcular desconto em leilão: a fórmula que interessa
+
+O modo mais disciplinado de responder "como calcular desconto em leilão" é começar pelo final: o que sobra de valor depois que tudo que é previsível (e parte do que é incerto) já foi precificado.
+
+Trabalhe com três blocos: **(1) valor de referência**, **(2) desembolso total**, **(3) ajuste de risco e tempo**.
+
+### 1) Defina o valor de referência correto (VR)
+
+Você precisa escolher um único VR para sua tese de investimento. Os três mais usados são:
+
+- **Valor de mercado em transação** — comparáveis reais, com ajustes por tipologia, estado, liquidez e micro-localização.
+- **Valor de liquidez suportado** — quanto realizaria em uma venda rápida, com desconto de tempo e negociação.
+- **Valor para uso** — quanto o ativo vale dentro da operação da empresa, por exemplo, economia de aluguel, logística, sinergias.
+
+> Evite usar "avaliação do edital" como VR automático. Muitas avaliações são conservadoras ou desatualizadas, e algumas não refletem passivos do ativo. Ela serve como dado, não como âncora.
+
+### 2) Calcule o desembolso total (DT)
+
+O lance é apenas a primeira linha do seu custo. O DT precisa incluir todos os itens que você vai pagar para assumir e colocar o ativo no estado-alvo.
+
+Em imóveis, por exemplo, o DT costuma ser:
+
+| Item | Descrição |
+|------|-----------|
+| Lance | Valor arrematado no leilão |
+| Comissão do leiloeiro | Geralmente 5% do lance |
+| Custos de aquisição | ITBI, emolumentos, registros |
+| Regularização documental | Taxas e honorários para regularização |
+| Custos de posse | Desocupação, acordos, condomínio/IPTU |
+| Obra/adequações | Reformas e adequações necessárias |
+| Custo financeiro | Capital imobilizado no tempo |
+
+**DT = Lance + Comissão + Custos de aquisição + Regularização + Custos de posse + Obra + Custo financeiro**
+
+Alguns itens variam conforme o tipo de leilão (judicial, extrajudicial, venda direta) e conforme a matriz de responsabilidades do edital. É aqui que o "desconto" costuma evaporar em operações mal precificadas.
+
+### 3) Ajuste por risco e tempo (AR)
+
+Mesmo após mapear custos, você ainda tem incertezas: prazo de imissão na posse, disputas, vícios, risco de nulidade, contingências, e o custo de oportunidade de capital. O AR é o seu desconto de segurança: um fator aplicado ao VR ou uma reserva adicional no DT.
+
+Na prática, há duas maneiras consistentes de fazer isso:
+
+- **Reduzir o VR por um fator de risco e liquidez**: VRaj = VR × (1 - r)
+- **Aumentar o DT com uma provisão de risco**: DTaj = DT + Provisão
+
+O importante é escolher uma abordagem e documentar premissas. Em comitês de investimento, a pergunta não é "qual foi o desconto?" - é "quais riscos você precificou e quais você decidiu não correr?".
+
+## A fórmula final do desconto
+
+Com VR ajustado e DT ajustado, você calcula o **desconto econômico**:
+
+> **Desconto (%) = (VRaj - DTaj) / VRaj**
+
+Se o resultado for positivo, existe margem. Se for zero, você está pagando valor cheio. Se for negativo, você está comprando acima do valor ajustado - e isso só faz sentido quando há justificativa operacional muito específica.
+
+## Um exemplo numérico que separa a sensação da realidade
+
+Suponha um imóvel com VR (mercado em transação) estimado em **R$ 1.200.000**.
+
+Você considera um fator de risco e liquidez de 12% para refletir prazo e incerteza, chegando a **VRaj = R$ 1.056.000**.
+
+O lote é ofertado "por 50% do valor de avaliação" e você planeja lance de R$ 700.000. O desembolso total estimado:
+
+| Componente | Valor |
+|------------|-------|
+| Lance | R$ 700.000 |
+| Comissão do leiloeiro (5%) | R$ 35.000 |
+| ITBI e registros (estimado) | R$ 50.000 |
+| Regularização | R$ 20.000 |
+| Custo de posse | R$ 40.000 |
+| Obra/adequação | R$ 60.000 |
+| Custo financeiro e carrego | R$ 30.000 |
+| **DT** | **R$ 935.000** |
+
+Você ainda adiciona uma provisão de risco de R$ 35.000 para contingências: **DTaj = R$ 970.000**.
+
+Agora o desconto econômico:
+
+> **Desconto = (1.056.000 - 970.000) / 1.056.000 = 8,1%**
+
+O leilão parecia "metade do preço". O investimento, depois de custo e risco, entrega **8,1% de margem**. Dependendo do seu custo de capital e do tempo esperado, 8,1% pode ser pouco. Em alguns mandatos, isso reprova.
+
+## Onde o cálculo costuma falhar (e por quê)
+
+O erro mais comum é usar um VR otimista e um DT incompleto. O segundo erro é tratar risco como opinião, não como número. O terceiro é ignorar tempo - e em leilão, tempo é variável de resultado.
+
+O prazo até a posse e a capacidade de executar a transição (desocupação, regularização e obra) mexem diretamente no custo financeiro, na perda de janela de mercado e na governança do investimento. Quanto maior o atrito operacional, maior deve ser o AR ou menor deve ser o teto de lance.
+
+Outro ponto sensível: passivos que "não entram na planilha" porque não estão claros no início. É por isso que o edital, a matrícula, o histórico de ocupação e os autos (quando judiciais) não são burocracia. Eles são a base do DTaj.
+
+## Como transformar o desconto em teto de lance
+
+Desconto é diagnóstico. A decisão é o **teto de lance**. Para ter controle, trabalhe de trás para frente:
+
+> **Teto de Lance = VRaj × (1 - Margem mínima) - (Custos fixos e variáveis fora do lance)**
+
+A margem mínima depende do mandato: retorno exigido, prazo máximo, risco jurídico aceitável, liquidez na saída e custo de capital. Operações que competem com ativos "limpos" no mercado tradicional precisam de margem maior, porque o leilão carrega fricções que o mercado comum não carrega.
+
+Se o seu cálculo indica teto de R$ 680 mil e o leilão sobe para R$ 720 mil, a disciplina é **não "ajustar na hora"**. Quem se ajusta na hora está trocando método por emoção, e isso costuma custar caro.
+
+## Quando "desconto baixo" ainda pode ser bom
+
+Existe cenário em que um desconto econômico menor é aceitável: quando o valor de uso é alto e defensável, ou quando a capacidade de execução reduz o risco e o tempo de forma objetiva. Uma empresa que internaliza um ativo estratégico pode aceitar margem menor porque parte do retorno aparece em outra linha (eficiência operacional, redução de despesas, ganho logístico).
+
+O ponto é que isso precisa ser escrito como tese, não improvisado como justificativa. A decisão tem de sobreviver a auditorias internas e a questionamentos de governança.
+
+## O papel da diligência: desconto é consequência, não promessa
+
+Em leilões, o desconto não é um benefício automático do canal. Ele é uma consequência de assimetria, urgência e risco. Se você não mede risco, você não está capturando desconto - você está assumindo risco sem remuneração.
+
+Existe uma disciplina de diligência para converter incerteza em número: o que é custo certo, o que é custo provável, o que é custo extremo, e qual é a probabilidade de cada um. É esse processo que permite sustentar uma decisão de alto impacto com segurança jurídica.
+
+Em operações de maior porte, é comum estruturar uma governança curta e objetiva: VR defensável, DT completo, AR explícito e teto de lance aprovado antes do pregão. É nessa camada que uma assessoria especializada como a LFCOM costuma atuar - não para "achar pechincha", mas para garantir controle, documentação e execução até o fechamento.
+
+---
+
+Se você quiser um norte prático para o próximo leilão, faça uma pergunta simples antes de abrir o lote: **"Qual é o meu teto de lance e o que me faria desistir?"**. Quando essa resposta já existe, o desconto deixa de ser narrativa e vira decisão com lastro.
+    `,
+    date: "2026-02-02",
+    readingMinutes: 12,
+    tags: ["Cálculo", "Desconto", "Estratégia", "Investimento", "Risco"],
+    coverImage: calculoDescontoLeilao
   }
 ];
 
