@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { trackCTAClick } from "@/lib/analytics";
 
 const navigation = [
   { name: "Soluções", href: "/solucoes" },
@@ -68,7 +69,7 @@ export const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button asChild variant="default" size="sm">
-              <Link to="/contato">Contato</Link>
+              <Link to="/contato" onClick={() => trackCTAClick("Contato", "Navbar")}>Contato</Link>
             </Button>
           </div>
 
