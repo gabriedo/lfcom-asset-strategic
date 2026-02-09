@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, MessageCircle } from "lucide-react";
+import { trackCTAClick } from "@/lib/analytics";
 
 export const FinalCTASection = () => {
   return (
@@ -18,7 +19,7 @@ export const FinalCTASection = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button asChild variant="hero" size="lg" className="group">
-              <Link to="/contato">
+              <Link to="/contato" onClick={() => trackCTAClick("Agendar conversa estratégica", "FinalCTA")}>
                 <Calendar className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                 Agendar conversa estratégica
               </Link>
@@ -29,6 +30,7 @@ export const FinalCTASection = () => {
                 href="https://wa.me/5541920030105" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                onClick={() => trackCTAClick("WhatsApp", "FinalCTA")}
               >
                 <MessageCircle className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                 Falar no WhatsApp

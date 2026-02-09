@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { posts } from "@/data/posts";
 import type { CarouselApi } from "@/components/ui/carousel";
+import { trackCTAClick } from "@/lib/analytics";
 
 // Import images
 import leioesEmpresarios from "@/assets/insights/leiloes-empresarios.jpg";
@@ -117,7 +118,7 @@ export const HeroCarousel = () => {
                         <Link to={`/insights/${slide.slug}`}>Ler análise completa</Link>
                       </Button>
                       <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black">
-                        <Link to="/contato">Falar com especialista</Link>
+                        <Link to="/contato" onClick={() => trackCTAClick("Falar com especialista", "HeroCarousel")}>Falar com especialista</Link>
                       </Button>
                     </div>
                   </div>

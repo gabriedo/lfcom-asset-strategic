@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { trackCTAClick } from "@/lib/analytics";
 export const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden">
       {/* Background Pattern */}
@@ -24,7 +25,7 @@ export const HeroSection = () => {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8 animate-slide-in-right">
             <Button asChild variant="hero" size="lg">
-              <Link to="/contato">Falar com a LFCOM</Link>
+              <Link to="/contato" onClick={() => trackCTAClick("Falar com a LFCOM", "Hero")}>Falar com a LFCOM</Link>
             </Button>
             <Button asChild variant="hero-outline" size="lg">
               <Link to="/solucoes">Conheça nossas soluções</Link>

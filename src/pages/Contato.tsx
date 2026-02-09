@@ -11,6 +11,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, Clock, CheckCircle, MessageSquare, Calendar } from "lucide-react";
+import { trackCTAClick, trackFormSubmit } from "@/lib/analytics";
 
 const Contato = () => {
   const { toast } = useToast();
@@ -60,6 +61,7 @@ const Contato = () => {
       
       console.log("Form data:", formData);
       
+      trackFormSubmit("contato_formulario");
       setIsSubmitted(true);
       toast({
         title: "Mensagem enviada com sucesso!",
@@ -103,14 +105,14 @@ const Contato = () => {
                   
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Button asChild variant="default" size="lg">
-                      <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                      <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={() => trackCTAClick("WhatsApp", "Contato-Sucesso")}>
                         <MessageSquare size={20} />
                         WhatsApp
                       </a>
                     </Button>
                     
                     <Button asChild variant="outline" size="lg">
-                      <a href={calendlyUrl} target="_blank" rel="noopener noreferrer">
+                      <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" onClick={() => trackCTAClick("Calendly", "Contato-Sucesso")}>
                         <Calendar size={20} />
                         Agendar reunião
                       </a>
@@ -344,14 +346,14 @@ const Contato = () => {
 
                       <div className="pt-4 space-y-3">
                         <Button asChild variant="outline" size="sm" className="w-full">
-                          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={() => trackCTAClick("WhatsApp", "Contato-Sidebar")}>
                             <MessageSquare size={16} />
                             WhatsApp
                           </a>
                         </Button>
                         
                         <Button asChild variant="outline" size="sm" className="w-full">
-                          <a href={calendlyUrl} target="_blank" rel="noopener noreferrer">
+                          <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" onClick={() => trackCTAClick("Calendly", "Contato-Sidebar")}>
                             <Calendar size={16} />
                             Agendar reunião
                           </a>
