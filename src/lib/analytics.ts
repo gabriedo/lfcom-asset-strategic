@@ -1,5 +1,5 @@
-// Google Analytics 4 - ID de medição
-const GA_MEASUREMENT_ID = 'G-D3FVS4848G';
+// Google Analytics 4 - Dois IDs para cobrir ambos os domínios
+const GA_IDS = ['G-FNDVLMF0J2', 'G-D3FVS4848G'];
 
 // Declare gtag on window
 declare global {
@@ -12,34 +12,38 @@ declare global {
 // Initialize Google Analytics
 export const initGA = (): void => {
   if (typeof window === 'undefined') return;
-  
-  // Check if already initialized
   if (window.gtag) return;
 
-  // Create script element for gtag.js
   const script = document.createElement('script');
   script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_IDS[0]}`;
   document.head.appendChild(script);
 
-  // Initialize dataLayer and gtag function
   window.dataLayer = window.dataLayer || [];
-  window.gtag = function gtag(...args: unknown[]) {
-    window.dataLayer.push(args);
+  // Correção crítica: usar function() para acessar o objeto arguments nativo
+  window.gtag = function () {
+    // eslint-disable-next-line prefer-rest-params
+    window.dataLayer.push(arguments);
   };
 
   window.gtag('js', new Date());
-  window.gtag('config', GA_MEASUREMENT_ID, {
-    anonymize_ip: true, // LGPD compliance
+
+  // Configurar ambos os streams
+  GA_IDS.forEach(id => {
+    window.gtag('config', id, {
+      anonymize_ip: true,
+    });
   });
 };
 
 // Track page views
 export const trackPageView = (path: string): void => {
   if (typeof window === 'undefined' || !window.gtag) return;
-  
-  window.gtag('config', GA_MEASUREMENT_ID, {
-    page_path: path,
+
+  GA_IDS.forEach(id => {
+    window.gtag('config', id, {
+      page_path: path,
+    });
   });
 };
 
@@ -51,7 +55,7 @@ export const trackEvent = (
   value?: number
 ): void => {
   if (typeof window === 'undefined' || !window.gtag) return;
-  
+
   window.gtag('event', action, {
     event_category: category,
     event_label: label,
