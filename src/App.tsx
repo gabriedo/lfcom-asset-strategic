@@ -24,6 +24,7 @@ import Status from "./pages/Status";
 import NotFound from "./pages/NotFound";
 import { CookieConsent } from "./components/layout/CookieConsent";
 import { ScrollToTop } from "./hooks/useScrollToTop";
+import { AnalyticsTracker } from "./components/layout/AnalyticsTracker";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <AnalyticsTracker />
         <CookieConsent />
         <Routes>
           <Route path="/" element={<Index />} />
