@@ -2,17 +2,24 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Redirecting...</title>
+  <title>LFCOM</title>
   <script>
-    // Obtém o caminho da URL
-    const path = window.location.pathname;
+    // SPA redirect: preserva o path e redireciona para index.html
+    // O sessionStorage guarda o path para o React Router resolver
+    var pathSegmentsToKeep = 0;
+    var l = window.location;
+    var path = l.pathname.slice(1);
+    var query = l.search;
+    var hash = l.hash;
     
-    // Redireciona para o index.html, mantendo o caminho como um parâmetro
-    // Isso é uma solução comum para SPAs no GitHub Pages
-    window.location.replace(`/${path}`);
+    // Salva o path original no sessionStorage
+    sessionStorage.setItem('spa-redirect', path + query + hash);
+    
+    // Redireciona para a raiz
+    l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/' + (query ? '?' + query : ''));
   </script>
 </head>
 <body>
-  <p>Redirecionando para a página inicial...</p>
+  <p>Redirecionando...</p>
 </body>
 </html>
