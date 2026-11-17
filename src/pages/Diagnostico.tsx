@@ -98,12 +98,12 @@ const TIPOS: Record<string, string[]> = {
 };
 
 /* Leituras por tipo. Números da série Teses por Tipo de Ativo, extração de 10/11/2026. */
-const TESE: Record<string, { nome: string; caminho: string; risco: string; mediana: string }> = {
-  galpao: { nome: "Galpão e industrial", caminho: "aluguel a operador logístico ou industrial", risco: "vacância e adequação do imóvel", mediana: "R$\u00a01.142.646" },
-  comercial: { nome: "Comercial", caminho: "aluguel ou uso pelo próprio negócio", risco: "ponto e zoneamento", mediana: "R$\u00a0325.800" },
-  rural: { nome: "Rural", caminho: "arrendamento, produção ou valorização da terra", risco: "posse e georreferenciamento", mediana: "R$\u00a0600.000" },
-  terreno: { nome: "Terreno", caminho: "construção, loteamento ou espera", risco: "prazo sem renda e aprovação", mediana: "R$\u00a0144.000" },
-  residencial: { nome: "Residencial", caminho: "revenda ou aluguel", risco: "ocupação", mediana: "R$\u00a0149.888" },
+const TESE: Record<string, { nome: string; caminho: string; risco: string }> = {
+  galpao: { nome: "Galpão e industrial", caminho: "aluguel a operador logístico ou industrial", risco: "vacância e adequação do imóvel" },
+  comercial: { nome: "Comercial", caminho: "aluguel ou uso pelo próprio negócio", risco: "ponto e zoneamento" },
+  rural: { nome: "Rural", caminho: "arrendamento, produção ou valorização da terra", risco: "posse e georreferenciamento" },
+  terreno: { nome: "Terreno", caminho: "construção, loteamento ou espera", risco: "prazo sem renda e aprovação" },
+  residencial: { nome: "Residencial", caminho: "revenda ou aluguel", risco: "ocupação" },
 };
 
 const ESTAGIO: Record<string, { nome: string; texto: string }> = {
@@ -368,9 +368,6 @@ const Diagnostico = () => {
                 </p>
               </div>
             </div>
-            <p className="mt-3 text-xs text-[#A9AEB5]">
-              Lance mínimo mediano de {tese.nome.toLowerCase()} na base: {tese.mediana}. Extração de 10/11/2026.
-            </p>
 
             <h2 className="mt-12 text-2xl font-extrabold tracking-tight md:text-3xl">Três imóveis em leilão agora, dentro do seu capital</h2>
             <p className="mt-2 text-sm text-[#A9AEB5]">
