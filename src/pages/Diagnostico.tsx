@@ -7,6 +7,27 @@ import { trackEvent } from "@/lib/analytics";
    A chave abaixo é a chave pública (publishable) do Supabase; a tabela imoveis tem leitura pública. */
 const SUPABASE_URL = "https://qmwufkpyzcndzmrdrfql.supabase.co";
 const SUPABASE_KEY = "sb_publishable_pY46iMq7H78j5wAaEcUlSw_ATXOEzJt";
+
+// Contagem anônima de cada passo do diagnóstico, sem cookie e sem dado pessoal.
+// Serve para saber em que pergunta as pessoas param, mesmo quando não aceitam os cookies.
+const SESSAO = Math.random().toString(36).slice(2, 12);
+function funil(evento: string, passo?: number) {
+  try {
+    const q = new URLSearchParams(window.location.search);
+    const utm = (k: string) => (q.get(k) || "").slice(0, 80) || null;
+    fetch(`${SUPABASE_URL}/rest/v1/funil_eventos`, {
+      method: "POST",
+      keepalive: true,
+      headers: { apikey: SUPABASE_KEY, "Content-Type": "application/json", Prefer: "return=minimal" },
+      body: JSON.stringify({
+        pagina: "diagnostico", evento, passo: passo ?? null, sessao: SESSAO,
+        origem: utm("utm_source"), campanha: utm("utm_campaign"), conteudo: utm("utm_content"),
+      }),
+    }).catch(() => undefined);
+  } catch {
+    // a medição nunca atrapalha a página
+  }
+}
 const WHATSAPP = "5541920030105";
 const PORTAL = "https://consultaleilao.com/imovel/";
 
@@ -203,6 +224,7 @@ const Diagnostico = () => {
   useEffect(() => {
     document.title = "Diagnóstico de leilão de imóveis | LFCOM";
     trackEvent("diagnostico_inicio", "diagnostico");
+    funil("inicio");
   }, []);
 
   const ufFinal = resp.regiao === "outro" ? uf : resp.regiao === "BR" ? null : resp.regiao ?? null;
@@ -222,6 +244,7 @@ const Diagnostico = () => {
         setAmpliado(amp);
         setLotes(escolherTres(rows));
         trackEvent("diagnostico_concluido", "diagnostico", `${resp.tipo}|${resp.capital}|${resp.regiao}`);
+        funil("concluido");
       } catch {
         if (vivo) { setErro(true); setLotes([]); }
       }
@@ -234,6 +257,7 @@ const Diagnostico = () => {
     const novo = { ...resp, [pergunta.id]: id };
     setResp(novo);
     trackEvent("diagnostico_resposta", "diagnostico", `${pergunta.id}:${id}`);
+    funil("resposta", passo + 1);
     if (pergunta.id === "regiao" && id === "outro") return;
     setTimeout(() => setPasso((p) => p + 1), 180);
   };
@@ -263,6 +287,7 @@ const Diagnostico = () => {
 
   const aoClicarWhats = () => {
     trackEvent("diagnostico_whatsapp", "conversion", `${resp.tipo}|${resp.capital}`);
+    funil("whatsapp");
     const w = window as unknown as { fbq?: (...a: unknown[]) => void };
     if (w.fbq) w.fbq("track", "Lead");
   };
@@ -279,34 +304,34 @@ const Diagnostico = () => {
         <span className="text-xs uppercase tracking-[0.25em] text-[#A9AEB5]">Diagnóstico</span>
       </header>
 
-      <main className="mx-auto max-w-3xl px-5 pb-24 pt-8">
+      <main className="mx-auto max-w-3xl px-5 pb-24 pt-5 md:pt-8">
         {!fim && (
           <section>
-            <div className="mb-10 flex items-center gap-3">
+            <div className="mb-6 flex items-center gap-3 md:mb-10">
               {PERGUNTAS.map((_, i) => (
                 <div key={i} className={`h-1 flex-1 ${i <= passo ? "bg-[#1E90FF]" : "bg-white/15"}`} />
               ))}
             </div>
 
             {passo === 0 && (
-              <p className="mb-8 text-base leading-relaxed text-[#C9CDD3] md:text-lg">
+              <p className="mb-5 text-sm leading-relaxed text-[#C9CDD3] md:mb-8 md:text-lg">
                 Seis perguntas, menos de um minuto. No fim você recebe a leitura do seu perfil e três imóveis reais,
                 em leilão agora, dentro do seu capital.
               </p>
             )}
 
-            <p className="mb-3 text-sm uppercase tracking-[0.2em] text-[#1E90FF]">Pergunta {passo + 1} de {total}</p>
+            <p className="mb-2 text-sm uppercase tracking-[0.2em] text-[#1E90FF] md:mb-3">Pergunta {passo + 1} de {total}</p>
             <h1 className="text-3xl font-extrabold leading-tight tracking-tight md:text-5xl">{pergunta.titulo}</h1>
-            {pergunta.apoio && <p className="mt-4 text-base text-[#A9AEB5] md:text-lg">{pergunta.apoio}</p>}
+            {pergunta.apoio && <p className="mt-2 text-sm text-[#A9AEB5] md:mt-4 md:text-lg">{pergunta.apoio}</p>}
 
-            <div className="mt-8 grid gap-3">
+            <div className="mt-5 grid gap-3 md:mt-8">
               {pergunta.opcoes.map((o) => {
                 const ativo = resp[pergunta.id] === o.id;
                 return (
                   <button
                     key={o.id}
                     onClick={() => escolher(o.id)}
-                    className={`flex w-full items-center justify-between border px-5 py-5 text-left transition-colors ${
+                    className={`flex w-full items-center justify-between border px-5 py-4 text-left transition-colors md:py-5 ${
                       ativo ? "border-[#1E90FF] bg-[#1E90FF]/15" : "border-white/15 bg-white/[0.04] hover:border-white/40"
                     }`}
                   >
@@ -355,6 +380,19 @@ const Diagnostico = () => {
             <h1 className="text-3xl font-extrabold leading-tight tracking-tight md:text-5xl">
               Estágio: {estagio.nome}. Tese: {tese.nome.toLowerCase()}.
             </h1>
+
+            <a
+              href={linkWhats}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={aoClicarWhats}
+              className="mt-6 flex w-full items-center justify-center gap-3 bg-[#1E90FF] px-6 py-4 text-lg font-bold text-white hover:bg-[#1878d6]"
+            >
+              <MessageCircle className="h-5 w-5" /> Continuar no WhatsApp
+            </a>
+            <p className="mt-2 text-xs text-[#A9AEB5]">
+              Abre o WhatsApp com as suas respostas já escritas. A leitura e os três imóveis estão logo abaixo.
+            </p>
 
             <div className="mt-8 grid gap-4 md:grid-cols-2">
               <div className="border border-white/15 bg-white/[0.04] p-6">
