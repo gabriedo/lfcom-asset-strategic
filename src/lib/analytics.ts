@@ -1,7 +1,5 @@
 // Google Analytics 4 - Dois IDs para cobrir ambos os domínios
 const GA_IDS = ['G-FNDVLMF0J2', 'G-D3FVS4848G'];
-// Google tag da conta Google Ads 102-713-0425
-const GOOGLE_ADS_TAG = 'GTM-WVGVJRGF';
 
 // Declare gtag on window
 declare global {
@@ -11,30 +9,36 @@ declare global {
   }
 }
 
-// Initialize Google Analytics
+// Initialize Google Analytics (chamado quando o visitante aceita os cookies).
+// A tag do Google Ads já vem no index.html com consentimento negado; aqui o consentimento é liberado.
+let gaLoaded = false;
 export const initGA = (): void => {
   if (typeof window === 'undefined') return;
-  if (window.gtag) return;
+
+  if (!window.gtag) {
+    window.dataLayer = window.dataLayer || [];
+    // Correção crítica: usar function() para acessar o objeto arguments nativo
+    window.gtag = function () {
+      // eslint-disable-next-line prefer-rest-params
+      window.dataLayer.push(arguments);
+    };
+    window.gtag('js', new Date());
+  }
+
+  window.gtag('consent', 'update', {
+    ad_storage: 'granted',
+    ad_user_data: 'granted',
+    ad_personalization: 'granted',
+    analytics_storage: 'granted',
+  });
+
+  if (gaLoaded) return;
+  gaLoaded = true;
 
   const script = document.createElement('script');
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_IDS[0]}`;
   document.head.appendChild(script);
-
-  // Tag do Google Ads (contêiner da conta LFCOM, mede conversões dos anúncios)
-  const adsTag = document.createElement('script');
-  adsTag.async = true;
-  adsTag.src = `https://www.googletagmanager.com/gtm.js?id=${GOOGLE_ADS_TAG}`;
-  document.head.appendChild(adsTag);
-
-  window.dataLayer = window.dataLayer || [];
-  // Correção crítica: usar function() para acessar o objeto arguments nativo
-  window.gtag = function () {
-    // eslint-disable-next-line prefer-rest-params
-    window.dataLayer.push(arguments);
-  };
-
-  window.gtag('js', new Date());
 
   // Configurar ambos os streams
   GA_IDS.forEach(id => {

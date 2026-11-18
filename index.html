@@ -3,6 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tag do Google (Google Ads, conta 102-713-0425). Começa com consentimento negado (LGPD) e só libera quando o visitante aceita os cookies. -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500});
+      try {
+        var c = JSON.parse(localStorage.getItem('lfcom_cookie_consent') || 'null');
+        if (c && c.status === 'accepted') {
+          gtag('consent', 'update', {ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted'});
+        }
+      } catch (e) {}
+      gtag('js', new Date());
+    </script>
+    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-WVGVJRGF"></script>
     <title>LFCOM — Assessoria de Leilões para Grandes Investidores e Empresas</title>
     <meta name="description" content="Transformamos ativos de leilão em patrimônio estratégico. Segurança jurídica, dados e execução sênior para decisões de alto impacto." />
     <meta name="author" content="LFCOM" />
