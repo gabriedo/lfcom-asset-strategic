@@ -1,5 +1,7 @@
 // Google Analytics 4 - Dois IDs para cobrir ambos os domínios
 const GA_IDS = ['G-FNDVLMF0J2', 'G-D3FVS4848G'];
+// Google tag da conta Google Ads 102-713-0425
+const GOOGLE_ADS_TAG = 'GTM-WVGVJRGF';
 
 // Declare gtag on window
 declare global {
@@ -18,6 +20,12 @@ export const initGA = (): void => {
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_IDS[0]}`;
   document.head.appendChild(script);
+
+  // Tag do Google Ads (contêiner da conta LFCOM, mede conversões dos anúncios)
+  const adsTag = document.createElement('script');
+  adsTag.async = true;
+  adsTag.src = `https://www.googletagmanager.com/gtm.js?id=${GOOGLE_ADS_TAG}`;
+  document.head.appendChild(adsTag);
 
   window.dataLayer = window.dataLayer || [];
   // Correção crítica: usar function() para acessar o objeto arguments nativo
