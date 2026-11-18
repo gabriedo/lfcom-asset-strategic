@@ -13,6 +13,7 @@ import Sobre from "./pages/Sobre";
 import Contato from "./pages/Contato";
 import QuizResultado from "./pages/QuizResultado";
 import Diagnostico from "./pages/Diagnostico";
+import Assessoria from "./pages/Assessoria";
 import LeiloesPatrimonio from "./pages/LeiloesPatrimonio";
 import LeiloesMaquinas from "./pages/LeiloesMaquinas";
 import LeiloesEmpresas from "./pages/LeiloesEmpresas";
@@ -49,6 +50,7 @@ const App = () => (
           <Route path="/contato" element={<Contato />} />
           <Route path="/quiz-resultado" element={<QuizResultado />} />
           <Route path="/diagnostico" element={<Diagnostico />} />
+          <Route path="/assessoria" element={<Assessoria />} />
           <Route path="/leiloes-patrimonio" element={<LeiloesPatrimonio />} />
           <Route path="/leiloes-maquinas" element={<LeiloesMaquinas />} />
           <Route path="/leiloes-empresas" element={<LeiloesEmpresas />} />
