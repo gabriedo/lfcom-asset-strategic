@@ -216,9 +216,14 @@ const Diagnostico = () => {
   const [ampliado, setAmpliado] = useState(false);
   const [erro, setErro] = useState(false);
   const [nome, setNome] = useState("");
+  const [fone, setFone] = useState("");
+  const [email, setEmail] = useState("");
+  const [contatoOk, setContatoOk] = useState(false);
+  const [tentou, setTentou] = useState(false);
 
   const total = PERGUNTAS.length;
-  const fim = passo >= total;
+  const pedindoContato = passo >= total && !contatoOk;
+  const fim = passo >= total && contatoOk;
   const pergunta = PERGUNTAS[Math.min(passo, total - 1)];
 
   useEffect(() => {
@@ -268,20 +273,28 @@ const Diagnostico = () => {
     return q.opcoes.find((o) => o.id === resp[pid])?.label ?? "";
   };
 
-  const linkWhats = useMemo(() => {
-    if (!fim) return "#";
+  const respostas = () => [
+    `Objetivo: ${rotulo("objetivo")}`,
+    `Capital para o lance: ${rotulo("capital")}`,
+    `Tipo de imóvel: ${rotulo("tipo")}`,
+    `Região: ${rotulo("regiao")}`,
+    `Experiência: ${rotulo("experiencia")}`,
+    `Prazo: ${rotulo("prazo")}`,
+  ];
+
+  const montarLink = (ls: Lote[] | null) => {
     const linhas = [
       "Olá, fiz o diagnóstico no site da LFCOM e quero a conversa de 20 minutos.",
-      nome ? `Nome: ${nome}` : "",
-      `Objetivo: ${rotulo("objetivo")}`,
-      `Capital para o lance: ${rotulo("capital")}`,
-      `Tipo de imóvel: ${rotulo("tipo")}`,
-      `Região: ${rotulo("regiao")}`,
-      `Experiência: ${rotulo("experiencia")}`,
-      `Prazo: ${rotulo("prazo")}`,
-      lotes && lotes.length ? `Imóveis que apareceram: ${lotes.map((l) => `#${l.id}`).join(", ")}` : "",
+      nome.trim() ? `Nome: ${nome.trim()}` : "",
+      ...respostas(),
+      ls && ls.length ? `Imóveis que apareceram: ${ls.map((l) => `#${l.id}`).join(", ")}` : "",
     ].filter(Boolean);
     return `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(linhas.join("\n"))}`;
+  };
+
+  const linkWhats = useMemo(() => {
+    if (!fim) return "#";
+    return montarLink(lotes);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [fim, lotes, nome]);
 
@@ -290,6 +303,46 @@ const Diagnostico = () => {
     funil("whatsapp");
     const w = window as unknown as { fbq?: (...a: unknown[]) => void };
     if (w.fbq) w.fbq("track", "Lead");
+  };
+
+  const foneDigitos = fone.replace(/\D/g, "");
+  const nomeOk = nome.trim().length >= 2;
+  const foneOk = foneDigitos.length >= 10 && foneDigitos.length <= 13;
+  const emailOk = !email.trim() || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
+
+  // Último passo: guarda o contato e já abre o WhatsApp com as respostas escritas.
+  // O clique no botão é o gesto que permite abrir a conversa sem bloqueio do navegador.
+  const enviarContato = () => {
+    setTentou(true);
+    if (!nomeOk || !foneOk || !emailOk) return;
+    try {
+      const q = new URLSearchParams(window.location.search);
+      const utm = ["utm_source", "utm_campaign", "utm_content"].map((k) => q.get(k)).filter(Boolean).join(" | ");
+      fetch(`${SUPABASE_URL}/rest/v1/leads`, {
+        method: "POST",
+        keepalive: true,
+        headers: { apikey: SUPABASE_KEY, "Content-Type": "application/json", Prefer: "return=minimal" },
+        body: JSON.stringify({
+          name: nome.trim().slice(0, 80),
+          phone: foneDigitos,
+          email: email.trim().slice(0, 120) || null,
+          service: "diagnostico-lfcom",
+          message: [...respostas(), utm ? `Origem: ${utm.slice(0, 200)}` : ""].filter(Boolean).join("\n"),
+        }),
+      }).catch(() => undefined);
+    } catch {
+      // se o registro falhar, a pessoa segue para o resultado do mesmo jeito
+    }
+    trackEvent("diagnostico_contato", "conversion", `${resp.tipo}|${resp.capital}`);
+    funil("contato");
+    try {
+      const aba = window.open(montarLink(null), "_blank");
+      if (aba) { aba.opener = null; aoClicarWhats(); }
+    } catch {
+      // sem abertura automática, o botão do topo do resultado faz o mesmo
+    }
+    setContatoOk(true);
+    window.scrollTo({ top: 0 });
   };
 
   const tese = resp.tipo ? TESE[resp.tipo] : null;
@@ -305,7 +358,7 @@ const Diagnostico = () => {
       </header>
 
       <main className="mx-auto max-w-3xl px-5 pb-24 pt-5 md:pt-8">
-        {!fim && (
+        {!fim && !pedindoContato && (
           <section>
             <div className="mb-6 flex items-center gap-3 md:mb-10">
               {PERGUNTAS.map((_, i) => (
@@ -374,6 +427,74 @@ const Diagnostico = () => {
           </section>
         )}
 
+        {pedindoContato && (
+          <section>
+            <div className="mb-6 flex items-center gap-3 md:mb-10">
+              {PERGUNTAS.map((_, i) => (
+                <div key={i} className="h-1 flex-1 bg-[#1E90FF]" />
+              ))}
+            </div>
+            <p className="mb-2 text-sm uppercase tracking-[0.2em] text-[#1E90FF] md:mb-3">Sua leitura está pronta</p>
+            <h1 className="text-3xl font-extrabold leading-tight tracking-tight md:text-5xl">Com quem falamos?</h1>
+            <p className="mt-2 text-sm text-[#A9AEB5] md:mt-4 md:text-lg">
+              A leitura e os três imóveis vêm em seguida, e o WhatsApp já abre com as suas respostas escritas.
+            </p>
+
+            <form
+              className="mt-5 grid gap-3 md:mt-8"
+              onSubmit={(e) => { e.preventDefault(); enviarContato(); }}
+              noValidate
+            >
+              <input
+                value={nome}
+                onChange={(e) => setNome(e.target.value)}
+                placeholder="Seu nome"
+                autoComplete="given-name"
+                aria-label="Seu nome"
+                className={`w-full border bg-[#0C1118] px-4 py-4 text-lg text-white placeholder:text-white/40 ${tentou && !nomeOk ? "border-[#F87171]" : "border-white/25"}`}
+              />
+              <input
+                value={fone}
+                onChange={(e) => setFone(e.target.value)}
+                placeholder="WhatsApp com DDD"
+                type="tel"
+                inputMode="tel"
+                autoComplete="tel"
+                aria-label="WhatsApp com DDD"
+                className={`w-full border bg-[#0C1118] px-4 py-4 text-lg text-white placeholder:text-white/40 ${tentou && !foneOk ? "border-[#F87171]" : "border-white/25"}`}
+              />
+              <input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="E-mail (opcional)"
+                type="email"
+                inputMode="email"
+                autoComplete="email"
+                aria-label="E-mail, opcional"
+                className={`w-full border bg-[#0C1118] px-4 py-4 text-lg text-white placeholder:text-white/40 ${tentou && !emailOk ? "border-[#F87171]" : "border-white/25"}`}
+              />
+              {tentou && (!nomeOk || !foneOk || !emailOk) && (
+                <p className="text-sm text-[#F87171]">
+                  {!nomeOk ? "Informe o seu nome." : !foneOk ? "Informe o WhatsApp com DDD, só números." : "Confira o e-mail ou deixe em branco."}
+                </p>
+              )}
+              <button
+                type="submit"
+                className="mt-1 flex w-full items-center justify-center gap-3 bg-[#1E90FF] px-6 py-4 text-lg font-bold text-white hover:bg-[#1878d6]"
+              >
+                <MessageCircle className="h-5 w-5" /> Ver minha leitura
+              </button>
+            </form>
+            <p className="mt-3 text-xs leading-relaxed text-[#A9AEB5]">
+              Ao continuar, você concorda que a LFCOM fale com você por WhatsApp ou e-mail sobre este diagnóstico.{" "}
+              <Link to="/politica-de-privacidade" className="underline">Política de privacidade</Link>.
+            </p>
+            <button onClick={() => setPasso(total - 1)} className="mt-8 inline-flex items-center gap-2 text-sm text-[#A9AEB5] hover:text-white">
+              <ArrowLeft className="h-4 w-4" /> Voltar
+            </button>
+          </section>
+        )}
+
         {fim && tese && estagio && (
           <section>
             <p className="mb-3 text-sm uppercase tracking-[0.2em] text-[#1E90FF]">Sua leitura</p>
@@ -391,7 +512,7 @@ const Diagnostico = () => {
               <MessageCircle className="h-5 w-5" /> Continuar no WhatsApp
             </a>
             <p className="mt-2 text-xs text-[#A9AEB5]">
-              Abre o WhatsApp com as suas respostas já escritas. A leitura e os três imóveis estão logo abaixo.
+Se o WhatsApp não abriu sozinho, toque no botão. As suas respostas já vão escritas. A leitura e os três imóveis estão logo abaixo.
             </p>
 
             <div className="mt-8 grid gap-4 md:grid-cols-2">
@@ -467,19 +588,12 @@ const Diagnostico = () => {
                 Olhamos o seu perfil e estes imóveis antes de falar com você. Você sai da conversa sabendo o que vale análise,
                 o que descartar e como funciona a assessoria da LFCOM, do edital ao registro.
               </p>
-              <input
-                value={nome}
-                onChange={(e) => setNome(e.target.value)}
-                placeholder="Seu nome (opcional)"
-                className="mt-5 w-full border border-white/25 bg-[#06080B] px-4 py-4 text-lg text-white placeholder:text-white/40"
-                aria-label="Seu nome"
-              />
               <a
                 href={linkWhats}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={aoClicarWhats}
-                className="mt-4 flex w-full items-center justify-center gap-3 bg-[#1E90FF] px-6 py-5 text-lg font-bold text-white hover:bg-[#1878d6]"
+                className="mt-5 flex w-full items-center justify-center gap-3 bg-[#1E90FF] px-6 py-5 text-lg font-bold text-white hover:bg-[#1878d6]"
               >
                 <MessageCircle className="h-5 w-5" /> Chamar no WhatsApp com as minhas respostas
               </a>
